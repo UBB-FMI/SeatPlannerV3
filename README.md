@@ -95,7 +95,7 @@ This does **not** publish the plan or create an open event. Repeating the comman
 
 Uvicorn runs with `--no-proxy-headers`. The app does not infer public URLs from client-controlled forwarded headers. For IP-based throttling, optionally configure the **exact proxy peer address/network as seen by the application** in `TRUSTED_PROXY_CIDRS`; that proxy must overwrite `X-Real-IP`. In Docker this peer may be the bridge gateway, not `127.0.0.1`. Do not trust all addresses. With no trusted proxy configured, requests behind one proxy share an IP throttling bucket; configure this before public launch.
 
-For a subpath, use `PUBLIC_URL=https://faculty.example.org/seats` and the prefix-stripping `/seats/` rules in the proxy example. Do not include a trailing slash in `PUBLIC_URL`. The proxy should redirect `/seats` to `/seats/`. Cookies and static/API/mail links use that path.
+For a subpath, use `PUBLIC_URL=https://faculty.example.org/seats` and the prefix-preserving `/seats/` rules in the proxy example. Do not include a trailing slash in `PUBLIC_URL`. The proxy should redirect `/seats` to `/seats/`. Cookies and static/API/mail links use that path.
 
 For a remote proxy, replace the loopback binding with a private interface binding and firewall access to the proxy host. Plain HTTP should remain on a trusted private transport.
 

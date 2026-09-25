@@ -35,7 +35,7 @@ The examples use `/var/lib/seatplan` for data and `/opt/seatplan/.env` as the sh
 
 Use `deploy/apache.conf` or `deploy/nginx.conf`. Add these inside the virtual host that already terminates TLS. Do not create a second TLS terminator inside the app. Uvicorn must remain `--no-proxy-headers`; the configured `PUBLIC_URL` is authoritative. The app does not depend on trusting `X-Forwarded-Proto` for links or cookies.
 
-The `/seats/` examples strip the prefix before forwarding. Static files, API paths, mail URLs and cookies are generated using the configured prefix. Preserve query strings, forward the browser Origin header, and do not cache authenticated content. No WebSocket support is required; the visitor view polls availability every seven seconds. Admin snapshots refresh on demand and reject stale overrides.
+The `/seats/` examples preserve the prefix when forwarding. This is required for static files under the configured FastAPI root path. Static files, API paths, mail URLs and cookies are generated using that prefix. Preserve query strings, forward the browser Origin header, and do not cache authenticated content. No WebSocket support is required; the visitor view polls availability every seven seconds. Admin snapshots refresh on demand and reject stale overrides.
 
 For IP rate limiting, overwrite `X-Real-IP` in the **last trusted proxy** and set only its actual peer CIDR in `TRUSTED_PROXY_CIDRS`. The app deliberately ignores that header from untrusted peers. A shared default bucket behind the proxy can otherwise throttle multiple visitors together. Do not use `0.0.0.0/0`, and do not make the upstream publicly reachable merely to simplify proxying.
 

@@ -297,6 +297,9 @@ def test_subpath_urls_and_cookie_scope(settings):
             mail = connection.execute("SELECT body FROM outbox").fetchone()[0]
         assert "http://testserver/seats/#confirm=" in mail
         assert 'src="/seats/static/app.js"' in client.get("/seats/").text
+        stylesheet = client.get("/seats/static/app.css")
+        assert stylesheet.status_code == 200
+        assert ":root" in stylesheet.text
 
 
 def test_settings_fail_closed(settings):
