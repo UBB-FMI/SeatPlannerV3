@@ -94,6 +94,20 @@ def test_multi_seat_booking_and_idempotency(client, app, inventory):
         assert connection.execute("SELECT COUNT(*) FROM outbox WHERE subject LIKE 'Reservation confirmed:%'").fetchone()[0] == 1
 
 
+def test_events_keep_separate_seat_allocations_and_limits(client, app, inventory):
+    plan_id, seats, first_event = inventory
+    second_event = make_event(app.state.db, plan_id, maximum=1)
+    with app.state.db.transaction() as connection:
+        connection.execute("UPDATE events SET max_per_user=1 WHERE id=?", (first_event,))
+    headers = login(client, app)
+    seat_id = seats[0]["id"]
+    assert booking(client, first_event, [seat_id], headers).status_code == 200
+    assert booking(client, second_event, [seat_id], headers).status_code == 200
+    assert booking(client, first_event, [seats[1]["id"]], headers).status_code == 409
+    assert booking(client, second_event, [seats[1]["id"]], headers).status_code == 409
+    assert {entry["event_id"] for entry in client.get("/api/bookings").json()["bookings"]} == {first_event, second_event}
+
+
 def test_all_or_nothing_conflict_quota_and_wrong_plan(client, app, settings, inventory):
     pid, seats, eid = inventory
     headers = login(client, app)
@@ -297,6 +311,10 @@ def test_subpath_urls_and_cookie_scope(settings):
             mail = connection.execute("SELECT body FROM outbox").fetchone()[0]
         assert "http://testserver/seats/#confirm=" in mail
         assert 'src="/seats/static/app.js"' in client.get("/seats/").text
+        translations = client.get("/seats/api/i18n")
+        assert translations.status_code == 200
+        assert translations.json()["languages"] == ["en"]
+        assert client.get("/seats/static/i18n.js").status_code == 200
         stylesheet = client.get("/seats/static/app.css")
         assert stylesheet.status_code == 200
         assert ":root" in stylesheet.text

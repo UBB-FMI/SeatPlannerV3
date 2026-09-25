@@ -11,6 +11,7 @@ from fastapi import HTTPException
 from .config import Settings
 from .db import Database, json_dump
 from .domain import BookRequest, EventEdit, OverrideRequest, PlanSave, excluded, new_id, validate_rotated_bounds
+from .i18n import catalog
 from .mail import enqueue
 from .security import Identity, ensure_user
 
@@ -147,9 +148,12 @@ def booking_notice(connection: sqlite3.Connection, settings: Settings, booking_i
     if booking is None or not booking["email"]:
         return
     seats = [json.loads(row[0]) for row in connection.execute("SELECT s.payload FROM allocations a JOIN seats s ON s.id=a.seat_id WHERE a.booking_id=? ORDER BY s.section,s.row_name,s.label", (booking_id,))]
-    seat_lines = "\n".join("  " + seat_name(seat) for seat in seats) or "  No seats remain in this reservation."
-    body = f"{heading}\n\n{booking['title']}\n{booking['starts_at']}\nReference: {booking_id}\n\nCurrent seats in this reservation:\n{seat_lines}\n\nSign in to view or cancel:\n{settings.public_url}/?event={booking['event_id']}\n\nKeep this message private. This is a reservation, not proof of identity.\n"
-    enqueue(connection, booking["email"], f"{heading}: {booking['title']}", body)
+    user = connection.execute("SELECT locale FROM users WHERE id=?", (booking["user_id"],)).fetchone() if booking["user_id"] else None
+    language = user["locale"] if user else "en"
+    tr = lambda source, *values: catalog().translate(source, language, *values)
+    seat_lines = "\n".join("  " + seat_name(seat) for seat in seats) or "  " + tr("No seats remain in this reservation.")
+    body = f"{tr(heading)}\n\n{booking['title']}\n{booking['starts_at']}\n{tr('Reference: {0}', booking_id)}\n\n{tr('Current seats in this reservation:')}\n{seat_lines}\n\n{tr('Sign in to view or cancel:')}\n{settings.public_url}/?event={booking['event_id']}\n\n{tr('Keep this message private. This is a reservation, not proof of identity.')}\n"
+    enqueue(connection, booking["email"], f"{tr(heading)}: {booking['title']}", body)
 
 
 def book(db: Database, settings: Settings, event_id: str, request: BookRequest, identity: Identity) -> dict:

@@ -128,8 +128,8 @@ def main():
                     page.set_content(html)
                     if path.startswith("/print/"):
                         return
-                    source = "\n".join((ROOT / "seatplan/static" / name).read_text() for name in ["ui.js", "map.js", "editor.js", "app.js"])
-                    source = re.sub(r'^import .*?;\s*$', '', source, flags=re.MULTILINE).replace("export function", "function").replace("export class", "class")
+                    source = "\n".join((ROOT / "seatplan/static" / name).read_text() for name in ["i18n.js", "ui.js", "map.js", "editor.js", "app.js"])
+                    source = re.sub(r'^import .*?;\s*$', '', source, flags=re.MULTILINE).replace("export async function", "async function").replace("export function", "function").replace("export class", "class")
                     source = source.replace("const image = `${this.options.base}/media/${encodeURIComponent(this.options.planId)}/${this.page}.png`;", "const image = testMedia[`${this.options.base}/media/${encodeURIComponent(this.options.planId)}/${this.page}.png`];")
                     prelude = "const location = " + json.dumps({"hash": "#confirm=" + token if token else "", "pathname": "/", "search": ""}) + "; const history = {replaceState() {}}; const testMedia = " + json.dumps(media) + "; const fetch = async (url, options={}) => { const reply = await window.seatplanTestTransport({url, ...options}); return new Response(reply.body, {status: reply.status, headers: reply.headers}); };"
                     page.add_script_tag(content="(() => {" + prelude + source + "; window.__testApp = app; })();")
@@ -157,11 +157,14 @@ def main():
                         time.sleep(0.1)
                     assert token, "No login mail reached the development mailbox."
                     navigate(page, token=token)
-                    page.locator("#confirm-signin").click()
+                    if args.bridge is False:
+                        # A hash-only navigation reuses the current document;
+                        # reload so startup consumes the emailed fragment.
+                        page.reload()
                     page.get_by_role("button", name="Sign out", exact=True).wait_for()
 
                 sign_in(admin, "admin@example.org")
-                checks.append("Admin email request, delivered link, explicit verification and cookie session")
+                checks.append("Admin email request, delivered link, automatic verification and cookie session")
                 admin.locator("#admin-nav").click()
                 admin.locator("#plan-select").select_option(sample_id)
                 admin.locator("#plan-count").filter(has_text=str(sample_count)).wait_for()
@@ -294,11 +297,26 @@ def main():
                 admin.locator('#live-map svg').wait_for()
                 user = browser.new_page(viewport={"width": 1440, "height": 1040})
                 user.on("pageerror", lambda error: errors.append(str(error)))
+                with db.transaction() as connection:
+                    connection.execute("UPDATE events SET status='closed' WHERE id=?", (eid,))
+                navigate(user)
+                user.locator("#book-button").filter(has_text="Not reservable").wait_for()
+                assert user.locator("#book-button").inner_text() == "Not reservable"
+                assert user.locator("#book-button").is_disabled()
+                with db.transaction() as connection:
+                    connection.execute("UPDATE events SET status='open' WHERE id=?", (eid,))
+                checks.append("Closed events show Not reservable on the booking button")
                 sign_in(user, "visitor@example.org")
                 user.locator(f'[data-id="{seats[0]["id"]}"]').click()
                 user.locator(f'[data-id="{seats[1]["id"]}"]').click()
                 user.locator('#book-button').click()
                 user.locator('#toast').filter(has_text="Reservation confirmed").wait_for()
+                user.locator(f'[data-id="{seats[2]["id"]}"]').click()
+                user.locator(f'[data-id="{seats[3]["id"]}"]').click()
+                user.locator(f'[data-id="{seats[4]["id"]}"]').click()
+                assert user.locator('.selected-chip').count() == 2
+                assert "limit has been reached" in user.locator('#toast').inner_text()
+                checks.append("Existing two-seat booking leaves only two selectable seats under the per-event four-seat limit")
                 user.screenshot(path=str(args.output / "booking-view.png"), full_page=True)
                 checks.append("Visitor signs in by delivered email and reserves two seats through the map")
                 user.locator('[data-view="mine"]').click()

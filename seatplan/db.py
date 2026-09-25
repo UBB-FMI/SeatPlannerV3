@@ -9,7 +9,8 @@ from typing import Iterator
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS users (
-    id TEXT PRIMARY KEY, email TEXT NOT NULL UNIQUE, created REAL NOT NULL
+    id TEXT PRIMARY KEY, email TEXT NOT NULL UNIQUE, created REAL NOT NULL,
+    locale TEXT NOT NULL DEFAULT 'en'
 );
 CREATE TABLE IF NOT EXISTS sessions (
     token_hash TEXT PRIMARY KEY, user_id TEXT REFERENCES users(id), csrf TEXT NOT NULL,
@@ -81,7 +82,6 @@ CREATE TABLE IF NOT EXISTS jobs (
 CREATE TABLE IF NOT EXISTS heartbeat (
     name TEXT PRIMARY KEY, updated REAL NOT NULL
 );
-PRAGMA user_version = 1;
 """
 
 
@@ -101,10 +101,15 @@ class Database:
         self.path.parent.mkdir(parents=True, exist_ok=True)
         with self.read() as connection:
             version = connection.execute("PRAGMA user_version").fetchone()[0]
-            if version > 1:
+            if version > 2:
                 raise RuntimeError("Database is from a newer Seatplan version. Do not downgrade.")
             connection.execute("PRAGMA journal_mode = WAL")
             connection.executescript(SCHEMA)
+            if version < 2:
+                columns = {row[1] for row in connection.execute("PRAGMA table_info(users)")}
+                if "locale" not in columns:
+                    connection.execute("ALTER TABLE users ADD COLUMN locale TEXT NOT NULL DEFAULT 'en'")
+                connection.execute("PRAGMA user_version = 2")
 
     @contextmanager
     def read(self) -> Iterator[sqlite3.Connection]:

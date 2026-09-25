@@ -1,19 +1,19 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{ language }}">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Seating plan · {{ snapshot.event.title }}</title>
+<title>{{ tr('Seating plan · {0}', snapshot.event.title) }}</title>
 <link rel="stylesheet" href="{{ base }}/static/print.css">
 <script defer src="{{ base }}/static/print.js"></script>
 </head>
 <body{% if labels %} class="overlay-labels"{% endif %}>
-<div class="print-actions"><button id="print-button">Print / save as PDF</button><label><input type="checkbox" id="print-labels"{% if labels %} checked{% endif %}> Overlay seat labels</label><span>Snapshot generated {{ generated }}. Enable background graphics for the closest color match. Symbols and outlines also distinguish states.</span></div>
+<div class="print-actions"><button id="print-button">{{ tr('Print / save as PDF') }}</button><label><input type="checkbox" id="print-labels"{% if labels %} checked{% endif %}> {{ tr('Overlay seat labels') }}</label><span>{{ tr('Snapshot generated {0}. Enable background graphics for the closest color match. Symbols and outlines also distinguish states.', generated) }}</span></div>
 <main>
 {% for page in snapshot.plan.pages %}
 <section class="print-sheet">
-<header><div><h1>{{ snapshot.event.title }}</h1><p>{{ snapshot.event.starts_at }} · {{ snapshot.plan.name }}</p></div><small>Page {{ loop.index }} / {{ snapshot.plan.pages|length }}<br>{{ generated }}<br>Event revision {{ snapshot.event.revision }}</small></header>
-<div class="legend"><span>□ Available</span><span>■ Reserved</span><span>× Unavailable</span>{% if roster %}<span>Attendee list follows the plan.</span>{% endif %}</div>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {{ page.width }} {{ page.height }}" class="printed-map" aria-label="Seating allocation plan, page {{ loop.index }}">
+<header><div><h1>{{ snapshot.event.title }}</h1><p>{{ snapshot.event.starts_at }} · {{ snapshot.plan.name }}</p></div><small>{{ tr('Page {0} / {1}', loop.index, snapshot.plan.pages|length) }}<br>{{ generated }}<br>{{ tr('Event revision {0}', snapshot.event.revision) }}</small></header>
+<div class="legend"><span>□ {{ tr('Available') }}</span><span>■ {{ tr('Reserved') }}</span><span>× {{ tr('Unavailable') }}</span>{% if roster %}<span>{{ tr('Attendee list follows the plan.') }}</span>{% endif %}</div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {{ page.width }} {{ page.height }}" class="printed-map" aria-label="{{ tr('Seating allocation plan, page {0}', loop.index) }}">
 <image href="{{ base }}/media/{{ snapshot.plan.id }}/{{ page.index }}.png" width="{{ page.width }}" height="{{ page.height }}"/>
 {% for seat in snapshot.seats if seat.page == page.index %}
 <g transform="translate({{ seat.x * page.width }} {{ seat.y * page.height }}) rotate({{ seat.angle }})">
@@ -26,10 +26,10 @@
 </section>
 {% endfor %}
 {% if roster %}
-<section class="printed-roster"><h1>Attendee list · {{ snapshot.event.title }}</h1><p>Organizer copy. Contains private email addresses. Snapshot: {{ generated }}.</p>
-<table><thead><tr><th>Section / row / seat</th><th>Email / house reservation</th><th>Reference</th></tr></thead><tbody>
+<section class="printed-roster"><h1>{{ tr('Attendee list · {0}', snapshot.event.title) }}</h1><p>{{ tr('Organizer copy. Contains private email addresses. Snapshot: {0}.', generated) }}</p>
+<table><thead><tr><th>{{ tr('Section / row / seat') }}</th><th>{{ tr('Email / house reservation') }}</th><th>{{ tr('Reference') }}</th></tr></thead><tbody>
 {% for seat in snapshot.seats if seat.status == 'reserved' %}
-<tr><td>{{ seat.section }}{% if seat.row %} / {{ seat.row }}{% endif %} / {{ seat.label }}</td><td>{{ seat.allocation.email or 'House reservation' }}</td><td>{{ seat.allocation.booking_id }}</td></tr>
+<tr><td>{{ seat.section }}{% if seat.row %} / {{ seat.row }}{% endif %} / {{ seat.label }}</td><td>{{ seat.allocation.email or tr('House reservation') }}</td><td>{{ seat.allocation.booking_id }}</td></tr>
 {% endfor %}
 </tbody></table></section>
 {% endif %}

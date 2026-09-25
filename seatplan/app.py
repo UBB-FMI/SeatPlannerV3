@@ -12,15 +12,18 @@ from pathlib import Path
 from typing import Callable
 
 from fastapi import FastAPI, HTTPException, Query, Request
+from fastapi.exceptions import RequestValidationError
 from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, Response
 from fastapi.staticfiles import StaticFiles
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from pydantic import Field
 from starlette.concurrency import run_in_threadpool
+from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from .config import Settings, load_settings
 from .db import Database, json_dump
 from .domain import BookRequest, CancelRequest, ConfirmRequest, DetectSpec, EmailRequest, EventEdit, GridSpec, OverrideRequest, PlanSave, StrictModel, build_grid, new_id
+from .i18n import catalog, request_language
 from .mail import enqueue
 from .security import client_ip, create_session, digest, ensure_user, get_identity, rate_limit, require_identity
 from .services import audit, book, booking_notice, cancel_booking, clone_plan, event_snapshot, get_event, get_plan, override, plan_seats, plan_summary, publish_plan, save_event, save_plan, seat_name
@@ -28,6 +31,10 @@ from .services import audit, book, booking_notice, cancel_booking, clone_plan, e
 
 class RevisionRequest(StrictModel):
     revision: int = Field(ge=1)
+
+
+class LanguageEdit(StrictModel):
+    language: str = Field(min_length=2, max_length=35)
 
 
 class SafetyMiddleware:
@@ -40,9 +47,10 @@ class SafetyMiddleware:
             await self.app(scope, receive, send)
             return
         headers = {key.decode().lower(): value.decode() for key, value in scope["headers"]}
+        language = request_language(Request(scope))
         mutating = scope["method"] not in {"GET", "HEAD", "OPTIONS"}
         if mutating and headers.get("origin") != self.settings.origin:
-            await JSONResponse({"detail": "Invalid request origin. Check PUBLIC_URL."}, 403)(scope, receive, send)
+            await JSONResponse({"detail": catalog().translate("Invalid request origin. Check PUBLIC_URL.", language)}, 403)(scope, receive, send)
             return
         body = bytearray()
         path = scope["path"].removeprefix(self.settings.base_path) if self.settings.base_path else scope["path"]
@@ -52,7 +60,8 @@ class SafetyMiddleware:
             try:
                 await run_in_threadpool(require_identity, Request(scope), self.db, self.settings, admin=True)
             except HTTPException as exc:
-                await JSONResponse({"detail": exc.detail}, exc.status_code, headers=exc.headers)(scope, receive, send)
+                detail = catalog().translate(exc.detail, language) if isinstance(exc.detail, str) else exc.detail
+                await JSONResponse({"detail": detail}, exc.status_code, headers=exc.headers)(scope, receive, send)
                 return
         if mutating:
             limit = (self.settings.max_upload_mb * 1024**2) if path == "/api/admin/plans/upload" else (8 * 1024**2 if admin_write else 64 * 1024)
@@ -62,7 +71,7 @@ class SafetyMiddleware:
                     return
                 body.extend(message.get("body", b""))
                 if len(body) > limit:
-                    await JSONResponse({"detail": "Request body exceeds the configured size limit."}, 413)(scope, receive, send)
+                    await JSONResponse({"detail": catalog().translate("Request body exceeds the configured size limit.", language)}, 413)(scope, receive, send)
                     return
                 if not message.get("more_body", False):
                     break
@@ -102,10 +111,24 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     templates = Environment(loader=FileSystemLoader(package / "templates"), autoescape=select_autoescape(["html"]))
     app.mount("/static", StaticFiles(directory=package / "static"), name="static")
 
+    @app.exception_handler(StarletteHTTPException)
+    async def translated_http_error(request: Request, error: StarletteHTTPException) -> JSONResponse:
+        detail = catalog().translate(error.detail, request_language(request)) if isinstance(error.detail, str) else error.detail
+        return JSONResponse({"detail": detail}, error.status_code, headers=error.headers)
+
+    @app.exception_handler(RequestValidationError)
+    async def translated_validation_error(request: Request, error: RequestValidationError) -> JSONResponse:
+        language = request_language(request)
+        details = []
+        for item in error.errors():
+            message = item["msg"] if language == "en" or item["msg"] in catalog().rows else "Invalid value."
+            details.append({"loc": item["loc"], "msg": catalog().translate(message, language), "type": item["type"]})
+        return JSONResponse({"detail": details}, 422)
+
     @app.exception_handler(sqlite3.OperationalError)
     async def database_busy(request: Request, error: sqlite3.OperationalError) -> JSONResponse:
         if "locked" in str(error).lower() or "busy" in str(error).lower():
-            return JSONResponse({"detail": "The database is busy. Retry the same operation in a moment."}, 503, headers={"Retry-After": "2"})
+            return JSONResponse({"detail": catalog().translate("The database is busy. Retry the same operation in a moment.", request_language(request))}, 503, headers={"Retry-After": "2"})
         raise error
 
     @app.get("/", response_class=HTMLResponse)
@@ -117,6 +140,10 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         with db.read() as connection:
             connection.execute("SELECT 1")
         return {"ok": True}
+
+    @app.get("/api/i18n")
+    def translations() -> dict:
+        return catalog().public()
 
     @app.get("/api/me")
     def me(request: Request) -> JSONResponse:
@@ -133,15 +160,18 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     @app.post("/api/auth/request")
     def request_login(payload: EmailRequest, request: Request) -> dict:
         require_identity(request, db, settings, signed_in=False)
+        language = request_language(request)
+        tr = lambda source: catalog().translate(source, language)
         with db.transaction() as connection:
             rate_limit(connection, settings, "login-email", payload.email, 5, 3600)
             rate_limit(connection, settings, "login-ip", client_ip(request, settings), 60, 900)
             token = secrets.token_urlsafe(32)
             connection.execute("INSERT INTO login_tokens VALUES(?,?,?,NULL,?)", (digest(settings, token), payload.email, time.time() + 900, time.time()))
-            # URL fragment avoids token leakage to HTTP logs. The browser requires an explicit POST.
+            # URL fragment avoids token leakage to HTTP logs. The browser submits the token with POST.
             link = f"{settings.public_url}/#confirm={token}"
-            enqueue(connection, payload.email, "Your Seatplan sign-in link", f"Open this link and press Confirm sign-in:\n\n{link}\n\nIt expires in 15 minutes and can be used once.\nDo not forward this email.\nIf you did not request it, ignore this message.\n")
-        return {"message": "A sign-in email has been queued. Check your inbox and spam folder."}
+            body = f"{tr('Open this link to sign in:')}\n\n{link}\n\n{tr('It expires in 15 minutes and can be used once.')}\n{tr('Do not forward this email.')}\n{tr('If you did not request it, ignore this message.')}\n"
+            enqueue(connection, payload.email, tr("Your Seatplan sign-in link"), body)
+        return {"message": tr("A sign-in email has been queued. Check your inbox and spam folder.")}
 
     @app.post("/api/auth/confirm")
     def confirm_login(payload: ConfirmRequest, request: Request) -> JSONResponse:
@@ -154,10 +184,21 @@ def create_app(settings: Settings | None = None) -> FastAPI:
                 raise HTTPException(400, "This sign-in link has expired or was already used. Request a new one.")
             connection.execute("UPDATE login_tokens SET consumed=? WHERE token_hash=?", (time.time(), token["token_hash"]))
             uid = ensure_user(connection, token["email"])
+            connection.execute("UPDATE users SET locale=? WHERE id=?", (request_language(request), uid))
             connection.execute("DELETE FROM sessions WHERE token_hash=?", (current.session_hash,))
             create_session(connection, settings, response, uid)
             audit(connection, token["email"], "auth.sign_in", uid, {})
         return response
+
+    @app.post("/api/me/language")
+    def save_language(payload: LanguageEdit, request: Request) -> dict:
+        identity = require_identity(request, db, settings)
+        language = next((code for code in catalog().languages if code.lower() == payload.language.lower()), None)
+        if language is None:
+            raise HTTPException(422, "This language is not available yet.")
+        with db.transaction() as connection:
+            connection.execute("UPDATE users SET locale=? WHERE id=?", (language, identity.user_id))
+        return {"language": language}
 
     @app.post("/api/auth/logout")
     def logout(request: Request) -> JSONResponse:
@@ -369,27 +410,31 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     @app.get("/api/admin/events/{event_id}/csv")
     def export_csv(event_id: str, request: Request) -> Response:
         identity = require_identity(request, db, settings, admin=True)
+        language = request_language(request)
+        tr = lambda source: catalog().translate(source, language)
         with db.read() as connection:
             connection.execute("BEGIN")
             snapshot = event_snapshot(connection, event_id, identity, admin=True)
         stream = io.StringIO(newline="")
         writer = csv.writer(stream)
-        writer.writerow(["Section", "Row", "Seat", "State", "Email", "Reservation", "Admin note"])
+        writer.writerow([tr(source) for source in ["Section", "Row", "Seat", "State", "Email", "Reservation", "Admin note"]])
         def safe(value: object) -> str:
             text = str(value or "")
             return "'" + text if text.lstrip().startswith(("=", "+", "-", "@", "\t", "\r", "\n")) else text
         for seat in snapshot["seats"]:
             allocation = seat.get("allocation", {})
-            writer.writerow([safe(value) for value in [seat["section"], seat["row"], seat["label"], seat["status"], allocation.get("email", ""), allocation.get("booking_id", ""), allocation.get("note", "")]])
+            writer.writerow([safe(value) for value in [seat["section"], seat["row"], seat["label"], tr(seat["status"]), allocation.get("email", ""), allocation.get("booking_id", ""), allocation.get("note", "")]])
         return Response("\ufeff" + stream.getvalue(), media_type="text/csv; charset=utf-8", headers={"Content-Disposition": f'attachment; filename="seating-{event_id}.csv"'})
 
     @app.get("/print/{event_id}", response_class=HTMLResponse)
     def print_event(event_id: str, request: Request, roster: bool = False, labels: bool = False) -> HTMLResponse:
         identity = require_identity(request, db, settings, admin=True)
+        language = request_language(request)
         with db.read() as connection:
             connection.execute("BEGIN")
             snapshot = event_snapshot(connection, event_id, identity, admin=True)
-        return HTMLResponse(templates.get_template("print.html").render(base=settings.base_path, snapshot=snapshot, roster=roster, labels=labels, generated=datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")))
+        tr = lambda source, *values: catalog().translate(source, language, *values)
+        return HTMLResponse(templates.get_template("print.html").render(base=settings.base_path, snapshot=snapshot, roster=roster, labels=labels, generated=datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"), language=language, tr=tr))
 
     @app.get("/api/admin/system")
     def system_status(request: Request) -> dict:

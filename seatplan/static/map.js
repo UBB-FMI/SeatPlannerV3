@@ -1,3 +1,4 @@
+import {translate} from "./i18n.js";
 import {escape, isExcluded, seatName, seatVertices} from "./ui.js";
 
 export class SeatMap
@@ -149,7 +150,7 @@ export class SeatMap
             const selected = this.selected.has(seat.id);
             const x = seat.x * width, y = seat.y * height, w = seat.w * width, h = seat.h * height;
             const classNames = ["seat", state, selected ? "selected" : "", seat.mine ? "mine" : "", preview ? "preview" : ""].join(" ");
-            const name = `${seatName(seat)} — ${state}${seat.mine ? " (yours)" : ""}`;
+            const name = `${seatName(seat)} — ${translate(state)}${seat.mine ? ` (${translate("yours")})` : ""}`;
             const geometry = seat.outline ? `polygon points="${seat.outline.map(([px, py]) => `${px * w},${py * h}`).join(" ")}"` : `rect x="${-w / 2}" y="${-h / 2}" width="${w}" height="${h}" rx="1"`;
             const tag = seat.outline ? "polygon" : "rect";
             html += `<g transform="translate(${x} ${y}) rotate(${seat.angle})"><${geometry} class="${classNames}" data-id="${escape(seat.id)}" tabindex="${preview ? -1 : 0}" role="button" aria-label="${escape(name)}"><title>${escape(name)}</title></${tag}>`;
@@ -166,7 +167,7 @@ export class SeatMap
             {
                 seatVertices(selected, page).forEach(([x, y], index) =>
                 {
-                    html += `<circle class="corner-handle" data-id="${escape(selected.id)}" data-corner="${index}" cx="${x}" cy="${y}" r="6"><title>Drag corner ${index + 1}</title></circle>`;
+                    html += `<circle class="corner-handle" data-id="${escape(selected.id)}" data-corner="${index}" cx="${x}" cy="${y}" r="6"><title>${escape(translate("Drag corner {0}", index + 1))}</title></circle>`;
                 });
             }
         }

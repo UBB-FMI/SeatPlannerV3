@@ -12,7 +12,7 @@
   <header class="site-header">
     <a class="brand" href="{{ base }}/" aria-label="Seatplan home"><span class="brand-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Seatplan</a>
     <nav aria-label="Main navigation"><button data-view="book" class="nav active">Book seats</button><button data-view="mine" class="nav">My reservations</button><button data-view="admin" class="nav" id="admin-nav" hidden>Administration</button></nav>
-    <div class="account"><span id="account-email"></span><button id="account-button" class="button secondary">Sign in</button></div>
+    <div class="account"><label class="language-picker" hidden><span class="sr-only">Language</span><select id="language-select" aria-label="Language"><option value="en">English</option></select></label><span id="account-email" translate="no"></span><button id="account-button" class="button secondary">Sign in</button></div>
   </header>
   <div id="development" class="development" hidden>Development mode · Email messages are written to the server's data/dev-mail directory when MAIL_BACKEND=file.</div>
   <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>

@@ -16,7 +16,7 @@ You run Seatplan on your own server. It is free, open-source software under the 
 4. **Let visitors book:** Visitors confirm a one-time email link, select seats, and press **Reserve**. Seats are assigned when they press Reserve, so two visitors cannot take the same seat.
 5. **Manage the event:** Organizers can change assignments, block seats, export a CSV, and print a plan or private attendee list.
 
-**Start here:** [Deploy with Docker](#quick-start-docker-behind-your-https-proxy) · [Prepare your first event](#preparing-your-first-event) · [Try it locally](#development-without-a-live-smtp-server) · [Read the editor guide](docs/EDITOR.md) · [Run and back up a live installation](docs/OPERATIONS.md)
+**Start here:** [Deploy with Docker](#quick-start-docker-behind-your-https-proxy) · [Prepare your first event](#preparing-your-first-event) · [Try it locally](#development-without-a-live-smtp-server) · [Read the editor guide](docs/EDITOR.md) · [Translate the interface](docs/TRANSLATIONS.md) · [Run and back up a live installation](docs/OPERATIONS.md)
 
 The application is a standalone implementation. It uses your SMTP server for email and runs its HTTP service behind your HTTPS reverse proxy. The browser does not depend on a third-party CDN or external AI service.
 
@@ -44,6 +44,10 @@ See the [original / v1.2 / v1.3 comparison](docs/screenshots/residual-comparison
 | Operations | SQLite online backup utility, health endpoint, worker heartbeat, queue status, Apache/Nginx and systemd examples, Docker Compose |
 
 A selected seat is **not held while someone browses**. Allocation happens when the visitor presses Reserve. Another visitor may book first; the losing request is rejected without partially booking the remaining seats. Email confirmation of sign-in happens **before** booking, rather than temporarily holding seats for an unverified mailbox.
+
+Seatplan supports multiple events at once. Each event has its own seating plan, open/closed state, per-email seat limit, and reservations. Visitors choose an event from the booking page; administrators choose one in **Events & seating**. The browser stops selection at the remaining per-event allowance, while the server still checks the limit when booking. A closed event shows **Not reservable**.
+
+The interface can be translated through [`seatplan/locales/messages.csv`](seatplan/locales/messages.csv). Romanian, German, and Hungarian columns are ready for translation; a language appears in the selector once every cell in its column is filled. See [TRANSLATIONS.md](docs/TRANSLATIONS.md).
 
 ## Quick start: Docker behind your HTTPS proxy
 
@@ -79,7 +83,7 @@ docker compose up -d --build
 docker compose logs --tail=100 web worker
 ```
 
-Install the relevant rules from `deploy/apache.conf` inside your existing SSL virtual host, or adapt `deploy/nginx.conf`. Visit the external HTTPS address, request a sign-in link using an email listed in `ADMIN_EMAILS`, open it, and press **Confirm sign-in**. Administration is then visible. Administrators use the same email flow; no hard-coded administrator password exists.
+Install the relevant rules from `deploy/apache.conf` inside your existing SSL virtual host, or adapt `deploy/nginx.conf`. Visit the external HTTPS address, request a sign-in link using an email listed in `ADMIN_EMAILS`, and open it. The page signs you in automatically. Administration is then visible. Administrators use the same email flow; no hard-coded administrator password exists.
 
 To load the supplied PDF, detection candidates and hand-marked exclusion areas:
 

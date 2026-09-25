@@ -27,6 +27,7 @@ small, .small { font-size: 12px; }
 .nav { border: 0; background: none; padding: 0 1px; color: var(--muted); font-weight: 570; border-bottom: 3px solid transparent; margin-top: 3px; }
 .nav.active { color: var(--accent); border-bottom-color: var(--accent); }
 .account { margin-left: auto; display: flex; align-items: center; gap: 14px; }
+.language-picker select { max-width: 130px; min-height: 39px; border: 1px solid var(--line); border-radius: 7px; background: white; color: var(--ink); padding: 6px 8px; }
 #account-email { color: var(--muted); font-size: 12px; max-width: 240px; overflow: hidden; text-overflow: ellipsis; }
 main { max-width: 1700px; margin: 0 auto; padding: 32px 36px 50px; min-height: calc(100vh - 150px); }
 .site-footer { display: flex; justify-content: space-between; gap: 20px; padding: 20px 36px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }

@@ -1,4 +1,5 @@
 import {SeatMap} from "./map.js";
+import {confirmTranslated, translate} from "./i18n.js";
 import {dialog, downloadJSON, escape, isExcluded, numeric, seatName, uid, seatOverlap, seatVertices} from "./ui.js";
 
 export class PlanEditor
@@ -34,7 +35,7 @@ export class PlanEditor
     {
         const plan = this.plan;
         const editable = plan.state === "draft";
-        this.container.innerHTML = `<div class="editor-header"><div><p class="eyebrow">PDF SEAT MAP · ${escape(plan.state.toUpperCase())}</p><h2>${escape(plan.name)}</h2><p id="plan-count" class="muted"></p></div><div class="actions"><button id="editor-duplicate" class="button secondary">Duplicate</button><button id="editor-export" class="button secondary">Export overlay</button><label class="button secondary ${editable ? "" : "disabled"}">Import overlay<input type="file" id="editor-import" accept="application/json,.json" hidden ${editable ? "" : "disabled"}></label><button id="editor-save" class="button" ${editable ? "" : "disabled"}>Save draft</button><button id="editor-publish" class="button dark" ${editable ? "" : "disabled"}>Publish</button></div></div>
+        this.container.innerHTML = `<div class="editor-header"><div><p class="eyebrow">${escape(translate("PDF SEAT MAP · {0}", translate(plan.state.toUpperCase())))}</p><h2 translate="no">${escape(plan.name)}</h2><p id="plan-count" class="muted"></p></div><div class="actions"><button id="editor-duplicate" class="button secondary">Duplicate</button><button id="editor-export" class="button secondary">Export overlay</button><label class="button secondary ${editable ? "" : "disabled"}">Import overlay<input type="file" id="editor-import" accept="application/json,.json" hidden ${editable ? "" : "disabled"}></label><button id="editor-save" class="button" ${editable ? "" : "disabled"}>Save draft</button><button id="editor-publish" class="button dark" ${editable ? "" : "disabled"}>Publish</button></div></div>
         ${editable ? '<p class="notice">Draft only. Review seat identities and cross-outs before publishing. Selecting a shape does not approve it.</p>' : '<p class="notice">Published plans are immutable. Duplicate this plan to revise its overlay, or upload a new PDF. Existing events keep their current version until you explicitly switch it.</p>'}
         <div class="workspace"><section class="map-panel"><div class="tool-strip" id="editor-tools">${[["select", "Select"], ["move", "Move"], ["add", "Add seat"], ["grid", "Draw grid"], ["quadgrid", "4-corner grid"], ["corners", "Edit corners"], ["exclude", "Exclude area"], ["region", "Detection region"]].map(([tool, label]) => `<button data-tool="${tool}" ${editable || tool === "select" ? "" : "disabled"}>${label}</button>`).join("")}<button id="editor-undo" ${editable ? "" : "disabled"}>Undo</button></div><div id="editor-map"></div><div class="legend"><span class="dot review"></span>Needs review <span class="dot free"></span>Approved <span class="dot blocked"></span>Excluded <span class="dot selected"></span>Selected</div></section>
         <aside class="inspector"><details open><summary>Selection <span id="selection-count">0</span></summary><div id="selection-summary" class="selection-list muted">Click a seat, or drag to select an area.</div><form id="seat-form"><div class="two"><label>Section<input name="section" maxlength="80" placeholder="Keep existing"></label><label>Row<input name="row" maxlength="40" placeholder="Keep existing"></label></div><label>Seat label <small>(one seat only)</small><input name="label" maxlength="40" placeholder="Printed number"></label><div class="three"><label>Width, px<input type="number" name="width" min="2" step="0.1" placeholder="22"></label><label>Height, px<input type="number" name="height" min="2" step="0.1" placeholder="32"></label><label>Angle, °<input type="number" name="angle" min="-180" max="180" step="0.1" placeholder="0"></label></div><div class="two"><label>Seat availability<select name="blocked"><option value="">Keep existing</option><option value="false">Free</option><option value="true">Excluded</option></select></label><label>Review state<select name="reviewed"><option value="">Keep existing</option><option value="true">Approved</option><option value="false">Needs review</option></select></label></div><label>Internal note<textarea name="note" rows="2" maxlength="300" placeholder="Keep existing"></textarea></label><button class="button full" ${editable ? "" : "disabled"}>Apply to selection</button></form><div class="actions wrap"><button id="approve-selected" class="button secondary" ${editable ? "" : "disabled"}>Approve selected</button><button id="block-selected" class="button secondary" ${editable ? "" : "disabled"}>Exclude selected</button><button id="delete-selected" class="button danger" ${editable ? "" : "disabled"}>Delete shapes</button></div><button id="uncertain-selected" class="text-button">Select low-confidence shapes</button><button id="renumber" class="text-button" ${editable ? "" : "disabled"}>Renumber selected shapes…</button></details>
@@ -59,7 +60,7 @@ export class PlanEditor
         this.container.querySelector("#editor-export").onclick = () => downloadJSON({format: "seatplan-overlay-v1", plan: this.plan}, `seatplan-${plan.id}.json`);
         this.container.querySelector("#editor-duplicate").onclick = () => this.app.run(async () =>
         {
-            if (this.dirty && confirm("Save your changes before duplicating?") === true)
+            if (this.dirty && confirmTranslated("Save your changes before duplicating?") === true)
             {
                 await this.save();
             }
@@ -74,7 +75,7 @@ export class PlanEditor
         this.container.querySelector("#delete-selected").onclick = () => this.deleteSelected();
         this.container.querySelector("#approve-all").onclick = () =>
         {
-            if (confirm("I have checked EVERY shape, printed seat identity, missing seat and crossed-out area on ALL pages. Mark all candidates reviewed?") === true)
+            if (confirmTranslated("I have checked EVERY shape, printed seat identity, missing seat and crossed-out area on ALL pages. Mark all candidates reviewed?") === true)
             {
                 this.checkpoint();
                 this.plan.seats.forEach((seat) => seat.reviewed = true);
@@ -100,7 +101,7 @@ export class PlanEditor
         const seats = this.plan.seats;
         const blocked = seats.filter((seat) => isExcluded(seat, this.plan.zones)).length;
         const pending = seats.filter((seat) => seat.reviewed === false).length;
-        this.container.querySelector("#plan-count").textContent = `${seats.length} shapes · ${blocked} excluded · ${pending} need review · revision ${this.plan.revision}${this.dirty ? " · unsaved changes" : ""}`;
+        this.container.querySelector("#plan-count").textContent = translate("{0} shapes · {1} excluded · {2} need review · revision {3}", seats.length, blocked, pending, this.plan.revision) + (this.dirty ? ` · ${translate("unsaved changes")}` : "");
         this.container.querySelector("#selection-count").textContent = this.selected.size;
         const selection = seats.filter((seat) => this.selected.has(seat.id));
         this.container.querySelector("#selection-summary").innerHTML = selection.length ? selection.slice(0, 12).map((seat) => `<div>${escape(seatName(seat))}<small>${isExcluded(seat, this.plan.zones) ? "Excluded" : seat.reviewed ? "Approved" : "Needs review"}</small></div>`).join("") + (selection.length > 12 ? `<p>+ ${selection.length - 12} more</p>` : "") : "Click a seat, or drag to select an area.";
@@ -122,7 +123,7 @@ export class PlanEditor
         this.container.querySelector("#zone-list").innerHTML = this.plan.zones.map((zone) => `<div class="zone-row"><span>${escape(zone.name)}<small>Page ${zone.page + 1}</small></span>${this.plan.state === "draft" ? `<button class="text-button danger-text" data-zone="${escape(zone.id)}">Remove</button>` : ""}</div>`).join("") || '<p class="small muted">No exclusion areas. Use “Exclude area” to draw one.</p>';
         this.container.querySelectorAll("[data-zone]").forEach((button) => button.onclick = () =>
         {
-            if (confirm("Remove this exclusion area? Individually blocked seats stay blocked until you change their flags.") === true)
+            if (confirmTranslated("Remove this exclusion area? Individually blocked seats stay blocked until you change their flags.") === true)
             {
                 this.checkpoint();
                 this.plan.zones = this.plan.zones.filter((zone) => zone.id !== button.dataset.zone);
@@ -277,7 +278,7 @@ export class PlanEditor
 
     deleteSelected()
     {
-        if (this.selected.size === 0 || confirm(`Delete ${this.selected.size} selected shapes from this draft?`) === false)
+        if (this.selected.size === 0 || confirmTranslated(`Delete ${this.selected.size} selected shapes from this draft?`) === false)
         {
             return;
         }
@@ -317,7 +318,7 @@ export class PlanEditor
             this.app.toast("Review every candidate before publishing.", true);
             return;
         }
-        if (confirm("Publish this reviewed plan? Its geometry will be frozen. You can duplicate it to make future changes.") === false)
+        if (confirmTranslated("Publish this reviewed plan? Its geometry will be frozen. You can duplicate it to make future changes.") === false)
         {
             return;
         }
@@ -366,11 +367,11 @@ export class PlanEditor
         {
             throw new Error("The source overlay has a different page count.");
         }
-        if (source.sha256 !== this.plan.sha256 && confirm("This overlay was created for a DIFFERENT PDF. Coordinates are normalized, but alignment may be wrong. Import as unreviewed shapes?") === false)
+        if (source.sha256 !== this.plan.sha256 && confirmTranslated("This overlay was created for a DIFFERENT PDF. Coordinates are normalized, but alignment may be wrong. Import as unreviewed shapes?") === false)
         {
             return;
         }
-        if (confirm("Replace all shapes and exclusion areas in this draft with the imported overlay? This can be undone before saving.") === false)
+        if (confirmTranslated("Replace all shapes and exclusion areas in this draft with the imported overlay? This can be undone before saving.") === false)
         {
             return;
         }
@@ -421,7 +422,8 @@ export class PlanEditor
 
     gridDialog(bounds)
     {
-        const modal = dialog(`<h2>Construct a seat grid</h2><p class="muted">${bounds.corners ? 'Your four corners define a skewed grid. Shared boundaries are interpolated consistently; rotation is ignored. For curved banks use short strips or individual rows.' : 'The rectangle you drew defines the grid bounds.'} Gaps are percentages of each cell's pitch. Use zero gaps to follow adjacent printed cell boundaries.</p><form id="grid-form"><div class="two"><label>Rows<input name="rows" type="number" min="1" max="100" value="5" required></label><label>Columns<input name="columns" type="number" min="1" max="150" value="10" required></label><label>Horizontal gap, %<input name="gap_x" type="number" min="0" max="90" value="15"></label><label>Vertical gap, %<input name="gap_y" type="number" min="0" max="90" value="15"></label><label>Section<input name="section" value="Main" maxlength="80" required></label><label>Rotation, °<input name="angle" type="number" min="-180" max="180" value="0" step="0.1"></label><label>Row prefix<input name="row_prefix" value="R" maxlength="20"></label><label>First row<input name="row_start" type="number" value="1" min="0"></label><label>First seat number<input name="start" type="number" value="1"></label><label>Numbering step<input name="step" type="number" value="1"></label></div><label>Numbering<select name="numbering"><option value="continuous">Continue across the grid</option><option value="per-row">Restart on each row</option></select></label><label class="check"><input type="checkbox" name="serpentine">Reverse alternate rows (serpentine)</label><p class="small muted">Use step −1, 2 or −2 for reversed or odd/even numbering. Draw irregular rows as separate grids; delete positions where aisles occur.</p><div class="actions"><button type="button" class="button secondary" data-close>Cancel</button><button class="button">Preview grid</button></div></form>`);
+        const gridHelp = `${translate(bounds.corners ? "Your four corners define a skewed grid. Shared boundaries are interpolated consistently; rotation is ignored. For curved banks use short strips or individual rows." : "The rectangle you drew defines the grid bounds.")} ${translate("Gaps are percentages of each cell's pitch. Use zero gaps to follow adjacent printed cell boundaries.")}`;
+        const modal = dialog(`<h2>Construct a seat grid</h2><p class="muted">${escape(gridHelp)}</p><form id="grid-form"><div class="two"><label>Rows<input name="rows" type="number" min="1" max="100" value="5" required></label><label>Columns<input name="columns" type="number" min="1" max="150" value="10" required></label><label>Horizontal gap, %<input name="gap_x" type="number" min="0" max="90" value="15"></label><label>Vertical gap, %<input name="gap_y" type="number" min="0" max="90" value="15"></label><label>Section<input name="section" value="Main" maxlength="80" required></label><label>Rotation, °<input name="angle" type="number" min="-180" max="180" value="0" step="0.1"></label><label>Row prefix<input name="row_prefix" value="R" maxlength="20"></label><label>First row<input name="row_start" type="number" value="1" min="0"></label><label>First seat number<input name="start" type="number" value="1"></label><label>Numbering step<input name="step" type="number" value="1"></label></div><label>Numbering<select name="numbering"><option value="continuous">Continue across the grid</option><option value="per-row">Restart on each row</option></select></label><label class="check"><input type="checkbox" name="serpentine">Reverse alternate rows (serpentine)</label><p class="small muted">Use step −1, 2 or −2 for reversed or odd/even numbering. Draw irregular rows as separate grids; delete positions where aisles occur.</p><div class="actions"><button type="button" class="button secondary" data-close>Cancel</button><button class="button">Preview grid</button></div></form>`);
         modal.querySelector("#grid-form").onsubmit = (event) =>
         {
             event.preventDefault();
@@ -466,7 +468,7 @@ export class PlanEditor
         box.querySelector("#discard-preview").onclick = () => { this.map.preview = []; this.map.render(); box.innerHTML = ""; };
         const apply = (replace) =>
         {
-            if (replace && confirm("Replace all current-page seat shapes with these unreviewed candidates? Exclusion areas are retained.") === false)
+            if (replace && confirmTranslated("Replace all current-page seat shapes with these unreviewed candidates? Exclusion areas are retained.") === false)
             {
                 return;
             }

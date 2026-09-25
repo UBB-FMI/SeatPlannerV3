@@ -100,5 +100,5 @@ def ensure_user(connection: sqlite3.Connection, email: str) -> str:
     if row is not None:
         return row["id"]
     uid = new_id()
-    connection.execute("INSERT INTO users VALUES(?,?,?)", (uid, email, time.time()))
+    connection.execute("INSERT INTO users(id,email,created) VALUES(?,?,?)", (uid, email, time.time()))
     return uid
