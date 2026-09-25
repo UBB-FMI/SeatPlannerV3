@@ -1,442 +1,442 @@
 source,context,en,ro,de,hu
-(0 = unlimited),Admin events (app.js:610),(0 = unlimited),,,
-"(display text, include timezone)",Admin events (app.js:610),"(display text, include timezone)",,,
-(one seat only),Seat-plan editor (editor.js:37),(one seat only),,,
-(optional for house reservations),Admin events (app.js:543),(optional for house reservations),,,
-(required),Admin events (app.js:543),(required),,,
-(yours),Interactive seat map (map.js:152),(yours),,,
-+ {0} more,Admin events (app.js:589); Seat-plan editor (editor.js:106),+ {0} more,,,
-4-corner grid,Seat-plan editor (editor.js:39),4-corner grid,,,
-A place for everyone.,Visitor reservations (app.js:220),A place for everyone.,,,
-A seat or exclusion references a page that is not in the PDF.,API error (services.py:69),A seat or exclusion references a page that is not in the PDF.,,,
-A seat was selected twice.,API error (services.py:158),A seat was selected twice.,,,
-A selected seat does not belong to this event.,API error (services.py:175); API error (services.py:218),A selected seat does not belong to this event.,,,
-A sign-in email has been queued. Check your inbox and spam folder.,Sign-in API response,A sign-in email has been queued. Check your inbox and spam folder.,,,
-Action,System and delivery (app.js:634),Action,,,
-Actor,System and delivery (app.js:634),Actor,,,
-Add non-overlapping,Seat-plan editor (editor.js:465),Add non-overlapping,,,
-Add seat,Seat-plan editor (editor.js:39),Add seat,,,
-Added {0} shapes. Save the draft when ready.,Seat-plan editor (editor.js:502),Added {0} shapes. Save the draft when ready.,,,
-Admin note,CSV export header,Admin note,,,
-Administration,Admin seat plans (app.js:403); Site shell (index.html),Administration,,,
-Administrator access is required.,API error (security.py:66),Administrator access is required.,,,
-Administrator override,Admin events (app.js:543),Administrator override,,,
-All sections,Visitor reservations (app.js:227); Visitor reservations (app.js:279),All sections,,,
-Already reserved or blocked: {0}. Nothing was booked.,API error (services.py:179),Already reserved or blocked: {0}. Nothing was booked.,,,
-An imported seat ID belongs to another plan. Use the import function to assign new IDs.,API error (services.py:79),An imported seat ID belongs to another plan. Use the import function to assign new IDs.,,,
-"Angle, °",Seat-plan editor (editor.js:37),"Angle, °",,,
-Another administrator changed this plan. Export your work before reloading.,API error (services.py:58),Another administrator changed this plan. Export your work before reloading.,,,
-Apply administrator override,Admin events (app.js:543),Apply administrator override,,,
-Apply numbering,Seat-plan editor (editor.js:516),Apply numbering,,,
-Apply to selection,Seat-plan editor (editor.js:37),Apply to selection,,,
-Approve selected,Seat-plan editor (editor.js:37),Approve selected,,,
-Approved,Seat-plan editor (editor.js:37),Approved,,,
-Attempts,System and delivery (app.js:634),Attempts,,,
-Attendee email,Admin events (app.js:543),Attendee email,,,
-Attendee list follows the plan.,Printable plan and private roster (print.html); Printable plan legend,Attendee list follows the plan.,,,
-Attendee list · {0},Private roster heading,Attendee list · {0},,,
-Automatic detection,Seat-plan editor (editor.js:37),Automatic detection,,,
-Available,Admin events (app.js:543); Printable plan and private roster (print.html); Visitor reservations (app.js:227),Available,,,
-Available seats only,Visitor reservations (app.js:227),Available seats only,,,
-blocked,Admin events (app.js:590); Interactive seat map (map.js:147); Seat-plan editor (editor.js:255),blocked,,,
-Blocked for this event,Admin events (app.js:543),Blocked for this event,,,
-Book seats,Site shell (index.html),Book seats,,,
-Booking is closed for this event.,API error (services.py:168),Booking is closed for this event.,,,
-Box fill ratio,Seat-plan editor (editor.js:37),Box fill ratio,,,
-Cancel,Account and sign-in (app.js:138); Admin events (app.js:610); Admin seat plans (app.js:471); Seat-plan editor (editor.js:424); Seat-plan editor (editor.js:516),Cancel,,,
-Cancel all these seats,My reservations (app.js:380),Cancel all these seats,,,
-Cancel seat,My reservations (app.js:380),Cancel seat,,,
-Cancel the selected reservation seats? They will immediately become available to others.,My reservations (app.js:383),Cancel the selected reservation seats? They will immediately become available to others.,,,
-"Cannot migrate occupied seat {0}. Keep its exact name and availability in the new plan, or explicitly resolve this allocation first.",API error (services.py:267),"Cannot migrate occupied seat {0}. Keep its exact name and availability in the new plan, or explicitly resolve this allocation first.",,,
-Changing the plan preserves occupied seats only when their exact section / row / label exists in the new version. Missing or newly excluded reserved seats prevent the change. Resolve them explicitly first.,Admin events (app.js:610),Changing the plan preserves occupied seats only when their exact section / row / label exists in the new version. Missing or newly excluded reserved seats prevent the change. Resolve them explicitly first.,,,
-Choose a page in a draft plan.,API error (app.py:293),Choose a page in a draft plan.,,,
-Choose a published seating plan.,API error (services.py:250),Choose a published seating plan.,,,
-Choose seats on the map or in the roster. An override may cancel another person's reservation; changes are logged and emailed.,Admin events (app.js:543),Choose seats on the map or in the roster. An override may cancel another person's reservation; changes are logged and emailed.,,,
-Choose your place. Keep your confirmation.,Site shell (index.html),Choose your place. Keep your confirmation.,,,
-Choose your seats,Visitor reservations (app.js:227),Choose your seats,,,
-Clear detection region,Seat-plan editor (editor.js:37),Clear detection region,,,
-Click a seat · drag to select an area,Interactive seat map (map.js:114),Click a seat · drag to select an area,,,
-"Click a seat, or drag to select an area.",Seat-plan editor (editor.js:106); Seat-plan editor (editor.js:37),"Click a seat, or drag to select an area.",,,
-"Click an available seat on the plan, or use the search below.",Visitor reservations (app.js:310),"Click an available seat on the plan, or use the search below.",,,
-"Click four corners clockwise, starting at row 1 / column 1; Escape cancels",Interactive seat map (map.js:114),"Click four corners clockwise, starting at row 1 / column 1; Escape cancels",,,
-"Click four grid corners clockwise around the page, starting at the first row/column corner.",API error (domain.py:158),"Click four grid corners clockwise around the page, starting at the first row/column corner.",,,
-Click to add a seat,Interactive seat map (map.js:114),Click to add a seat,,,
-Close,Account and sign-in (app.js:162),Close,,,
-"Close kernel, px",Seat-plan editor (editor.js:37),"Close kernel, px",,,
-Closed,Admin events (app.js:610),Closed,,,
-closed,Visitor reservations (app.js:227),closed,,,
-Columns,Seat-plan editor (editor.js:424),Columns,,,
-Construct a seat grid,Seat-plan editor (editor.js:424),Construct a seat grid,,,
-Continue across the grid,Seat-plan editor (editor.js:424),Continue across the grid,,,
-Corners must form a convex outline without crossing edges.,Seat-plan editor (editor.js:407),Corners must form a convex outline without crossing edges.,,,
-Create an event,Admin events (app.js:610),Create an event,,,
-Create event,Admin events (app.js:518),Create event,,,
-Create your first event.,Admin events (app.js:538),Create your first event.,,,
-Current seats in this reservation:,Reservation email,Current seats in this reservation:,,,
-D-labels are provisional. Detection can still miss or split seats; a shape count is not a completeness check. Nothing is approved automatically.,Seat-plan editor (editor.js:465),D-labels are provisional. Detection can still miss or split seats; a shape count is not a completeness check. Nothing is approved automatically.,,,
-Date and time,Admin events (app.js:610),Date and time,,,
-"Default limit: 20 MB, 10 pages. PDFs are rasterized on the server; the browser receives only page images.",Admin seat plans (app.js:471),"Default limit: 20 MB, 10 pages. PDFs are rasterized on the server; the browser receives only page images.",,,
-Delete shapes,Seat-plan editor (editor.js:37),Delete shapes,,,
-Delete {0} selected shapes from this draft?,Seat-plan editor delete confirmation,Delete {0} selected shapes from this draft?,,,
-Delivery & audit,Admin seat plans (app.js:403),Delivery & audit,,,
-Delivery & operations,System and delivery (app.js:634),Delivery & operations,,,
-Description,Admin events (app.js:610),Description,,,
-Details,System and delivery (app.js:634),Details,,,
-Detect candidates,Seat-plan editor (editor.js:37),Detect candidates,,,
-Detecting… The worker must be running.,Seat-plan editor (editor.js:450),Detecting… The worker must be running.,,,
-Detection image is too large.,API error (detection.py:86),Detection image is too large.,,,
-Detection method,Seat-plan editor (editor.js:37),Detection method,,,
-Detection region,Seat-plan editor (editor.js:39),Detection region,,,
-Detection requires a rendered draft page.,API error (app.py:307),Detection requires a rendered draft page.,,,
-Development mode · Email messages are written to the server's data/dev-mail directory when MAIL_BACKEND=file.,Site shell (index.html),Development mode · Email messages are written to the server's data/dev-mail directory when MAIL_BACKEND=file.,,,
-Discard,Seat-plan editor (editor.js:465),Discard,,,
-Discard unsaved changes to this plan?,Admin seat plans (app.js:436),Discard unsaved changes to this plan?,,,
-Discard unsaved map changes before refreshing the plan list?,Admin seat plans (app.js:421),Discard unsaved map changes before refreshing the plan list?,,,
-Discard unsaved map changes?,My reservations (app.js:395),Discard unsaved map changes?,,,
-Do not forward this email.,Sign-in email,Do not forward this email.,,,
-done,Admin seat plans (app.js:505),done,,,
-draft,Account and sign-in (app.js:40); Admin seat plans (app.js:457); Seat-plan editor (editor.js:122); Seat-plan editor (editor.js:188); Seat-plan editor (editor.js:225); Seat-plan editor (editor.js:36); Seat-plan editor (editor.js:393),draft,,,
-DRAFT,Seat-plan editor heading status,DRAFT,,,
-Draft only. Review seat identities and cross-outs before publishing. Selecting a shape does not approve it.,Seat-plan editor (editor.js:38),Draft only. Review seat identities and cross-outs before publishing. Selecting a shape does not approve it.,,,
-Draft saved.,Seat-plan editor (editor.js:310),Draft saved.,,,
-Drag a non-reservable area,Interactive seat map (map.js:114),Drag a non-reservable area,,,
-Drag a selected seat to move the selection,Interactive seat map (map.js:114),Drag a selected seat to move the selection,,,
-Drag corner {0},Interactive seat map (map.js:169),Drag corner {0},,,
-Drag the outer bounds of a grid,Interactive seat map (map.js:114),Drag the outer bounds of a grid,,,
-Drag the region to detect,Interactive seat map (map.js:114),Drag the region to detect,,,
-Draw grid,Seat-plan editor (editor.js:39),Draw grid,,,
-Duplicate,Seat-plan editor (editor.js:37),Duplicate,,,
-Duplicate internal seat IDs.,API error (services.py:66),Duplicate internal seat IDs.,,,
-Edit corners,Seat-plan editor (editor.js:39),Edit corners,,,
-Email,Admin events (app.js:543); CSV export header,Email,,,
-Email / house reservation,Printable plan and private roster (print.html); Private roster header,Email / house reservation,,,
-Email address,Account and sign-in (app.js:162),Email address,,,
-Email confirmed. You can now book seats.,Account and sign-in (app.js:150),Email confirmed. You can now book seats.,,,
-Email delivery,System and delivery (app.js:634),Email delivery,,,
-Enter a valid email address.,API error (domain.py:21); API error (domain.py:24); API error (domain.py:26),Enter a valid email address.,,,
-Error,System and delivery (app.js:634),Error,,,
-Event,Admin events (app.js:518); Visitor reservations (app.js:227),Event,,,
-Event details updated,Event-change email subject,Event details updated,,,
-Event not found.,API error (services.py:119),Event not found.,,,
-Event revision {0},Printable plan revision,Event revision {0},,,
-Event saved.,Admin events (app.js:624),Event saved.,,,
-"Event seating, without the paperwork.",Visitor reservations (app.js:220),"Event seating, without the paperwork.",,,
-Event settings,Admin events (app.js:518); Admin events (app.js:610),Event settings,,,
-Event title,Admin events (app.js:610),Event title,,,
-Events & seating,Admin seat plans (app.js:403),Events & seating,,,
-Exclude area,Seat-plan editor (editor.js:39),Exclude area,,,
-Exclude selected,Seat-plan editor (editor.js:37),Exclude selected,,,
-Excluded,Seat-plan editor (editor.js:37),Excluded,,,
-Exclusion area is empty.,API error (domain.py:97),Exclusion area is empty.,,,
-Exclusion areas,Seat-plan editor (editor.js:37),Exclusion areas,,,
-Exclusion coordinates must be finite and within the page.,API error (domain.py:94),Exclusion coordinates must be finite and within the page.,,,
-Exit focus,Interactive seat map (map.js:27),Exit focus,,,
-Explicitly allow reserving plan-excluded seats,Admin events (app.js:543),Explicitly allow reserving plan-excluded seats,,,
-Export CSV,Admin events (app.js:543),Export CSV,,,
-Export overlay,Seat-plan editor (editor.js:37),Export overlay,,,
-failed,Admin seat plans (app.js:459); Admin seat plans (app.js:501); System and delivery (app.js:634),failed,,,
-Find a seat,Visitor reservations (app.js:227),Find a seat,,,
-First number,Seat-plan editor (editor.js:516),First number,,,
-First row,Seat-plan editor (editor.js:424),First row,,,
-First seat number,Seat-plan editor (editor.js:424),First seat number,,,
-Fit page,Interactive seat map (map.js:17),Fit page,,,
-Fit width,Interactive seat map (map.js:17),Fit width,,,
-Flag possible cross-outs,Seat-plan editor (editor.js:37),Flag possible cross-outs,,,
-Focus map,Interactive seat map (map.js:17); Interactive seat map (map.js:27),Focus map,,,
-free,Admin events (app.js:590); Interactive seat map (map.js:147); Visitor reservations (app.js:265); Visitor reservations (app.js:288); Visitor reservations (app.js:323); Visitor reservations (app.js:325),free,,,
-Free,Seat-plan editor (editor.js:37),Free,,,
-Free (remove event assignment),Admin events (app.js:543),Free (remove event assignment),,,
-Gaps are percentages of each cell's pitch. Use zero gaps to follow adjacent printed cell boundaries.,Seat-plan grid dialog,Gaps are percentages of each cell's pitch. Use zero gaps to follow adjacent printed cell boundaries.,,,
-Grid corners must be within the page.,API error (domain.py:152),Grid corners must be within the page.,,,
-"Grid is too large, or numbering step is zero.",API error (domain.py:160),"Grid is too large, or numbering step is zero.",,,
-Grid preview,Seat-plan editor (editor.js:436),Grid preview,,,
-"Height, px",Seat-plan editor (editor.js:37),"Height, px",,,
-"Horizontal gap, %",Seat-plan editor (editor.js:424),"Horizontal gap, %",,,
-House reservation,Private roster allocation,House reservation,,,
-"I have checked EVERY shape, printed seat identity, missing seat and crossed-out area on ALL pages. Mark all candidates reviewed?",Seat-plan editor (editor.js:77),"I have checked EVERY shape, printed seat identity, missing seat and crossed-out area on ALL pages. Mark all candidates reviewed?",,,
-"If you did not request it, ignore this message.",Sign-in email,"If you did not request it, ignore this message.",,,
-Import overlay,Seat-plan editor (editor.js:37),Import overlay,,,
-Interactive seating plan,Interactive seat map (map.js:17),Interactive seating plan,,,
-Internal note,Seat-plan editor (editor.js:37),Internal note,,,
-Invalid detection region.,API error (domain.py:231),Invalid detection region.,,,
-Invalid or oversized overlay.,Seat-plan editor (editor.js:349),Invalid or oversized overlay.,,,
-Invalid request origin. Check PUBLIC_URL and your reverse proxy.,API error (security.py:69),Invalid request origin. Check PUBLIC_URL and your reverse proxy.,,,
-Invalid request origin. Check PUBLIC_URL.,API error,Invalid request origin. Check PUBLIC_URL.,,,
-Invalid value.,Form validation message,Invalid value.,,,
-It expires in 15 minutes and can be used once.,Sign-in email,It expires in 15 minutes and can be used once.,,,
-Job,System and delivery (app.js:634),Job,,,
-Job not found or already expired.,API error (app.py:323),Job not found or already expired.,,,
-Keep existing,Seat-plan editor (editor.js:37); Seat-plan editor (editor.js:516),Keep existing,,,
-"Keep the worker running, then press Refresh. The PDF is rendered in a resource-limited subprocess.",Admin seat plans (app.js:459),"Keep the worker running, then press Refresh. The PDF is rendered in a resource-limited subprocess.",,,
-"Keep this message private. This is a reservation, not proof of identity.",Reservation email,"Keep this message private. This is a reservation, not proof of identity.",,,
-Language,Accessible label for the language selector,Language,,,
-Latest audit entries,System and delivery (app.js:634),Latest audit entries,,,
-Leave this editor and discard unsaved changes? Export or save the draft first to keep them.,Account and sign-in (app.js:185),Leave this editor and discard unsaved changes? Export or save the draft first to keep them.,,,
-Left to right,Seat-plan editor (editor.js:516),Left to right,,,
-Legacy detector (comparison),Seat-plan editor (editor.js:37),Legacy detector (comparison),,,
-Loading Seatplan…,Site shell (index.html),Loading Seatplan…,,,
-Main navigation,Site shell (index.html),Main navigation,,,
-MAKE YOURSELF AT HOME,Visitor reservations (app.js:227),MAKE YOURSELF AT HOME,,,
-Mark all shapes reviewed…,Seat-plan editor (editor.js:37),Mark all shapes reviewed…,,,
-"Maximum side, px",Seat-plan editor (editor.js:37),"Maximum side, px",,,
-Method Not Allowed,HTTP 405 response,Method Not Allowed,,,
-"Minimum side, px",Seat-plan editor (editor.js:37),"Minimum side, px",,,
-Minimum size must be smaller than maximum size.,API error (domain.py:227),Minimum size must be smaller than maximum size.,,,
-"More than 5,000 candidates. Restrict the region or increase minimum size.",API error (detection.py:135),"More than 5,000 candidates. Restrict the region or increase minimum size.",,,
-Multi-pass: faint and rotated seats,Seat-plan editor (editor.js:37),Multi-pass: faint and rotated seats,,,
-Multiple seats can be reserved with one email address.,Visitor reservations (app.js:312),Multiple seats can be reserved with one email address.,,,
-My reservations,My reservations (app.js:380); Site shell (index.html); Visitor reservations (app.js:375),My reservations,,,
-Nearby shapes,Seat-plan editor (editor.js:37),Nearby shapes,,,
-Needs review,Seat-plan editor (editor.js:106); Seat-plan editor (editor.js:37),Needs review,,,
-"New grid seats will require review. This is administrator-constrained reconstruction, not automatic seat detection.",Seat-plan editor (editor.js:465),"New grid seats will require review. This is administrator-constrained reconstruction, not automatic seat detection.",,,
-NO ACTIVE SEATS,My reservations (app.js:380),NO ACTIVE SEATS,,,
-No events have been created yet.,Visitor reservations (app.js:220),No events have been created yet.,,,
-No exclusion areas. Use “Exclude area” to draw one.,Seat-plan editor (editor.js:122),No exclusion areas. Use “Exclude area” to draw one.,,,
-No messages queued yet.,System and delivery (app.js:634),No messages queued yet.,,,
-NO PASSWORD NEEDED,Account and sign-in (app.js:162),NO PASSWORD NEEDED,,,
-No seats remain in this reservation.,Reservation email,No seats remain in this reservation.,,,
-No worker heartbeat yet,System and delivery (app.js:633),No worker heartbeat yet,,,
-Not Found,HTTP 404 response,Not Found,,,
-Not reservable,Booking button when the event is closed,Not reservable,,,
-Not reservable: {0}.,API error (services.py:177),Not reservable: {0}.,,,
-Note,Admin events (app.js:543),Note,,,
-Notes,Seat-plan editor (editor.js:37),Notes,,,
-Numbering,Seat-plan editor (editor.js:424),Numbering,,,
-Numbering step,Seat-plan editor (editor.js:424),Numbering step,,,
-Only draft plans can be edited. Duplicate a published plan to revise it.,API error (services.py:56),Only draft plans can be edited. Duplicate a published plan to revise it.,,,
-"Only use this after checking all pages, labels, exclusions and false detections. Publication does not automatically open event bookings.",Seat-plan editor (editor.js:37),"Only use this after checking all pages, labels, exclusions and false detections. Publication does not automatically open event bookings.",,,
-Open,Admin events (app.js:610),Open,,,
-open,Event status,open,,,
-Open this link to sign in:,Sign-in email,Open this link to sign in:,,,
-Operation failed.,Account and sign-in (app.js:106),Operation failed.,,,
-Organizer copy. Contains private email addresses. Snapshot: {0}.,Private roster warning,Organizer copy. Contains private email addresses. Snapshot: {0}.,,,
-ORGANIZER WORKSPACE,Admin seat plans (app.js:403),ORGANIZER WORKSPACE,,,
-"Outline corners must be a convex, positive-winding quadrilateral.",API error (domain.py:74),"Outline corners must be a convex, positive-winding quadrilateral.",,,
-Outline corners must be finite local coordinates between -0.5 and 0.5.,API error (domain.py:68),Outline corners must be finite local coordinates between -0.5 and 0.5.,,,
-Overlay contains an invalid exclusion area.,Seat-plan editor (editor.js:362),Overlay contains an invalid exclusion area.,,,
-Overlay contains an invalid seat. No changes were imported.,Seat-plan editor (editor.js:355),Overlay contains an invalid seat. No changes were imported.,,,
-Overlay file is too large.,Seat-plan editor (editor.js:339),Overlay file is too large.,,,
-Overlay labels,Interactive seat map (map.js:17),Overlay labels,,,
-Overlay seat labels,Printable plan action; Printable plan and private roster (print.html),Overlay seat labels,,,
-Override applied and recorded in the audit log.,Admin events (app.js:563),Override applied and recorded in the audit log.,,,
-Page,Interactive seat map (map.js:17),Page,,,
-Page {0},Seat-plan editor (editor.js:122),Page {0},,,
-Page {0} / {1},Printable plan page counter,Page {0} / {1},,,
-PDF file,Admin seat plans (app.js:471),PDF file,,,
-PDF jobs,System and delivery (app.js:634),PDF jobs,,,
-PDF must contain between 1 and {0} pages.,API error (detection.py:27),PDF must contain between 1 and {0} pages.,,,
-PDF page not found.,API error (app.py:217),PDF page not found.,,,
-PDF processing failed,Admin seat plans (app.js:459),PDF processing failed,,,
-PDF processing failed.,Admin seat plans (app.js:503),PDF processing failed.,,,
-PDF processing is queued,Admin seat plans (app.js:459),PDF processing is queued,,,
-PDF rendered. Add or detect seats in the draft editor.,Admin seat plans (app.js:486),PDF rendered. Add or detect seats in the draft editor.,,,
-PDF SEAT MAP · {0},Seat-plan editor (editor.js:37),PDF SEAT MAP · {0},,,
-PDF uploaded. Waiting for the rendering worker…,Admin seat plans (app.js:482),PDF uploaded. Waiting for the rendering worker…,,,
-Plan name,Admin seat plans (app.js:471); Seat-plan editor (editor.js:37),Plan name,,,
-Plan published. Create an event to open reservations.,Seat-plan editor (editor.js:328),Plan published. Create an event to open reservations.,,,
-Plan settings & review,Seat-plan editor (editor.js:37),Plan settings & review,,,
-Please check back when the organizer opens an event.,Visitor reservations (app.js:220),Please check back when the organizer opens an event.,,,
-Please sign in with your email first.,API error (security.py:64),Please sign in with your email first.,,,
-"Precision fitting uses independent quadrilateral edges, not enclosing rectangles. Deterministic pixel search and optional repeated-symbol recovery; no AI or OCR. Scans receive provisional D-labels; every candidate needs review.",Seat-plan editor (editor.js:37),"Precision fitting uses independent quadrilateral edges, not enclosing rectangles. Deterministic pixel search and optional repeated-symbol recovery; no AI or OCR. Scans receive provisional D-labels; every candidate needs review.",,,
-Precision: four-border pixel fitting,Seat-plan editor (editor.js:37),Precision: four-border pixel fitting,,,
-Preview grid,Seat-plan editor (editor.js:424),Preview grid,,,
-Preview only. {0},Seat-plan editor (editor.js:465),Preview only. {0},,,
-Print / save as PDF,Printable plan action; Printable plan and private roster (print.html),Print / save as PDF,,,
-Print plan,Admin events (app.js:543),Print plan,,,
-Print plan + attendee list,Admin events (app.js:543),Print plan + attendee list,,,
-Printed number,Seat-plan editor (editor.js:37),Printed number,,,
-processing,Seat-plan processing state,processing,,,
-Publish,Seat-plan editor (editor.js:37),Publish,,,
-"Publish a reviewed plan, then select it in the event settings. Each event has its own reservations.",Admin events (app.js:538),"Publish a reviewed plan, then select it in the event settings. Each event has its own reservations.",,,
-Publish a reviewed seating plan before creating an event.,Admin events (app.js:608),Publish a reviewed seating plan before creating an event.,,,
-Publish this reviewed plan? Its geometry will be frozen. You can duplicate it to make future changes.,Seat-plan editor (editor.js:320),Publish this reviewed plan? Its geometry will be frozen. You can duplicate it to make future changes.,,,
-published,Admin events (app.js:605); Admin seat plans (app.js:457),published,,,
-PUBLISHED,Seat-plan editor heading status,PUBLISHED,,,
-"Published plans are immutable. Duplicate this plan to revise its overlay, or upload a new PDF. Existing events keep their current version until you explicitly switch it.",Seat-plan editor (editor.js:38),"Published plans are immutable. Duplicate this plan to revise its overlay, or upload a new PDF. Existing events keep their current version until you explicitly switch it.",,,
-Published seating plan,Admin events (app.js:610),Published seating plan,,,
-queued,System and delivery (app.js:634),queued,,,
-Reason,Admin events (app.js:543),Reason,,,
-Recipient,System and delivery (app.js:634),Recipient,,,
-Recover separate groups and faint chair pairs (slower),Seat-plan editor (editor.js:37),Recover separate groups and faint chair pairs (slower),,,
-Reference,Printable plan and private roster (print.html),Reference,,,
-Reference: {0},My reservations (app.js:380); Reservation email,Reference: {0},,,
-Refresh,Admin seat plans (app.js:429); System and delivery (app.js:634),Refresh,,,
-Refresh live view,Admin events (app.js:518),Refresh live view,,,
-Region: entire current page,Seat-plan editor (editor.js:37); Seat-plan editor (editor.js:90),Region: entire current page,,,
-Remove,Seat-plan editor (editor.js:122),Remove,,,
-Remove this exclusion area? Individually blocked seats stay blocked until you change their flags.,Seat-plan editor (editor.js:125),Remove this exclusion area? Individually blocked seats stay blocked until you change their flags.,,,
-Renumber selected shapes…,Seat-plan editor (editor.js:37),Renumber selected shapes…,,,
-Renumber {0} selected shapes,Seat-plan editor (editor.js:516),Renumber {0} selected shapes,,,
-Repair faint small outlines,Seat-plan editor (editor.js:37),Repair faint small outlines,,,
-"Repair gap length, px",Seat-plan editor (editor.js:37),"Repair gap length, px",,,
-Replace all current-page seat shapes with these unreviewed candidates? Exclusion areas are retained.,Seat-plan editor (editor.js:469),Replace all current-page seat shapes with these unreviewed candidates? Exclusion areas are retained.,,,
-Replace all shapes and exclusion areas in this draft with the imported overlay? This can be undone before saving.,Seat-plan editor (editor.js:373),Replace all shapes and exclusion areas in this draft with the imported overlay? This can be undone before saving.,,,
-Replace current page shapes…,Seat-plan editor (editor.js:465),Replace current page shapes…,,,
-Request body exceeds the configured size limit.,API error,Request body exceeds the configured size limit.,,,
-Request failed ({0}).,Network error,Request failed ({0}).,,,
-Request failed.,Generic HTTP error,Request failed.,,,
-Reservation,Admin events (app.js:543); CSV export header,Reservation,,,
-Reservation changed by the organizer,Reservation email subject,Reservation changed by the organizer,,,
-Reservation confirmed,Reservation email subject,Reservation confirmed,,,
-Reservation confirmed by the organizer,Reservation email subject,Reservation confirmed by the organizer,,,
-Reservation confirmed. Reference {0}. Your email is queued for delivery.,Booking result toast,Reservation confirmed. Reference {0}. Your email is queued for delivery.,,,
-Reservation not found.,API error (services.py:196),Reservation not found.,,,
-Reservation updated,Reservation email subject,Reservation updated,,,
-Reservation updated. An email notification has been queued.,My reservations (app.js:389),Reservation updated. An email notification has been queued.,,,
-RESERVATIONS,Visitor reservations (app.js:220),RESERVATIONS,,,
-Reservations,Admin events (app.js:610),Reservations,,,
-Reservations closed,Visitor reservations (app.js:263),Reservations closed,,,
-Reserve at most 100 seats per request.,Visitor reservations (app.js:343),Reserve at most 100 seats per request.,,,
-Reserve selected seats,Visitor reservations (app.js:227),Reserve selected seats,,,
-Reserve {0} seat,Booking button; one selected seat,Reserve {0} seat,,,
-Reserve {0} seats,Booking button; multiple selected seats,Reserve {0} seats,,,
-Reserved,Admin events (app.js:543); Printable plan and private roster (print.html); Visitor reservations (app.js:227),Reserved,,,
-reserved,Admin events (app.js:556); Admin events (app.js:590),reserved,,,
-Restart on each row,Seat-plan editor (editor.js:424),Restart on each row,,,
-Retry,System and delivery (app.js:634),Retry,,,
-Reverse alternate rows (serpentine),Seat-plan editor (editor.js:424),Reverse alternate rows (serpentine),,,
-review,Seat map review state,review,,,
-Review every candidate before publishing.,Seat-plan editor (editor.js:317),Review every candidate before publishing.,,,
-Review every candidate before publishing. Unreviewed: {0}.,API error (services.py:94),Review every candidate before publishing. Unreviewed: {0}.,,,
-Review state,Seat-plan editor (editor.js:37),Review state,,,
-revision {0},Admin event revision,revision {0},,,
-"Rotation, °",Seat-plan editor (editor.js:424),"Rotation, °",,,
-Row,CSV export header; Seat-plan editor (editor.js:37); Seat-plan editor (editor.js:516),Row,,,
-Row prefix,Seat-plan editor (editor.js:424),Row prefix,,,
-Rows,Seat-plan editor (editor.js:424),Rows,,,
-Save draft,Seat-plan editor (editor.js:37),Save draft,,,
-Save event,Admin events (app.js:610),Save event,,,
-Save or export first to keep your edits. Continue and discard unsaved map changes?,Admin seat plans (app.js:467),Save or export first to keep your edits. Continue and discard unsaved map changes?,,,
-Save your changes before duplicating?,Seat-plan editor (editor.js:62),Save your changes before duplicating?,,,
-"Search email, seat or reference",Admin events (app.js:543),"Search email, seat or reference",,,
-Search roster,Admin events (app.js:543),Search roster,,,
-"Search seat, row or section",Visitor reservations (app.js:227),"Search seat, row or section",,,
-Seat,Admin events (app.js:543); CSV export header,Seat,,,
-Seat availability,Seat-plan editor (editor.js:37),Seat availability,,,
-Seat corners must form a non-degenerate convex quadrilateral.,API error (geometry.py:17),Seat corners must form a non-degenerate convex quadrilateral.,,,
-Seat label,Seat-plan editor (editor.js:37),Seat label,,,
-Seat outline extends beyond the page.,API error (domain.py:168),Seat outline extends beyond the page.,,,
-Seat plan,Admin seat plans (app.js:429),Seat plan,,,
-Seat plan not found.,API error (services.py:25),Seat plan not found.,,,
-Seat plans,Admin seat plans (app.js:403),Seat plans,,,
-Seat rectangle extends beyond the page.,API error (domain.py:80),Seat rectangle extends beyond the page.,,,
-Seat roster,Admin events (app.js:543),Seat roster,,,
-"Seating allocation plan, page {0}",Printable plan accessible label,"Seating allocation plan, page {0}",,,
-Seating plan · {0},Printable plan browser title; event title remains as entered,Seating plan · {0},,,
-Seatplan home,Site shell (index.html),Seatplan home,,,
-Seatplan · Reservations,Site shell (index.html),Seatplan · Reservations,,,
-"Seats are assigned when you press Reserve, not while browsing. A confirmation email follows a successful reservation.",Visitor reservations (app.js:227),"Seats are assigned when you press Reserve, not while browsing. A confirmation email follows a successful reservation.",,,
-Seats per email,Admin events (app.js:610),Seats per email,,,
-"Seats whose centers fall inside an area stay unavailable, even when their individual flag is free. Remove the area to change that rule.",Seat-plan editor (editor.js:37),"Seats whose centers fall inside an area stay unavailable, even when their individual flag is free. Remove the area to change that rule.",,,
-Section,CSV export header; Seat-plan editor (editor.js:37); Seat-plan editor (editor.js:424); Seat-plan editor (editor.js:516); Visitor reservations (app.js:227),Section,,,
-Section / row / seat,Printable plan and private roster (print.html); Private roster header,Section / row / seat,,,
-Section for candidates,Seat-plan editor (editor.js:37),Section for candidates,,,
-Select,Admin events (app.js:543),Select,,,
-Select a plan,Admin seat plans (app.js:429),Select a plan,,,
-Select an event,Admin events (app.js:518),Select an event,,,
-Select at least one seat.,Admin events (app.js:553),Select at least one seat.,,,
-Select low-confidence shapes,Seat-plan editor (editor.js:37),Select low-confidence shapes,,,
-Select one or more seats first.,Seat-plan editor (editor.js:270),Select one or more seats first.,,,
-"Select one seat, then drag its four corner handles",Interactive seat map (map.js:114),"Select one seat, then drag its four corner handles",,,
-Select the row or shapes to number first.,Seat-plan editor (editor.js:513),Select the row or shapes to number first.,,,
-Select {0},Admin events (app.js:598),Select {0},,,
-Selected,Admin events (app.js:543); Seat-plan editor (editor.js:37),Selected,,,
-Selection,Seat-plan editor (editor.js:37),Selection,,,
-Send sign-in link,Account and sign-in (app.js:162),Send sign-in link,,,
-sending,Mail delivery state,sending,,,
-sent,Mail delivery state,sent,,,
-Server returned {0}. Check the reverse proxy and application logs.,Network error,Server returned {0}. Check the reverse proxy and application logs.,,,
-Set selected seats to,Admin events (app.js:543),Set selected seats to,,,
-Set {0} seats to {1}? This affects {2} currently reserved seats. Attendees with email addresses will be notified.,Administrator override confirmation,Set {0} seats to {1}? This affects {2} currently reserved seats. Attendees with email addresses will be notified.,,,
-Showing 60 of {0}. Refine your search.,Seat search results,Showing 60 of {0}. Refine your search.,,,
-Showing the latest 100 entries. The database retains the complete audit trail; the web interface cannot edit or delete it.,System and delivery (app.js:634),Showing the latest 100 entries. The database retains the complete audit trail; the web interface cannot edit or delete it.,,,
-Sign in,Account and sign-in (app.js:124); Site shell (index.html); Visitor reservations (app.js:375),Sign in,,,
-Sign in to reserve,Visitor reservations (app.js:314),Sign in to reserve,,,
-Sign in to view or cancel:,Reservation email,Sign in to view or cancel:,,,
-Sign in with the same email address you used to reserve.,Visitor reservations (app.js:375),Sign in with the same email address you used to reserve.,,,
-Sign in with your email,Account and sign-in (app.js:162),Sign in with your email,,,
-Sign out,Account and sign-in (app.js:124),Sign out,,,
-"Small symbol max side, px",Seat-plan editor (editor.js:37),"Small symbol max side, px",,,
-Snapshot generated {0}. Enable background graphics for the closest color match. Symbols and outlines also distinguish states.,Printable plan guidance,Snapshot generated {0}. Enable background graphics for the closest color match. Symbols and outlines also distinguish states.,,,
-Some selected seats are no longer available. Your selection was updated.,Visitor reservations (app.js:270),Some selected seats are no longer available. Your selection was updated.,,,
-Sort order,Seat-plan editor (editor.js:516),Sort order,,,
-Start with your PDF.,Admin seat plans (app.js:453),Start with your PDF.,,,
-State,Admin events (app.js:543); CSV export header; System and delivery (app.js:634),State,,,
-Step,Seat-plan editor (editor.js:516),Step,,,
-Subject,System and delivery (app.js:634),Subject,,,
-Symbol search exceeded its work limit. Select a smaller detection region.,API error (detection_recovery.py:193),Symbol search exceeded its work limit. Select a smaller detection region.,,,
-That request key was already used for a different selection.,API error (services.py:164),That request key was already used for a different selection.,,,
-The adjusted cell is too large or too small.,Seat-plan editor (editor.js:414),The adjusted cell is too large or too small.,,,
-The database is busy. Retry the same operation in a moment.,API error,The database is busy. Retry the same operation in a moment.,,,
-The draft has changed or is already published. Reload it.,API error (services.py:91),The draft has changed or is already published. Reload it.,,,
-The event has changed. Reload before saving.,API error (services.py:257),The event has changed. Reload before saving.,,,
-The grid extends beyond the page. Reduce its size or rotation.,API error (app.py:298),The grid extends beyond the page. Reduce its size or rotation.,,,
-"The job is still queued or running. Check Delivery & audit and make sure the worker is running, then refresh.",Admin seat plans (app.js:511),"The job is still queued or running. Check Delivery & audit and make sure the worker is running, then refresh.",,,
-The link expires in 15 minutes.,Sign-in request notice,The link expires in 15 minutes.,,,
-The live seating state changed. Refresh and review your override again.,API error (services.py:213),The live seating state changed. Refresh and review your override again.,,,
-The moved selection would extend beyond the page.,Seat-plan editor (editor.js:215),The moved selection would extend beyond the page.,,,
-The PDF exceeds the upload limit.,API error (app.py:241),The PDF exceeds the upload limit.,,,
-The PDF must finish processing first.,API error (services.py:106),The PDF must finish processing first.,,,
-The rectangle you drew defines the grid bounds.,Seat-plan editor (editor.js:424),The rectangle you drew defines the grid bounds.,,,
-The seat would extend beyond the page.,Seat-plan editor (editor.js:196),The seat would extend beyond the page.,,,
-The selection includes plan-excluded seats. Explicitly allow an excluded-seat override to continue.,API error (services.py:220),The selection includes plan-excluded seats. Explicitly allow an excluded-seat override to continue.,,,
-The source overlay has a different page count.,Seat-plan editor (editor.js:367),The source overlay has a different page count.,,,
-There must be at least one reservable seat.,API error (services.py:96),There must be at least one reservable seat.,,,
-This application requires JavaScript. Enable it to select and reserve seats.,Site shell (index.html),This application requires JavaScript. Enable it to select and reserve seats.,,,
-This creates a new draft. It will not change any existing event or reservation.,Admin seat plans (app.js:471),This creates a new draft. It will not change any existing event or reservation.,,,
-This email cannot be retried. Request a new sign-in link for expired messages.,API error (app.py:411),This email cannot be retried. Request a new sign-in link for expired messages.,,,
-This event allows {0} seats per email. You already have {1}.,API error (services.py:182),This event allows {0} seats per email. You already have {1}.,,,
-This event's per-email seat limit has been reached.,Seat selection limit,This event's per-email seat limit has been reached.,,,
-This file does not have a PDF header.,API error (app.py:239),This file does not have a PDF header.,,,
-This is not a Seatplan overlay export.,Seat-plan editor (editor.js:344),This is not a Seatplan overlay export.,,,
-This language is not available yet.,Language preference API error,This language is not available yet.,,,
-"This overlay was created for a DIFFERENT PDF. Coordinates are normalized, but alignment may be wrong. Import as unreviewed shapes?",Seat-plan editor (editor.js:369),"This overlay was created for a DIFFERENT PDF. Coordinates are normalized, but alignment may be wrong. Import as unreviewed shapes?",,,
-This reservation has changed. Refresh your reservations.,API error (services.py:200),This reservation has changed. Refresh your reservations.,,,
-This seating plan is not published.,API error (services.py:171),This seating plan is not published.,,,
-This sign-in link could not be used. Request a new one.,Sign-in error,This sign-in link could not be used. Request a new one.,,,
-This sign-in link has expired or was already used. Request a new one.,API error (app.py:154),This sign-in link has expired or was already used. Request a new one.,,,
-Time (local),System and delivery (app.js:634),Time (local),,,
-Too many boundary proposals. Select a smaller detection region.,API error (detection_boundaries.py:123),Too many boundary proposals. Select a smaller detection region.,,,
-Too many distinct boundaries. Restrict the detection region.,API error (detection_boundaries.py:153),Too many distinct boundaries. Restrict the detection region.,,,
-Too many requests. Please wait before trying again.,API error (security.py:94),Too many requests. Please wait before trying again.,,,
-Too many symbol-search regions. Select a smaller detection region.,API error (detection_recovery.py:164),Too many symbol-search regions. Select a smaller detection region.,,,
-Top to bottom,Seat-plan editor (editor.js:516),Top to bottom,,,
-Type,System and delivery (app.js:634),Type,,,
-Unavailable,Admin events (app.js:543); Printable plan and private roster (print.html); Visitor reservations (app.js:227),Unavailable,,,
-Undo,Seat-plan editor (editor.js:37),Undo,,,
-Unknown job type.,API error (pdf_job.py:25),Unknown job type.,,,
-unsaved changes,Seat-plan editor (editor.js:103),unsaved changes,,,
-Unsupported PDF page dimensions.,API error (detection.py:33),Unsupported PDF page dimensions.,,,
-Up to {0} seats per email for this event.,Per-event booking allowance,Up to {0} seats per email for this event.,,,
-Upload a new seating plan,Admin seat plans (app.js:471),Upload a new seating plan,,,
-Upload a PDF,Admin seat plans (app.js:429),Upload a PDF,,,
-"Upload a plan, detect seat shapes or draw grids, review the exclusions, then publish.",Admin seat plans (app.js:453),"Upload a plan, detect seat shapes or draw grids, review the exclusions, then publish.",,,
-Upload and render,Admin seat plans (app.js:471),Upload and render,,,
-"Upload and review a seating plan in Administration, then create an event.",Visitor reservations (app.js:220),"Upload and review a seating plan in Administration, then create an event.",,,
-Upload the PDF bytes with Content-Type: application/pdf.,API error (app.py:236),Upload the PDF bytes with Content-Type: application/pdf.,,,
-"Use step −1, 2 or −2 for reversed or odd/even numbering. Draw irregular rows as separate grids; delete positions where aisles occur.",Seat-plan editor (editor.js:424),"Use step −1, 2 or −2 for reversed or odd/even numbering. Draw irregular rows as separate grids; delete positions where aisles occur.",,,
-"Use this on one row at a time, or choose a sorting direction explicitly.",Seat-plan editor (editor.js:516),"Use this on one row at a time, or choose a sorting direction explicitly.",,,
-"Vertical gap, %",Seat-plan editor (editor.js:424),"Vertical gap, %",,,
-Wait for this plan's current PDF jobs to finish.,API error (app.py:310),Wait for this plan's current PDF jobs to finish.,,,
-"We will email a one-time confirmation link. Once confirmed, you can book seats and manage your reservations.",Account and sign-in (app.js:162),"We will email a one-time confirmation link. Once confirmed, you can book seats and manage your reservations.",,,
-"Width, px",Seat-plan editor (editor.js:37),"Width, px",,,
-Worker heartbeat: {0}s ago,System status,Worker heartbeat: {0}s ago,,,
-You have no reservations yet.,My reservations (app.js:380),You have no reservations yet.,,,
-Your four corners define a skewed grid. Shared boundaries are interpolated consistently; rotation is ignored. For curved banks use short strips or individual rows.,Seat-plan editor (editor.js:424),Your four corners define a skewed grid. Shared boundaries are interpolated consistently; rotation is ignored. For curved banks use short strips or individual rows.,,,
-YOUR PLACES,My reservations (app.js:380),YOUR PLACES,,,
-Your Seatplan sign-in link,Sign-in email subject,Your Seatplan sign-in link,,,
-Your selection,Visitor reservations (app.js:227),Your selection,,,
-Your selection was reduced to the seats still available under this event’s per-email limit.,Booking selection refresh,Your selection was reduced to the seats still available under this event’s per-email limit.,,,
-Your session has changed. Reload the page and try again.,API error (security.py:72),Your session has changed. Reload the page and try again.,,,
-yours,Seat-map accessible label for a seat owned by the signed-in visitor,yours,,,
-Yours,Visitor seat result,Yours,,,
-Zoom in,Interactive seat map (map.js:17),Zoom in,,,
-Zoom out,Interactive seat map (map.js:17),Zoom out,,,
-{0} mail backend,System status,{0} mail backend,,,
-{0} matching seats.,Seat search results,{0} matching seats.,,,
-{0} of {1} seats remain available to this email for this event.,Booking quota status,{0} of {1} seats remain available to this email for this event.,,,
-{0} RESERVED,My reservations count,{0} RESERVED,,,
-{0} selected,Admin events (app.js:589); Admin selection count,{0} selected,,,
-{0} shapes,Seat-plan selector,{0} shapes,,,
-{0} shapes · {1} excluded · {2} need review · revision {3},Seat-plan editor summary,{0} shapes · {1} excluded · {2} need review · revision {3},,,
-“Free” removes an event assignment. A seat excluded by the underlying plan remains non-reservable; revise the plan to change that rule.,Admin events (app.js:543),“Free” removes an event assignment. A seat excluded by the underlying plan remains non-reservable; revise the plan to change that rule.,,,
+(0 = unlimited),Admin events (app.js:610),(0 = unlimited),(0 = nelimitat),(0 = unbegrenzt),(0 = korlátlan)
+"(display text, include timezone)",Admin events (app.js:610),"(display text, include timezone)","(text afișat, includeți fusul orar)","(Anzeigetext, Zeitzone angeben)","(megjelenítendő szöveg, az időzónával együtt)"
+(one seat only),Seat-plan editor (editor.js:37),(one seat only),(un singur loc),(nur ein Platz),(csak egy ülőhely)
+(optional for house reservations),Admin events (app.js:543),(optional for house reservations),(opțional pentru rezervările organizatorului),(optional bei Veranstalterreservierungen),(szervezői foglalásoknál nem kötelező)
+(required),Admin events (app.js:543),(required),(obligatoriu),(erforderlich),(kötelező)
+(yours),Interactive seat map (map.js:152),(yours),(al dumneavoastră),(Ihr Platz),(az Öné)
++ {0} more,Admin events (app.js:589); Seat-plan editor (editor.js:106),+ {0} more,+ încă {0},+ {0} weitere,+ további {0}
+4-corner grid,Seat-plan editor (editor.js:39),4-corner grid,Grilă cu 4 colțuri,4-Ecken-Raster,Négysarkú rács
+A place for everyone.,Visitor reservations (app.js:220),A place for everyone.,Un loc pentru fiecare.,Ein Platz für alle.,Mindenkinek jut hely.
+A seat or exclusion references a page that is not in the PDF.,API error (services.py:69),A seat or exclusion references a page that is not in the PDF.,Un loc sau o zonă de excludere face referire la o pagină care nu există în PDF.,"Ein Platz oder ein Ausschlussbereich verweist auf eine Seite, die nicht im PDF enthalten ist.","Egy ülőhely vagy kizárási terület olyan oldalra hivatkozik, amely nincs a PDF-ben."
+A seat was selected twice.,API error (services.py:158),A seat was selected twice.,Un loc a fost selectat de două ori.,Ein Platz wurde zweimal ausgewählt.,Egy ülőhely kétszer lett kiválasztva.
+A selected seat does not belong to this event.,API error (services.py:175); API error (services.py:218),A selected seat does not belong to this event.,Un loc selectat nu aparține acestui eveniment.,Ein ausgewählter Platz gehört nicht zu dieser Veranstaltung.,Egy kiválasztott ülőhely nem ehhez a rendezvényhez tartozik.
+A sign-in email has been queued. Check your inbox and spam folder.,Sign-in API response,A sign-in email has been queued. Check your inbox and spam folder.,Un e-mail de autentificare a fost pus în coada de trimitere. Verificați mesajele primite și dosarul spam.,Eine Anmelde-E-Mail wurde zum Versand eingereiht. Prüfen Sie Ihren Posteingang und Spamordner.,A bejelentkezési e-mail a küldési sorba került. Ellenőrizze a beérkező leveleket és a spam mappát.
+Action,System and delivery (app.js:634),Action,Acțiune,Aktion,Művelet
+Actor,System and delivery (app.js:634),Actor,Autorul acțiunii,Ausführender Benutzer,Művelet végrehajtója
+Add non-overlapping,Seat-plan editor (editor.js:465),Add non-overlapping,Adăugare fără suprapuneri,Ohne Überlappung hinzufügen,Átfedésmentes alakzatok hozzáadása
+Add seat,Seat-plan editor (editor.js:39),Add seat,Adăugare loc,Platz hinzufügen,Ülőhely hozzáadása
+Added {0} shapes. Save the draft when ready.,Seat-plan editor (editor.js:502),Added {0} shapes. Save the draft when ready.,Forme adăugate: {0}. Salvați schița când ați terminat.,"Hinzugefügte Formen: {0}. Speichern Sie den Entwurf, wenn Sie fertig sind.","Hozzáadott alakzatok: {0}. Ha végzett, mentse a tervezetet."
+Admin note,CSV export header,Admin note,Notă administrator,Administratornotiz,Adminisztrátori megjegyzés
+Administration,Admin seat plans (app.js:403); Site shell (index.html),Administration,Administrare,Verwaltung,Adminisztráció
+Administrator access is required.,API error (security.py:66),Administrator access is required.,Este necesar acces de administrator.,Administratorzugriff ist erforderlich.,Adminisztrátori hozzáférés szükséges.
+Administrator override,Admin events (app.js:543),Administrator override,Suprascriere de către administrator,Administratorüberschreibung,Adminisztrátori felülbírálás
+All sections,Visitor reservations (app.js:227); Visitor reservations (app.js:279),All sections,Toate sectoarele,Alle Bereiche,Minden szektor
+Already reserved or blocked: {0}. Nothing was booked.,API error (services.py:179),Already reserved or blocked: {0}. Nothing was booked.,Deja rezervate sau blocate: {0}. Nu s-a rezervat niciun loc.,Bereits reserviert oder gesperrt: {0}. Es wurde nichts reserviert.,Már foglalt vagy zárolt: {0}. Egyetlen ülőhely sem lett lefoglalva.
+An imported seat ID belongs to another plan. Use the import function to assign new IDs.,API error (services.py:79),An imported seat ID belongs to another plan. Use the import function to assign new IDs.,Un ID de loc importat aparține altui plan. Folosiți funcția de import pentru a atribui ID-uri noi.,"Eine importierte Platz-ID gehört zu einem anderen Plan. Verwenden Sie die Importfunktion, um neue IDs zu vergeben.",Egy importált ülőhelyazonosító egy másik tervhez tartozik. Új azonosítók kiosztásához használja az importálási funkciót.
+"Angle, °",Seat-plan editor (editor.js:37),"Angle, °","Unghi, °","Winkel, °","Szög, °"
+Another administrator changed this plan. Export your work before reloading.,API error (services.py:58),Another administrator changed this plan. Export your work before reloading.,Un alt administrator a modificat acest plan. Exportați modificările înainte de reîncărcare.,Ein anderer Administrator hat diesen Plan geändert. Exportieren Sie Ihre Arbeit vor dem Neuladen.,Egy másik adminisztrátor módosította ezt a tervet. Újratöltés előtt exportálja a munkáját.
+Apply administrator override,Admin events (app.js:543),Apply administrator override,Aplicare suprascriere de către administrator,Administratorüberschreibung anwenden,Adminisztrátori felülbírálás alkalmazása
+Apply numbering,Seat-plan editor (editor.js:516),Apply numbering,Aplicare numerotare,Nummerierung anwenden,Számozás alkalmazása
+Apply to selection,Seat-plan editor (editor.js:37),Apply to selection,Aplicare la selecție,Auf Auswahl anwenden,Alkalmazás a kijelölésre
+Approve selected,Seat-plan editor (editor.js:37),Approve selected,Aprobare selecție,Auswahl freigeben,Kijelöltek jóváhagyása
+Approved,Seat-plan editor (editor.js:37),Approved,Aprobat,Freigegeben,Jóváhagyva
+Attempts,System and delivery (app.js:634),Attempts,Încercări,Versuche,Próbálkozások
+Attendee email,Admin events (app.js:543),Attendee email,E-mail participant,E-Mail-Adresse des Teilnehmers,Résztvevő e-mail-címe
+Attendee list follows the plan.,Printable plan and private roster (print.html); Printable plan legend,Attendee list follows the plan.,Lista participanților urmează după plan.,Die Teilnehmerliste folgt auf den Plan.,A résztvevők listája az ülésrend után következik.
+Attendee list · {0},Private roster heading,Attendee list · {0},Lista participanților · {0},Teilnehmerliste · {0},Résztvevők listája · {0}
+Automatic detection,Seat-plan editor (editor.js:37),Automatic detection,Detectare automată,Automatische Erkennung,Automatikus felismerés
+Available,Admin events (app.js:543); Printable plan and private roster (print.html); Visitor reservations (app.js:227),Available,Disponibil,Verfügbar,Elérhető
+Available seats only,Visitor reservations (app.js:227),Available seats only,Doar locuri disponibile,Nur verfügbare Plätze,Csak elérhető ülőhelyek
+blocked,Admin events (app.js:590); Interactive seat map (map.js:147); Seat-plan editor (editor.js:255),blocked,blocat,gesperrt,zárolt
+Blocked for this event,Admin events (app.js:543),Blocked for this event,Blocat pentru acest eveniment,Für diese Veranstaltung gesperrt,Ehhez a rendezvényhez zárolva
+Book seats,Site shell (index.html),Book seats,Rezervare locuri,Plätze reservieren,Ülőhelyfoglalás
+Booking is closed for this event.,API error (services.py:168),Booking is closed for this event.,Rezervările pentru acest eveniment sunt închise.,Reservierungen für diese Veranstaltung sind geschlossen.,Erre a rendezvényre a foglalás lezárult.
+Box fill ratio,Seat-plan editor (editor.js:37),Box fill ratio,Grad de umplere a dreptunghiului,Füllgrad des Begrenzungsrahmens,Határoló téglalap kitöltési aránya
+Cancel,Account and sign-in (app.js:138); Admin events (app.js:610); Admin seat plans (app.js:471); Seat-plan editor (editor.js:424); Seat-plan editor (editor.js:516),Cancel,Anulare,Abbrechen,Mégse
+Cancel all these seats,My reservations (app.js:380),Cancel all these seats,Anularea tuturor acestor locuri,Alle diese Plätze stornieren,Mindezen ülőhelyek lemondása
+Cancel seat,My reservations (app.js:380),Cancel seat,Anulare loc,Platz stornieren,Ülőhely lemondása
+Cancel the selected reservation seats? They will immediately become available to others.,My reservations (app.js:383),Cancel the selected reservation seats? They will immediately become available to others.,Anulați locurile selectate din rezervare? Acestea vor deveni imediat disponibile pentru alte persoane.,Die ausgewählten Plätze der Reservierung stornieren? Sie werden sofort für andere verfügbar.,Lemondja a foglalásból kiválasztott ülőhelyeket? Ezek azonnal elérhetővé válnak mások számára.
+"Cannot migrate occupied seat {0}. Keep its exact name and availability in the new plan, or explicitly resolve this allocation first.",API error (services.py:267),"Cannot migrate occupied seat {0}. Keep its exact name and availability in the new plan, or explicitly resolve this allocation first.",Locul ocupat {0} nu poate fi transferat. Păstrați exact denumirea și disponibilitatea acestuia în noul plan sau rezolvați mai întâi explicit această alocare.,Der belegte Platz {0} kann nicht übertragen werden. Behalten Sie seine genaue Bezeichnung und Verfügbarkeit im neuen Plan bei oder klären Sie diese Zuweisung zuerst ausdrücklich.,"A foglalt {0} ülőhely nem vihető át. Őrizze meg a pontos nevét és elérhetőségét az új tervben, vagy előbb rendezze kifejezetten ezt a kiosztást."
+Changing the plan preserves occupied seats only when their exact section / row / label exists in the new version. Missing or newly excluded reserved seats prevent the change. Resolve them explicitly first.,Admin events (app.js:610),Changing the plan preserves occupied seats only when their exact section / row / label exists in the new version. Missing or newly excluded reserved seats prevent the change. Resolve them explicitly first.,Schimbarea planului păstrează locurile ocupate doar dacă sectorul / rândul / eticheta lor există exact în noua versiune. Locurile rezervate care lipsesc sau sunt excluse în noua versiune împiedică schimbarea. Rezolvați-le mai întâi explicit.,"Beim Planwechsel bleiben belegte Plätze nur erhalten, wenn ihr Bereich / ihre Reihe / ihre Bezeichnung exakt in der neuen Version vorhanden ist. Fehlende oder neu ausgeschlossene reservierte Plätze verhindern den Wechsel. Klären Sie diese zuerst ausdrücklich.","A terv cseréjekor a foglalt ülőhelyek csak akkor maradnak meg, ha pontosan ugyanaz a szektor / sor / címke szerepel az új változatban. A hiányzó vagy újonnan kizárt foglalt ülőhelyek megakadályozzák a cserét. Előbb rendezze ezeket kifejezetten."
+Choose a page in a draft plan.,API error (app.py:293),Choose a page in a draft plan.,Alegeți o pagină dintr-un plan în stadiul de schiță.,Wählen Sie eine Seite in einem Planentwurf.,Válasszon egy oldalt egy tervezetből.
+Choose a published seating plan.,API error (services.py:250),Choose a published seating plan.,Alegeți un plan de locuri publicat.,Wählen Sie einen veröffentlichten Sitzplan.,Válasszon egy közzétett ülésrendet.
+Choose seats on the map or in the roster. An override may cancel another person's reservation; changes are logged and emailed.,Admin events (app.js:543),Choose seats on the map or in the roster. An override may cancel another person's reservation; changes are logged and emailed.,Alegeți locuri pe plan sau în listă. O suprascriere poate anula rezervarea altei persoane; modificările sunt înregistrate în jurnal și comunicate prin e-mail.,Wählen Sie Plätze im Plan oder in der Liste. Eine Überschreibung kann die Reservierung einer anderen Person stornieren; Änderungen werden protokolliert und per E-Mail mitgeteilt.,"Válasszon ülőhelyeket a térképen vagy a listában. A felülbírálás más személy foglalását is törölheti; a módosításokat a rendszer naplózza, és e-mailben értesítést küld róluk."
+Choose your place. Keep your confirmation.,Site shell (index.html),Choose your place. Keep your confirmation.,Alegeți-vă locul. Păstrați confirmarea.,Wählen Sie Ihren Platz. Bewahren Sie Ihre Bestätigung auf.,Válassza ki a helyét. Őrizze meg a visszaigazolást.
+Choose your seats,Visitor reservations (app.js:227),Choose your seats,Alegeți-vă locurile,Wählen Sie Ihre Plätze,Válassza ki az ülőhelyeit
+Clear detection region,Seat-plan editor (editor.js:37),Clear detection region,Ștergere regiune de detectare,Erkennungsbereich zurücksetzen,Felismerési terület törlése
+Click a seat · drag to select an area,Interactive seat map (map.js:114),Click a seat · drag to select an area,Clic pe un loc · trageți pentru a selecta o zonă,Platz anklicken · zum Auswählen eines Bereichs ziehen,Kattintson egy ülőhelyre · húzással jelöljön ki egy területet
+"Click a seat, or drag to select an area.",Seat-plan editor (editor.js:106); Seat-plan editor (editor.js:37),"Click a seat, or drag to select an area.",Faceți clic pe un loc sau trageți pentru a selecta o zonă.,"Klicken Sie auf einen Platz oder ziehen Sie, um einen Bereich auszuwählen.","Kattintson egy ülőhelyre, vagy húzással jelöljön ki egy területet."
+"Click an available seat on the plan, or use the search below.",Visitor reservations (app.js:310),"Click an available seat on the plan, or use the search below.",Faceți clic pe un loc disponibil de pe plan sau folosiți căutarea de mai jos.,Klicken Sie auf einen verfügbaren Platz im Plan oder verwenden Sie die Suche unten.,"Kattintson egy elérhető ülőhelyre a terven, vagy használja az alábbi keresőt."
+"Click four corners clockwise, starting at row 1 / column 1; Escape cancels",Interactive seat map (map.js:114),"Click four corners clockwise, starting at row 1 / column 1; Escape cancels","Faceți clic pe patru colțuri în sensul acelor de ceasornic, începând de la rândul 1 / coloana 1; Escape anulează","Klicken Sie vier Ecken im Uhrzeigersinn an, beginnend bei Reihe 1 / Spalte 1; Escape bricht ab","Kattintson négy sarokra az óramutató járásával megegyező irányban, az 1. sor / 1. oszlop sarkától kezdve; az Escape megszakítja"
+"Click four grid corners clockwise around the page, starting at the first row/column corner.",API error (domain.py:158),"Click four grid corners clockwise around the page, starting at the first row/column corner.","Faceți clic pe cele patru colțuri ale grilei de pe pagină, în sensul acelor de ceasornic, începând de la colțul primului rând și al primei coloane.","Klicken Sie die vier Rasterecken auf der Seite im Uhrzeigersinn an, beginnend bei der Ecke der ersten Reihe und ersten Spalte.","Kattintson a rács négy sarkára az oldalon, az óramutató járásával megegyező irányban, az első sor és első oszlop sarkától kezdve."
+Click to add a seat,Interactive seat map (map.js:114),Click to add a seat,Clic pentru a adăuga un loc,"Klicken, um einen Platz hinzuzufügen",Kattintson ülőhely hozzáadásához
+Close,Account and sign-in (app.js:162),Close,Închidere,Schließen,Bezárás
+"Close kernel, px",Seat-plan editor (editor.js:37),"Close kernel, px","Element de închidere morfologică, px","Schließkernel, px","Morfológiai zárás szűrőmérete, px"
+Closed,Admin events (app.js:610),Closed,Închise,Geschlossen,Lezárva
+closed,Visitor reservations (app.js:227),closed,închise,geschlossen,lezárva
+Columns,Seat-plan editor (editor.js:424),Columns,Coloane,Spalten,Oszlopok
+Construct a seat grid,Seat-plan editor (editor.js:424),Construct a seat grid,Construire grilă de locuri,Platzraster erstellen,Ülőhelyrács létrehozása
+Continue across the grid,Seat-plan editor (editor.js:424),Continue across the grid,Continuare pe întreaga grilă,Über das gesamte Raster fortsetzen,Folytatás a teljes rácson
+Corners must form a convex outline without crossing edges.,Seat-plan editor (editor.js:407),Corners must form a convex outline without crossing edges.,"Colțurile trebuie să formeze un contur convex, fără laturi care se intersectează.",Die Ecken müssen einen konvexen Umriss ohne sich kreuzende Kanten bilden.,"A sarkoknak konvex körvonalat kell alkotniuk, egymást keresztező élek nélkül."
+Create an event,Admin events (app.js:610),Create an event,Crearea unui eveniment,Eine Veranstaltung erstellen,Rendezvény létrehozása
+Create event,Admin events (app.js:518),Create event,Creare eveniment,Veranstaltung erstellen,Rendezvény létrehozása
+Create your first event.,Admin events (app.js:538),Create your first event.,Creați primul eveniment.,Erstellen Sie Ihre erste Veranstaltung.,Hozza létre az első rendezvényét.
+Current seats in this reservation:,Reservation email,Current seats in this reservation:,Locurile incluse în prezent în această rezervare:,Aktuelle Plätze in dieser Reservierung:,A foglalásban jelenleg szereplő ülőhelyek:
+D-labels are provisional. Detection can still miss or split seats; a shape count is not a completeness check. Nothing is approved automatically.,Seat-plan editor (editor.js:465),D-labels are provisional. Detection can still miss or split seats; a shape count is not a completeness check. Nothing is approved automatically.,Etichetele D sunt provizorii. Detectarea poate în continuare să omită sau să împartă locuri; numărul de forme nu confirmă caracterul complet al detectării. Nimic nu este aprobat automat.,D-Bezeichnungen sind vorläufig. Die Erkennung kann weiterhin Plätze übersehen oder aufteilen; die Anzahl der Formen belegt keine Vollständigkeit. Nichts wird automatisch freigegeben.,A D-címkék ideiglenesek. A felismerés továbbra is kihagyhat vagy több részre bonthat ülőhelyeket; az alakzatok száma nem igazolja a teljességet. Semmi sem kap automatikus jóváhagyást.
+Date and time,Admin events (app.js:610),Date and time,Data și ora,Datum und Uhrzeit,Dátum és idő
+"Default limit: 20 MB, 10 pages. PDFs are rasterized on the server; the browser receives only page images.",Admin seat plans (app.js:471),"Default limit: 20 MB, 10 pages. PDFs are rasterized on the server; the browser receives only page images.","Limită implicită: 20 MB, 10 pagini. PDF-urile sunt rasterizate pe server; browserul primește doar imaginile paginilor.","Standardlimit: 20 MB, 10 Seiten. PDFs werden auf dem Server gerastert; der Browser erhält nur Seitenbilder.","Alapértelmezett korlát: 20 MB, 10 oldal. A PDF-ek raszterizálása a szerveren történik; a böngésző csak az oldalak képeit kapja meg."
+Delete shapes,Seat-plan editor (editor.js:37),Delete shapes,Ștergere forme,Formen löschen,Alakzatok törlése
+Delete {0} selected shapes from this draft?,Seat-plan editor delete confirmation,Delete {0} selected shapes from this draft?,Ștergeți din această schiță formele selectate ({0})?,Die {0} ausgewählten Formen aus diesem Entwurf löschen?,Törli a kijelölt {0} alakzatot ebből a tervezetből?
+Delivery & audit,Admin seat plans (app.js:403),Delivery & audit,Trimitere și audit,Versand und Audit,Kézbesítés és audit
+Delivery & operations,System and delivery (app.js:634),Delivery & operations,Trimitere și operare,Versand und Betrieb,Kézbesítés és üzemeltetés
+Description,Admin events (app.js:610),Description,Descriere,Beschreibung,Leírás
+Details,System and delivery (app.js:634),Details,Detalii,Details,Részletek
+Detect candidates,Seat-plan editor (editor.js:37),Detect candidates,Detectare candidați,Kandidaten erkennen,Jelöltek felismerése
+Detecting… The worker must be running.,Seat-plan editor (editor.js:450),Detecting… The worker must be running.,Detectare în curs… Procesul de fundal trebuie să ruleze.,Erkennung läuft… Der Hintergrundprozess muss laufen.,Felismerés folyamatban… A háttérfeldolgozónak futnia kell.
+Detection image is too large.,API error (detection.py:86),Detection image is too large.,Imaginea pentru detectare este prea mare.,Das Bild für die Erkennung ist zu groß.,A felismeréshez használt kép túl nagy.
+Detection method,Seat-plan editor (editor.js:37),Detection method,Metodă de detectare,Erkennungsmethode,Felismerési módszer
+Detection region,Seat-plan editor (editor.js:39),Detection region,Regiune de detectare,Erkennungsbereich,Felismerési terület
+Detection requires a rendered draft page.,API error (app.py:307),Detection requires a rendered draft page.,Detectarea necesită o pagină de schiță deja randată.,Die Erkennung erfordert eine gerenderte Entwurfsseite.,A felismeréshez a tervezet már renderelt oldala szükséges.
+Development mode · Email messages are written to the server's data/dev-mail directory when MAIL_BACKEND=file.,Site shell (index.html),Development mode · Email messages are written to the server's data/dev-mail directory when MAIL_BACKEND=file.,Mod de dezvoltare · Mesajele e-mail sunt scrise în directorul data/dev-mail de pe server când MAIL_BACKEND=file.,Entwicklungsmodus · E-Mails werden bei MAIL_BACKEND=file im Verzeichnis data/dev-mail auf dem Server gespeichert.,"Fejlesztői mód · Ha MAIL_BACKEND=file, az e-mailek a szerver data/dev-mail könyvtárába kerülnek."
+Discard,Seat-plan editor (editor.js:465),Discard,Renunțare,Verwerfen,Elvetés
+Discard unsaved changes to this plan?,Admin seat plans (app.js:436),Discard unsaved changes to this plan?,Renunțați la modificările nesalvate ale acestui plan?,Nicht gespeicherte Änderungen an diesem Plan verwerfen?,Elveti a terv nem mentett módosításait?
+Discard unsaved map changes before refreshing the plan list?,Admin seat plans (app.js:421),Discard unsaved map changes before refreshing the plan list?,Renunțați la modificările nesalvate ale planului înainte de a actualiza lista planurilor?,Nicht gespeicherte Planänderungen vor dem Aktualisieren der Planliste verwerfen?,Elveti a térkép nem mentett módosításait a tervlista frissítése előtt?
+Discard unsaved map changes?,My reservations (app.js:395),Discard unsaved map changes?,Renunțați la modificările nesalvate ale planului?,Nicht gespeicherte Planänderungen verwerfen?,Elveti a térkép nem mentett módosításait?
+Do not forward this email.,Sign-in email,Do not forward this email.,Nu redirecționați acest e-mail.,Leiten Sie diese E-Mail nicht weiter.,Ne továbbítsa ezt az e-mailt.
+done,Admin seat plans (app.js:505),done,finalizat,abgeschlossen,kész
+draft,Account and sign-in (app.js:40); Admin seat plans (app.js:457); Seat-plan editor (editor.js:122); Seat-plan editor (editor.js:188); Seat-plan editor (editor.js:225); Seat-plan editor (editor.js:36); Seat-plan editor (editor.js:393),draft,schiță,Entwurf,tervezet
+DRAFT,Seat-plan editor heading status,DRAFT,SCHIȚĂ,ENTWURF,TERVEZET
+Draft only. Review seat identities and cross-outs before publishing. Selecting a shape does not approve it.,Seat-plan editor (editor.js:38),Draft only. Review seat identities and cross-outs before publishing. Selecting a shape does not approve it.,Doar schiță. Verificați identificarea locurilor și marcajele de anulare înainte de publicare. Selectarea unei forme nu înseamnă aprobarea ei.,Nur Entwurf. Prüfen Sie Platzkennzeichnungen und Durchstreichungen vor der Veröffentlichung. Das Auswählen einer Form gibt sie nicht frei.,Csak tervezet. Közzététel előtt ellenőrizze az ülőhelyek azonosítóit és az áthúzásokat. Egy alakzat kijelölése nem jelent jóváhagyást.
+Draft saved.,Seat-plan editor (editor.js:310),Draft saved.,Schiță salvată.,Entwurf gespeichert.,Tervezet mentve.
+Drag a non-reservable area,Interactive seat map (map.js:114),Drag a non-reservable area,Trageți pentru a delimita o zonă nerezervabilă,"Ziehen, um einen nicht reservierbaren Bereich zu markieren",Húzással jelöljön ki egy nem foglalható területet
+Drag a selected seat to move the selection,Interactive seat map (map.js:114),Drag a selected seat to move the selection,Trageți un loc selectat pentru a muta selecția,"Einen ausgewählten Platz ziehen, um die Auswahl zu verschieben",A kijelölés mozgatásához húzzon el egy kijelölt ülőhelyet
+Drag corner {0},Interactive seat map (map.js:169),Drag corner {0},Trageți colțul {0},Ecke {0} ziehen,Húzza ezt a sarkot: {0}
+Drag the outer bounds of a grid,Interactive seat map (map.js:114),Drag the outer bounds of a grid,Trageți pentru a delimita marginile exterioare ale grilei,Die äußeren Rastergrenzen durch Ziehen festlegen,Húzással adja meg a rács külső határait
+Drag the region to detect,Interactive seat map (map.js:114),Drag the region to detect,Trageți pentru a delimita regiunea de detectare,Den Erkennungsbereich durch Ziehen festlegen,Húzással jelölje ki a felismerési területet
+Draw grid,Seat-plan editor (editor.js:39),Draw grid,Desenare grilă,Raster zeichnen,Rács rajzolása
+Duplicate,Seat-plan editor (editor.js:37),Duplicate,Duplicare,Duplizieren,Másolat készítése
+Duplicate internal seat IDs.,API error (services.py:66),Duplicate internal seat IDs.,ID-uri interne de loc duplicate.,Doppelte interne Platz-IDs.,Ismétlődő belső ülőhelyazonosítók.
+Edit corners,Seat-plan editor (editor.js:39),Edit corners,Editare colțuri,Ecken bearbeiten,Sarkok szerkesztése
+Email,Admin events (app.js:543); CSV export header,Email,E-mail,E-Mail,E-mail
+Email / house reservation,Printable plan and private roster (print.html); Private roster header,Email / house reservation,E-mail / rezervare a organizatorului,E-Mail / Veranstalterreservierung,E-mail / szervezői foglalás
+Email address,Account and sign-in (app.js:162),Email address,Adresă de e-mail,E-Mail-Adresse,E-mail-cím
+Email confirmed. You can now book seats.,Account and sign-in (app.js:150),Email confirmed. You can now book seats.,Adresa de e-mail a fost confirmată. Acum puteți rezerva locuri.,E-Mail-Adresse bestätigt. Sie können jetzt Plätze reservieren.,Az e-mail-cím megerősítve. Most már foglalhat ülőhelyeket.
+Email delivery,System and delivery (app.js:634),Email delivery,Trimitere e-mailuri,E-Mail-Versand,E-mail-kézbesítés
+Enter a valid email address.,API error (domain.py:21); API error (domain.py:24); API error (domain.py:26),Enter a valid email address.,Introduceți o adresă de e-mail validă.,Geben Sie eine gültige E-Mail-Adresse ein.,Adjon meg egy érvényes e-mail-címet.
+Error,System and delivery (app.js:634),Error,Eroare,Fehler,Hiba
+Event,Admin events (app.js:518); Visitor reservations (app.js:227),Event,Eveniment,Veranstaltung,Rendezvény
+Event details updated,Event-change email subject,Event details updated,Detaliile evenimentului au fost actualizate,Veranstaltungsdetails aktualisiert,Rendezvényadatok frissítve
+Event not found.,API error (services.py:119),Event not found.,Evenimentul nu a fost găsit.,Veranstaltung nicht gefunden.,A rendezvény nem található.
+Event revision {0},Printable plan revision,Event revision {0},Revizia evenimentului {0},Veranstaltungsrevision {0},Rendezvényváltozat: {0}
+Event saved.,Admin events (app.js:624),Event saved.,Eveniment salvat.,Veranstaltung gespeichert.,Rendezvény mentve.
+"Event seating, without the paperwork.",Visitor reservations (app.js:220),"Event seating, without the paperwork.","Locuri la evenimente, fără hârtii.","Sitzplatzvergabe für Veranstaltungen, ohne Papierkram.","Ülőhelyfoglalás rendezvényekre, papírmunka nélkül."
+Event settings,Admin events (app.js:518); Admin events (app.js:610),Event settings,Setări eveniment,Veranstaltungseinstellungen,Rendezvénybeállítások
+Event title,Admin events (app.js:610),Event title,Titlul evenimentului,Veranstaltungstitel,Rendezvény címe
+Events & seating,Admin seat plans (app.js:403),Events & seating,Evenimente și locuri,Veranstaltungen und Plätze,Rendezvények és ülőhelyek
+Exclude area,Seat-plan editor (editor.js:39),Exclude area,Excludere zonă,Bereich ausschließen,Terület kizárása
+Exclude selected,Seat-plan editor (editor.js:37),Exclude selected,Excludere selecție,Auswahl ausschließen,Kijelöltek kizárása
+Excluded,Seat-plan editor (editor.js:37),Excluded,Exclus,Ausgeschlossen,Kizárva
+Exclusion area is empty.,API error (domain.py:97),Exclusion area is empty.,Zona de excludere este goală.,Der Ausschlussbereich ist leer.,A kizárási terület üres.
+Exclusion areas,Seat-plan editor (editor.js:37),Exclusion areas,Zone de excludere,Ausschlussbereiche,Kizárási területek
+Exclusion coordinates must be finite and within the page.,API error (domain.py:94),Exclusion coordinates must be finite and within the page.,Coordonatele zonei de excludere trebuie să fie finite și în interiorul paginii.,Die Koordinaten des Ausschlussbereichs müssen endlich sein und innerhalb der Seite liegen.,A kizárási koordinátáknak végeseknek és az oldal határain belülieknek kell lenniük.
+Exit focus,Interactive seat map (map.js:27),Exit focus,Ieșire din vizualizarea extinsă,Fokusansicht verlassen,Kilépés a fókusznézetből
+Explicitly allow reserving plan-excluded seats,Admin events (app.js:543),Explicitly allow reserving plan-excluded seats,Permiteți explicit rezervarea locurilor excluse din plan,Reservierung im Plan ausgeschlossener Plätze ausdrücklich erlauben,A tervben kizárt ülőhelyek foglalásának kifejezett engedélyezése
+Export CSV,Admin events (app.js:543),Export CSV,Export CSV,CSV exportieren,CSV exportálása
+Export overlay,Seat-plan editor (editor.js:37),Export overlay,Export strat interactiv,Overlay exportieren,Interaktív réteg exportálása
+failed,Admin seat plans (app.js:459); Admin seat plans (app.js:501); System and delivery (app.js:634),failed,eșuat,fehlgeschlagen,sikertelen
+Find a seat,Visitor reservations (app.js:227),Find a seat,Căutare loc,Platz suchen,Ülőhely keresése
+First number,Seat-plan editor (editor.js:516),First number,Primul număr,Erste Nummer,Kezdőszám
+First row,Seat-plan editor (editor.js:424),First row,Primul rând,Erste Reihe,Első sor
+First seat number,Seat-plan editor (editor.js:424),First seat number,Numărul primului loc,Erste Platznummer,Első ülőhely száma
+Fit page,Interactive seat map (map.js:17),Fit page,Încadrare pagină,Ganze Seite,Teljes oldal
+Fit width,Interactive seat map (map.js:17),Fit width,Încadrare pe lățime,An Breite anpassen,Szélességhez igazítás
+Flag possible cross-outs,Seat-plan editor (editor.js:37),Flag possible cross-outs,Marcare posibile locuri tăiate,Mögliche Durchstreichungen markieren,Lehetséges áthúzások megjelölése
+Focus map,Interactive seat map (map.js:17); Interactive seat map (map.js:27),Focus map,Vizualizare extinsă a planului,Plan fokussieren,Térkép fókusznézete
+free,Admin events (app.js:590); Interactive seat map (map.js:147); Visitor reservations (app.js:265); Visitor reservations (app.js:288); Visitor reservations (app.js:323); Visitor reservations (app.js:325),free,liber,frei,szabad
+Free,Seat-plan editor (editor.js:37),Free,Liber,Frei,Szabad
+Free (remove event assignment),Admin events (app.js:543),Free (remove event assignment),Liber (elimină alocarea pentru eveniment),Frei (Veranstaltungszuweisung entfernen),Szabad (rendezvényhez tartozó kiosztás törlése)
+Gaps are percentages of each cell's pitch. Use zero gaps to follow adjacent printed cell boundaries.,Seat-plan grid dialog,Gaps are percentages of each cell's pitch. Use zero gaps to follow adjacent printed cell boundaries.,Spațiile sunt procente din pasul fiecărei celule. Folosiți spații zero pentru a urma marginile celulelor adiacente tipărite.,"Abstände werden als Prozentsatz des Rastermaßes jeder Zelle angegeben. Verwenden Sie null Abstand, um den gedruckten Grenzen benachbarter Zellen zu folgen.",A hézagok az egyes cellák rácsosztásának százalékában értendők. A szomszédos nyomtatott cellahatárok követéséhez használjon nulla hézagot.
+Grid corners must be within the page.,API error (domain.py:152),Grid corners must be within the page.,Colțurile grilei trebuie să se afle în interiorul paginii.,Die Rasterecken müssen innerhalb der Seite liegen.,A rács sarkainak az oldal határain belül kell lenniük.
+"Grid is too large, or numbering step is zero.",API error (domain.py:160),"Grid is too large, or numbering step is zero.",Grila este prea mare sau pasul de numerotare este zero.,Das Raster ist zu groß oder die Nummerierungsschrittweite ist null.,"A rács túl nagy, vagy a számozás lépésköze nulla."
+Grid preview,Seat-plan editor (editor.js:436),Grid preview,Previzualizare grilă,Rastervorschau,Rács előnézete
+"Height, px",Seat-plan editor (editor.js:37),"Height, px","Înălțime, px","Höhe, px","Magasság, px"
+"Horizontal gap, %",Seat-plan editor (editor.js:424),"Horizontal gap, %","Spațiu orizontal, %","Horizontaler Abstand, %","Vízszintes hézag, %"
+House reservation,Private roster allocation,House reservation,Rezervare a organizatorului,Veranstalterreservierung,Szervezői foglalás
+"I have checked EVERY shape, printed seat identity, missing seat and crossed-out area on ALL pages. Mark all candidates reviewed?",Seat-plan editor (editor.js:77),"I have checked EVERY shape, printed seat identity, missing seat and crossed-out area on ALL pages. Mark all candidates reviewed?","Am verificat FIECARE formă, identificator de loc tipărit, loc lipsă și zonă tăiată de pe TOATE paginile. Marcați toți candidații ca verificați?","Ich habe JEDE Form, gedruckte Platzkennzeichnung, jeden fehlenden Platz und jeden durchgestrichenen Bereich auf ALLEN Seiten geprüft. Alle Kandidaten als geprüft markieren?","MINDEN oldalon ellenőriztem MINDEN alakzatot, nyomtatott ülőhelyazonosítót, hiányzó ülőhelyet és áthúzott területet. Megjelöli az összes jelöltet ellenőrzöttként?"
+"If you did not request it, ignore this message.",Sign-in email,"If you did not request it, ignore this message.","Dacă nu ați solicitat acest lucru, ignorați mesajul.","Falls Sie dies nicht angefordert haben, ignorieren Sie diese Nachricht.","Ha nem Ön kérte, hagyja figyelmen kívül ezt az üzenetet."
+Import overlay,Seat-plan editor (editor.js:37),Import overlay,Import strat interactiv,Overlay importieren,Interaktív réteg importálása
+Interactive seating plan,Interactive seat map (map.js:17),Interactive seating plan,Plan interactiv de locuri,Interaktiver Sitzplan,Interaktív ülésrend
+Internal note,Seat-plan editor (editor.js:37),Internal note,Notă internă,Interne Notiz,Belső megjegyzés
+Invalid detection region.,API error (domain.py:231),Invalid detection region.,Regiune de detectare nevalidă.,Ungültiger Erkennungsbereich.,Érvénytelen felismerési terület.
+Invalid or oversized overlay.,Seat-plan editor (editor.js:349),Invalid or oversized overlay.,Strat interactiv nevalid sau prea mare.,Ungültiges oder zu großes Overlay.,Érvénytelen vagy túl nagy interaktív réteg.
+Invalid request origin. Check PUBLIC_URL and your reverse proxy.,API error (security.py:69),Invalid request origin. Check PUBLIC_URL and your reverse proxy.,Origine nevalidă a cererii. Verificați PUBLIC_URL și proxy-ul invers.,Ungültiger Anfrageursprung. Prüfen Sie PUBLIC_URL und Ihren Reverse-Proxy.,Érvénytelen kérésforrás. Ellenőrizze a PUBLIC_URL beállítást és a fordított proxyt.
+Invalid request origin. Check PUBLIC_URL.,API error,Invalid request origin. Check PUBLIC_URL.,Origine nevalidă a cererii. Verificați PUBLIC_URL.,Ungültiger Anfrageursprung. Prüfen Sie PUBLIC_URL.,Érvénytelen kérésforrás. Ellenőrizze a PUBLIC_URL beállítást.
+Invalid value.,Form validation message,Invalid value.,Valoare nevalidă.,Ungültiger Wert.,Érvénytelen érték.
+It expires in 15 minutes and can be used once.,Sign-in email,It expires in 15 minutes and can be used once.,Expiră în 15 minute și poate fi folosit o singură dată.,Er läuft in 15 Minuten ab und kann nur einmal verwendet werden.,"15 perc múlva lejár, és csak egyszer használható fel."
+Job,System and delivery (app.js:634),Job,Sarcină,Auftrag,Feladat
+Job not found or already expired.,API error (app.py:323),Job not found or already expired.,Sarcina nu a fost găsită sau a expirat deja.,Auftrag nicht gefunden oder bereits abgelaufen.,"A feladat nem található, vagy már lejárt."
+Keep existing,Seat-plan editor (editor.js:37); Seat-plan editor (editor.js:516),Keep existing,Păstrare valoare existentă,Bestehendes beibehalten,Meglévő megtartása
+"Keep the worker running, then press Refresh. The PDF is rendered in a resource-limited subprocess.",Admin seat plans (app.js:459),"Keep the worker running, then press Refresh. The PDF is rendered in a resource-limited subprocess.","Mențineți procesul de fundal pornit, apoi apăsați Actualizare. PDF-ul este randat într-un subproces cu resurse limitate.",Lassen Sie den Hintergrundprozess laufen und klicken Sie dann auf Aktualisieren. Das PDF wird in einem Unterprozess mit begrenzten Ressourcen gerendert.,"Hagyja futni a háttérfeldolgozót, majd kattintson a Frissítés gombra. A PDF renderelése korlátozott erőforrású alfolyamatban történik."
+"Keep this message private. This is a reservation, not proof of identity.",Reservation email,"Keep this message private. This is a reservation, not proof of identity.","Păstrați acest mesaj confidențial. Acesta reprezintă o rezervare, nu o dovadă a identității.","Behandeln Sie diese Nachricht vertraulich. Dies ist eine Reservierung, kein Identitätsnachweis.","Kezelje bizalmasan ezt az üzenetet. Ez foglalás, nem személyazonosságot igazoló dokumentum."
+Language,Accessible label for the language selector,Language,Limbă,Sprache,Nyelv
+Latest audit entries,System and delivery (app.js:634),Latest audit entries,Cele mai recente înregistrări de audit,Neueste Auditeinträge,Legutóbbi auditbejegyzések
+Leave this editor and discard unsaved changes? Export or save the draft first to keep them.,Account and sign-in (app.js:185),Leave this editor and discard unsaved changes? Export or save the draft first to keep them.,"Părăsiți editorul și renunțați la modificările nesalvate? Pentru a le păstra, exportați sau salvați mai întâi schița.","Diesen Editor verlassen und nicht gespeicherte Änderungen verwerfen? Exportieren oder speichern Sie zuerst den Entwurf, um sie zu behalten.","Kilép a szerkesztőből, és elveti a nem mentett módosításokat? Megőrzésükhöz előbb exportálja vagy mentse a tervezetet."
+Left to right,Seat-plan editor (editor.js:516),Left to right,De la stânga la dreapta,Von links nach rechts,Balról jobbra
+Legacy detector (comparison),Seat-plan editor (editor.js:37),Legacy detector (comparison),Detector vechi (comparație),Früherer Detektor (Vergleich),Korábbi felismerő (összehasonlítás)
+Loading Seatplan…,Site shell (index.html),Loading Seatplan…,Se încarcă Seatplan…,Seatplan wird geladen…,Seatplan betöltése…
+Main navigation,Site shell (index.html),Main navigation,Navigare principală,Hauptnavigation,Fő navigáció
+MAKE YOURSELF AT HOME,Visitor reservations (app.js:227),MAKE YOURSELF AT HOME,SIMȚIȚI-VĂ CA ACASĂ,FÜHLEN SIE SICH WIE ZU HAUSE,ÉREZZE MAGÁT OTTHON
+Mark all shapes reviewed…,Seat-plan editor (editor.js:37),Mark all shapes reviewed…,Marcare toate formele ca verificate…,Alle Formen als geprüft markieren…,Összes alakzat megjelölése ellenőrzöttként…
+"Maximum side, px",Seat-plan editor (editor.js:37),"Maximum side, px","Latură maximă, px","Maximale Seitenlänge, px","Maximális oldalhossz, px"
+Method Not Allowed,HTTP 405 response,Method Not Allowed,Metodă nepermisă,Methode nicht erlaubt,A metódus nem engedélyezett
+"Minimum side, px",Seat-plan editor (editor.js:37),"Minimum side, px","Latură minimă, px","Minimale Seitenlänge, px","Minimális oldalhossz, px"
+Minimum size must be smaller than maximum size.,API error (domain.py:227),Minimum size must be smaller than maximum size.,Dimensiunea minimă trebuie să fie mai mică decât dimensiunea maximă.,Die Mindestgröße muss kleiner als die Höchstgröße sein.,A minimális méretnek kisebbnek kell lennie a maximális méretnél.
+"More than 5,000 candidates. Restrict the region or increase minimum size.",API error (detection.py:135),"More than 5,000 candidates. Restrict the region or increase minimum size.",Peste 5.000 de candidați. Restrângeți regiunea sau măriți dimensiunea minimă.,Mehr als 5.000 Kandidaten. Beschränken Sie den Bereich oder erhöhen Sie die Mindestgröße.,"Több mint 5 000 jelölt. Szűkítse a területet, vagy növelje a minimális méretet."
+Multi-pass: faint and rotated seats,Seat-plan editor (editor.js:37),Multi-pass: faint and rotated seats,Mai multe treceri: locuri estompate și rotite,Mehrere Durchläufe: schwach sichtbare und gedrehte Plätze,Többmenetes: halvány és elforgatott ülőhelyek
+Multiple seats can be reserved with one email address.,Visitor reservations (app.js:312),Multiple seats can be reserved with one email address.,Cu o singură adresă de e-mail se pot rezerva mai multe locuri.,Mit einer E-Mail-Adresse können mehrere Plätze reserviert werden.,Egy e-mail-címmel több ülőhely is foglalható.
+My reservations,My reservations (app.js:380); Site shell (index.html); Visitor reservations (app.js:375),My reservations,Rezervările mele,Meine Reservierungen,Foglalásaim
+Nearby shapes,Seat-plan editor (editor.js:37),Nearby shapes,Forme din apropiere,Benachbarte Formen,Közeli alakzatok
+Needs review,Seat-plan editor (editor.js:106); Seat-plan editor (editor.js:37),Needs review,Necesită verificare,Prüfung erforderlich,Ellenőrzést igényel
+"New grid seats will require review. This is administrator-constrained reconstruction, not automatic seat detection.",Seat-plan editor (editor.js:465),"New grid seats will require review. This is administrator-constrained reconstruction, not automatic seat detection.","Locurile noi din grilă vor necesita verificare. Aceasta este o reconstrucție pe baza constrângerilor definite de administrator, nu o detectare automată a locurilor.","Neue Rasterplätze müssen geprüft werden. Dies ist eine Rekonstruktion nach Administratorvorgaben, keine automatische Platzerkennung.","Az új rácsülőhelyeket ellenőrizni kell. Ez az adminisztrátor által megadott korlátokon alapuló rekonstrukció, nem automatikus ülőhely-felismerés."
+NO ACTIVE SEATS,My reservations (app.js:380),NO ACTIVE SEATS,NICIUN LOC ACTIV,KEINE AKTIVEN PLÄTZE,NINCS AKTÍV ÜLŐHELY
+No events have been created yet.,Visitor reservations (app.js:220),No events have been created yet.,Nu a fost creat încă niciun eveniment.,Es wurden noch keine Veranstaltungen erstellt.,Még nem hoztak létre rendezvényt.
+No exclusion areas. Use “Exclude area” to draw one.,Seat-plan editor (editor.js:122),No exclusion areas. Use “Exclude area” to draw one.,Nu există zone de excludere. Folosiți „Excludere zonă” pentru a desena una.,"Keine Ausschlussbereiche. Verwenden Sie „Bereich ausschließen“, um einen zu zeichnen.",Nincsenek kizárási területek. Rajzoljon egyet a „Terület kizárása” eszközzel.
+No messages queued yet.,System and delivery (app.js:634),No messages queued yet.,Nu există încă mesaje în coada de trimitere.,Es wurden noch keine Nachrichten zum Versand eingereiht.,Még nem került üzenet a küldési sorba.
+NO PASSWORD NEEDED,Account and sign-in (app.js:162),NO PASSWORD NEEDED,NU ESTE NECESARĂ O PAROLĂ,KEIN PASSWORT ERFORDERLICH,NINCS SZÜKSÉG JELSZÓRA
+No seats remain in this reservation.,Reservation email,No seats remain in this reservation.,Nu mai există locuri în această rezervare.,In dieser Reservierung sind keine Plätze mehr enthalten.,Ebben a foglalásban már nem maradt ülőhely.
+No worker heartbeat yet,System and delivery (app.js:633),No worker heartbeat yet,Niciun semnal de activitate de la procesul de fundal până acum,Noch kein Lebenszeichen vom Hintergrundprozess,Még nincs életjel a háttérfeldolgozótól
+Not Found,HTTP 404 response,Not Found,Nu a fost găsit,Nicht gefunden,Nem található
+Not reservable,Booking button when the event is closed,Not reservable,Nu se poate rezerva,Nicht reservierbar,Nem foglalható
+Not reservable: {0}.,API error (services.py:177),Not reservable: {0}.,Nu se pot rezerva: {0}.,Nicht reservierbar: {0}.,Nem foglalható: {0}.
+Note,Admin events (app.js:543),Note,Notă,Notiz,Megjegyzés
+Notes,Seat-plan editor (editor.js:37),Notes,Note,Notizen,Megjegyzések
+Numbering,Seat-plan editor (editor.js:424),Numbering,Numerotare,Nummerierung,Számozás
+Numbering step,Seat-plan editor (editor.js:424),Numbering step,Pas de numerotare,Nummerierungsschrittweite,Számozás lépésköze
+Only draft plans can be edited. Duplicate a published plan to revise it.,API error (services.py:56),Only draft plans can be edited. Duplicate a published plan to revise it.,Doar planurile în stadiul de schiță pot fi editate. Duplicați un plan publicat pentru a-l modifica.,"Nur Planentwürfe können bearbeitet werden. Duplizieren Sie einen veröffentlichten Plan, um ihn zu überarbeiten.",Csak a tervezetek szerkeszthetők. Egy közzétett terv módosításához készítsen róla másolatot.
+"Only use this after checking all pages, labels, exclusions and false detections. Publication does not automatically open event bookings.",Seat-plan editor (editor.js:37),"Only use this after checking all pages, labels, exclusions and false detections. Publication does not automatically open event bookings.","Folosiți această opțiune doar după verificarea tuturor paginilor, etichetelor, excluderilor și detectărilor greșite. Publicarea nu deschide automat rezervările pentru evenimente.","Verwenden Sie dies erst, nachdem Sie alle Seiten, Bezeichnungen, Ausschlüsse und Fehlerkennungen geprüft haben. Die Veröffentlichung öffnet Veranstaltungsreservierungen nicht automatisch.","Csak az összes oldal, címke, kizárás és téves felismerés ellenőrzése után használja. A közzététel nem nyitja meg automatikusan a rendezvényfoglalásokat."
+Open,Admin events (app.js:610),Open,Deschise,Geöffnet,Nyitva
+open,Event status,open,deschise,geöffnet,nyitva
+Open this link to sign in:,Sign-in email,Open this link to sign in:,Deschideți acest link pentru autentificare:,"Öffnen Sie diesen Link, um sich anzumelden:",A bejelentkezéshez nyissa meg ezt a hivatkozást:
+Operation failed.,Account and sign-in (app.js:106),Operation failed.,Operațiunea a eșuat.,Vorgang fehlgeschlagen.,A művelet sikertelen.
+Organizer copy. Contains private email addresses. Snapshot: {0}.,Private roster warning,Organizer copy. Contains private email addresses. Snapshot: {0}.,Exemplar pentru organizator. Conține adrese de e-mail confidențiale. Situație la: {0}.,Exemplar für den Veranstalter. Enthält private E-Mail-Adressen. Stand: {0}.,Szervezői példány. Személyes e-mail-címeket tartalmaz. Állapot időpontja: {0}.
+ORGANIZER WORKSPACE,Admin seat plans (app.js:403),ORGANIZER WORKSPACE,SPAȚIU DE LUCRU AL ORGANIZATORULUI,ARBEITSBEREICH FÜR VERANSTALTER,SZERVEZŐI MUNKAFELÜLET
+"Outline corners must be a convex, positive-winding quadrilateral.",API error (domain.py:74),"Outline corners must be a convex, positive-winding quadrilateral.","Colțurile conturului trebuie să formeze un patrulater convex, cu orientare pozitivă.",Die Umrissecken müssen ein konvexes Viereck mit positiver Umlaufrichtung bilden.,"A körvonal sarkainak konvex, pozitív körüljárású négyszöget kell alkotniuk."
+Outline corners must be finite local coordinates between -0.5 and 0.5.,API error (domain.py:68),Outline corners must be finite local coordinates between -0.5 and 0.5.,"Colțurile conturului trebuie să aibă coordonate locale finite, între -0.5 și 0.5.",Die Umrissecken müssen endliche lokale Koordinaten zwischen -0.5 und 0.5 haben.,A körvonal sarkainak véges helyi koordinátákkal kell rendelkezniük -0.5 és 0.5 között.
+Overlay contains an invalid exclusion area.,Seat-plan editor (editor.js:362),Overlay contains an invalid exclusion area.,Stratul interactiv conține o zonă de excludere nevalidă.,Das Overlay enthält einen ungültigen Ausschlussbereich.,Az interaktív réteg érvénytelen kizárási területet tartalmaz.
+Overlay contains an invalid seat. No changes were imported.,Seat-plan editor (editor.js:355),Overlay contains an invalid seat. No changes were imported.,Stratul interactiv conține un loc nevalid. Nu s-a importat nicio modificare.,Das Overlay enthält einen ungültigen Platz. Es wurden keine Änderungen importiert.,Az interaktív réteg érvénytelen ülőhelyet tartalmaz. Egyetlen módosítás sem lett importálva.
+Overlay file is too large.,Seat-plan editor (editor.js:339),Overlay file is too large.,Fișierul stratului interactiv este prea mare.,Die Overlay-Datei ist zu groß.,Az interaktív réteg fájlja túl nagy.
+Overlay labels,Interactive seat map (map.js:17),Overlay labels,Etichete pe stratul interactiv,Overlay-Bezeichnungen,Interaktív réteg címkéi
+Overlay seat labels,Printable plan action; Printable plan and private roster (print.html),Overlay seat labels,Suprapunere etichete de locuri,Platzbezeichnungen einblenden,Ülőhelycímkék megjelenítése a terven
+Override applied and recorded in the audit log.,Admin events (app.js:563),Override applied and recorded in the audit log.,Suprascrierea a fost aplicată și înregistrată în jurnalul de audit.,Die Überschreibung wurde angewendet und im Auditprotokoll erfasst.,A felülbírálás alkalmazva és az auditnaplóban rögzítve.
+Page,Interactive seat map (map.js:17),Page,Pagină,Seite,Oldal
+Page {0},Seat-plan editor (editor.js:122),Page {0},Pagina {0},Seite {0},{0}. oldal
+Page {0} / {1},Printable plan page counter,Page {0} / {1},Pagina {0} / {1},Seite {0} / {1},{0}. oldal / {1}
+PDF file,Admin seat plans (app.js:471),PDF file,Fișier PDF,PDF-Datei,PDF-fájl
+PDF jobs,System and delivery (app.js:634),PDF jobs,Sarcini PDF,PDF-Aufträge,PDF-feladatok
+PDF must contain between 1 and {0} pages.,API error (detection.py:27),PDF must contain between 1 and {0} pages.,PDF-ul trebuie să conțină între 1 și {0} pagini.,Das PDF muss zwischen 1 und {0} Seiten enthalten.,A PDF-nek legalább 1 és legfeljebb {0} oldalt kell tartalmaznia.
+PDF page not found.,API error (app.py:217),PDF page not found.,Pagina PDF nu a fost găsită.,PDF-Seite nicht gefunden.,A PDF-oldal nem található.
+PDF processing failed,Admin seat plans (app.js:459),PDF processing failed,Procesarea PDF-ului a eșuat,PDF-Verarbeitung fehlgeschlagen,A PDF feldolgozása sikertelen
+PDF processing failed.,Admin seat plans (app.js:503),PDF processing failed.,Procesarea PDF-ului a eșuat.,PDF-Verarbeitung fehlgeschlagen.,A PDF feldolgozása sikertelen.
+PDF processing is queued,Admin seat plans (app.js:459),PDF processing is queued,Procesarea PDF-ului este în coadă,PDF-Verarbeitung ist eingereiht,A PDF feldolgozása sorban áll
+PDF rendered. Add or detect seats in the draft editor.,Admin seat plans (app.js:486),PDF rendered. Add or detect seats in the draft editor.,PDF randat. Adăugați sau detectați locuri în editorul de schițe.,PDF gerendert. Fügen Sie im Entwurfseditor Plätze hinzu oder lassen Sie sie erkennen.,"A PDF renderelése kész. Adjon hozzá ülőhelyeket, vagy indítsa el a felismerést a tervezetszerkesztőben."
+PDF SEAT MAP · {0},Seat-plan editor (editor.js:37),PDF SEAT MAP · {0},PLAN DE LOCURI PDF · {0},PDF-SITZPLAN · {0},PDF-ÜLÉSREND · {0}
+PDF uploaded. Waiting for the rendering worker…,Admin seat plans (app.js:482),PDF uploaded. Waiting for the rendering worker…,PDF încărcat. Se așteaptă procesul de randare…,PDF hochgeladen. Warten auf den Renderprozess…,PDF feltöltve. Várakozás a renderelést végző háttérfeldolgozóra…
+Plan name,Admin seat plans (app.js:471); Seat-plan editor (editor.js:37),Plan name,Numele planului,Planname,Terv neve
+Plan published. Create an event to open reservations.,Seat-plan editor (editor.js:328),Plan published. Create an event to open reservations.,Plan publicat. Creați un eveniment pentru a deschide rezervările.,"Plan veröffentlicht. Erstellen Sie eine Veranstaltung, um Reservierungen zu öffnen.",Terv közzétéve. A foglalások megnyitásához hozzon létre egy rendezvényt.
+Plan settings & review,Seat-plan editor (editor.js:37),Plan settings & review,Setări și verificare plan,Planeinstellungen und Prüfung,Tervbeállítások és ellenőrzés
+Please check back when the organizer opens an event.,Visitor reservations (app.js:220),Please check back when the organizer opens an event.,Reveniți când organizatorul deschide un eveniment.,"Schauen Sie wieder vorbei, sobald der Veranstalter eine Veranstaltung öffnet.","Látogasson vissza, amikor a szervező megnyit egy rendezvényt."
+Please sign in with your email first.,API error (security.py:64),Please sign in with your email first.,Autentificați-vă mai întâi cu adresa de e-mail.,Melden Sie sich bitte zuerst mit Ihrer E-Mail-Adresse an.,Először jelentkezzen be az e-mail-címével.
+"Precision fitting uses independent quadrilateral edges, not enclosing rectangles. Deterministic pixel search and optional repeated-symbol recovery; no AI or OCR. Scans receive provisional D-labels; every candidate needs review.",Seat-plan editor (editor.js:37),"Precision fitting uses independent quadrilateral edges, not enclosing rectangles. Deterministic pixel search and optional repeated-symbol recovery; no AI or OCR. Scans receive provisional D-labels; every candidate needs review.","Ajustarea de precizie folosește laturi independente ale patrulaterelor, nu dreptunghiuri de încadrare. Căutare deterministă la nivel de pixeli și recuperare opțională a simbolurilor repetate; fără inteligență artificială sau OCR. Scanările primesc etichete D provizorii; fiecare candidat trebuie verificat.",Die Präzisionsanpassung verwendet unabhängige Viereckkanten statt umschließender Rechtecke. Deterministische Pixelsuche und optionale Wiederherstellung wiederholter Symbole; ohne KI oder OCR. Scans erhalten vorläufige D-Bezeichnungen; jeder Kandidat muss geprüft werden.,"A precíz illesztés független négyszögéleket használ, nem befoglaló téglalapokat. Determinisztikus pixelkeresés és az ismétlődő szimbólumok opcionális helyreállítása; mesterséges intelligencia és OCR nélkül. A szkennelt tervek ideiglenes D-címkéket kapnak; minden jelöltet ellenőrizni kell."
+Precision: four-border pixel fitting,Seat-plan editor (editor.js:37),Precision: four-border pixel fitting,Precizie: ajustarea celor patru laturi la pixeli,Präzision: pixelbasierte Anpassung der vier Kanten,Precíz: négy él pixelalapú illesztése
+Preview grid,Seat-plan editor (editor.js:424),Preview grid,Previzualizare grilă,Rastervorschau anzeigen,Rács előnézete
+Preview only. {0},Seat-plan editor (editor.js:465),Preview only. {0},Doar previzualizare. {0},Nur Vorschau. {0},Csak előnézet. {0}
+Print / save as PDF,Printable plan action; Printable plan and private roster (print.html),Print / save as PDF,Tipărire / salvare ca PDF,Drucken / als PDF speichern,Nyomtatás / mentés PDF-ként
+Print plan,Admin events (app.js:543),Print plan,Tipărire plan,Plan drucken,Terv nyomtatása
+Print plan + attendee list,Admin events (app.js:543),Print plan + attendee list,Tipărire plan + lista participanților,Plan + Teilnehmerliste drucken,Terv + résztvevőlista nyomtatása
+Printed number,Seat-plan editor (editor.js:37),Printed number,Număr tipărit,Gedruckte Nummer,Nyomtatott szám
+processing,Seat-plan processing state,processing,în procesare,in Bearbeitung,feldolgozás alatt
+Publish,Seat-plan editor (editor.js:37),Publish,Publicare,Veröffentlichen,Közzététel
+"Publish a reviewed plan, then select it in the event settings. Each event has its own reservations.",Admin events (app.js:538),"Publish a reviewed plan, then select it in the event settings. Each event has its own reservations.","Publicați un plan verificat, apoi selectați-l în setările evenimentului. Fiecare eveniment are propriile rezervări.",Veröffentlichen Sie einen geprüften Plan und wählen Sie ihn dann in den Veranstaltungseinstellungen aus. Jede Veranstaltung hat eigene Reservierungen.,"Tegyen közzé egy ellenőrzött tervet, majd válassza ki a rendezvény beállításaiban. Minden rendezvénynek saját foglalásai vannak."
+Publish a reviewed seating plan before creating an event.,Admin events (app.js:608),Publish a reviewed seating plan before creating an event.,Publicați un plan de locuri verificat înainte de a crea un eveniment.,"Veröffentlichen Sie einen geprüften Sitzplan, bevor Sie eine Veranstaltung erstellen.",Rendezvény létrehozása előtt tegyen közzé egy ellenőrzött ülésrendet.
+Publish this reviewed plan? Its geometry will be frozen. You can duplicate it to make future changes.,Seat-plan editor (editor.js:320),Publish this reviewed plan? Its geometry will be frozen. You can duplicate it to make future changes.,Publicați acest plan verificat? Geometria sa nu va mai putea fi modificată. Îl puteți duplica pentru modificări ulterioare.,Diesen geprüften Plan veröffentlichen? Seine Geometrie wird festgeschrieben. Für spätere Änderungen können Sie ihn duplizieren.,Közzéteszi ezt az ellenőrzött tervet? A geometriája többé nem módosítható. Későbbi módosításokhoz másolatot készíthet róla.
+published,Admin events (app.js:605); Admin seat plans (app.js:457),published,publicat,veröffentlicht,közzétéve
+PUBLISHED,Seat-plan editor heading status,PUBLISHED,PUBLICAT,VERÖFFENTLICHT,KÖZZÉTÉVE
+"Published plans are immutable. Duplicate this plan to revise its overlay, or upload a new PDF. Existing events keep their current version until you explicitly switch it.",Seat-plan editor (editor.js:38),"Published plans are immutable. Duplicate this plan to revise its overlay, or upload a new PDF. Existing events keep their current version until you explicitly switch it.",Planurile publicate nu pot fi modificate. Duplicați acest plan pentru a-i modifica stratul interactiv sau încărcați un PDF nou. Evenimentele existente își păstrează versiunea curentă până când o schimbați explicit.,"Veröffentlichte Pläne sind unveränderlich. Duplizieren Sie diesen Plan, um sein Overlay zu überarbeiten, oder laden Sie ein neues PDF hoch. Bestehende Veranstaltungen behalten ihre aktuelle Version, bis Sie sie ausdrücklich wechseln.","A közzétett tervek nem módosíthatók. Az interaktív réteg módosításához készítsen másolatot a tervről, vagy töltsön fel új PDF-et. A meglévő rendezvények megtartják jelenlegi változatukat, amíg azt kifejezetten le nem cseréli."
+Published seating plan,Admin events (app.js:610),Published seating plan,Plan de locuri publicat,Veröffentlichter Sitzplan,Közzétett ülésrend
+queued,System and delivery (app.js:634),queued,în coadă,in Warteschlange,sorban áll
+Reason,Admin events (app.js:543),Reason,Motiv,Grund,Indok
+Recipient,System and delivery (app.js:634),Recipient,Destinatar,Empfänger,Címzett
+Recover separate groups and faint chair pairs (slower),Seat-plan editor (editor.js:37),Recover separate groups and faint chair pairs (slower),Recuperare grupuri separate și perechi de scaune estompate (mai lent),Separate Gruppen und schwach sichtbare Stuhlpaare wiederherstellen (langsamer),Elkülönült csoportok és halvány székpárok helyreállítása (lassabb)
+Reference,Printable plan and private roster (print.html),Reference,Referință,Referenz,Hivatkozási szám
+Reference: {0},My reservations (app.js:380); Reservation email,Reference: {0},Referință: {0},Referenz: {0},Hivatkozási szám: {0}
+Refresh,Admin seat plans (app.js:429); System and delivery (app.js:634),Refresh,Actualizare,Aktualisieren,Frissítés
+Refresh live view,Admin events (app.js:518),Refresh live view,Actualizare vizualizare în timp real,Live-Ansicht aktualisieren,Élő nézet frissítése
+Region: entire current page,Seat-plan editor (editor.js:37); Seat-plan editor (editor.js:90),Region: entire current page,Regiune: întreaga pagină curentă,Bereich: gesamte aktuelle Seite,Terület: a teljes aktuális oldal
+Remove,Seat-plan editor (editor.js:122),Remove,Eliminare,Entfernen,Eltávolítás
+Remove this exclusion area? Individually blocked seats stay blocked until you change their flags.,Seat-plan editor (editor.js:125),Remove this exclusion area? Individually blocked seats stay blocked until you change their flags.,Eliminați această zonă de excludere? Locurile blocate individual rămân blocate până când le schimbați marcajele.,"Diesen Ausschlussbereich entfernen? Einzeln gesperrte Plätze bleiben gesperrt, bis Sie ihre Kennzeichnungen ändern.","Eltávolítja ezt a kizárási területet? Az egyenként zárolt ülőhelyek zárolva maradnak, amíg meg nem változtatja a jelölésüket."
+Renumber selected shapes…,Seat-plan editor (editor.js:37),Renumber selected shapes…,Renumerotare forme selectate…,Ausgewählte Formen neu nummerieren…,Kijelölt alakzatok újraszámozása…
+Renumber {0} selected shapes,Seat-plan editor (editor.js:516),Renumber {0} selected shapes,Renumerotare forme selectate ({0}),{0} ausgewählte Formen neu nummerieren,{0} kijelölt alakzat újraszámozása
+Repair faint small outlines,Seat-plan editor (editor.js:37),Repair faint small outlines,Reparare contururi mici estompate,Schwach sichtbare kleine Umrisse reparieren,Halvány kis körvonalak javítása
+"Repair gap length, px",Seat-plan editor (editor.js:37),"Repair gap length, px","Lungimea întreruperilor de reparat, px","Zu reparierende Lückenlänge, px","Javítandó hézag hossza, px"
+Replace all current-page seat shapes with these unreviewed candidates? Exclusion areas are retained.,Seat-plan editor (editor.js:469),Replace all current-page seat shapes with these unreviewed candidates? Exclusion areas are retained.,Înlocuiți toate formele de locuri de pe pagina curentă cu acești candidați neverificați? Zonele de excludere se păstrează.,Alle Platzformen der aktuellen Seite durch diese ungeprüften Kandidaten ersetzen? Ausschlussbereiche bleiben erhalten.,Lecseréli az aktuális oldal összes ülőhelyalakzatát ezekre az ellenőrizetlen jelöltekre? A kizárási területek megmaradnak.
+Replace all shapes and exclusion areas in this draft with the imported overlay? This can be undone before saving.,Seat-plan editor (editor.js:373),Replace all shapes and exclusion areas in this draft with the imported overlay? This can be undone before saving.,Înlocuiți toate formele și zonele de excludere din această schiță cu stratul interactiv importat? Operațiunea poate fi anulată înainte de salvare.,Alle Formen und Ausschlussbereiche in diesem Entwurf durch das importierte Overlay ersetzen? Dies kann vor dem Speichern rückgängig gemacht werden.,Lecseréli a tervezet összes alakzatát és kizárási területét az importált interaktív rétegre? Ez mentés előtt visszavonható.
+Replace current page shapes…,Seat-plan editor (editor.js:465),Replace current page shapes…,Înlocuire forme de pe pagina curentă…,Formen der aktuellen Seite ersetzen…,Aktuális oldal alakzatainak cseréje…
+Request body exceeds the configured size limit.,API error,Request body exceeds the configured size limit.,Corpul cererii depășește limita de dimensiune configurată.,Der Anfrageinhalt überschreitet die konfigurierte Größenbegrenzung.,A kérés törzse meghaladja a beállított méretkorlátot.
+Request failed ({0}).,Network error,Request failed ({0}).,Cererea a eșuat ({0}).,Anfrage fehlgeschlagen ({0}).,A kérés sikertelen ({0}).
+Request failed.,Generic HTTP error,Request failed.,Cererea a eșuat.,Anfrage fehlgeschlagen.,A kérés sikertelen.
+Reservation,Admin events (app.js:543); CSV export header,Reservation,Rezervare,Reservierung,Foglalás
+Reservation changed by the organizer,Reservation email subject,Reservation changed by the organizer,Rezervare modificată de organizator,Reservierung vom Veranstalter geändert,A szervező módosította a foglalást
+Reservation confirmed,Reservation email subject,Reservation confirmed,Rezervare confirmată,Reservierung bestätigt,Foglalás visszaigazolva
+Reservation confirmed by the organizer,Reservation email subject,Reservation confirmed by the organizer,Rezervare confirmată de organizator,Reservierung vom Veranstalter bestätigt,A szervező visszaigazolta a foglalást
+Reservation confirmed. Reference {0}. Your email is queued for delivery.,Booking result toast,Reservation confirmed. Reference {0}. Your email is queued for delivery.,Rezervare confirmată. Referință: {0}. E-mailul dumneavoastră este în coada de trimitere.,Reservierung bestätigt. Referenz {0}. Ihre E-Mail ist zum Versand eingereiht.,Foglalás visszaigazolva. Hivatkozási szám: {0}. Az e-mail a küldési sorba került.
+Reservation not found.,API error (services.py:196),Reservation not found.,Rezervarea nu a fost găsită.,Reservierung nicht gefunden.,A foglalás nem található.
+Reservation updated,Reservation email subject,Reservation updated,Rezervare actualizată,Reservierung aktualisiert,Foglalás frissítve
+Reservation updated. An email notification has been queued.,My reservations (app.js:389),Reservation updated. An email notification has been queued.,Rezervare actualizată. O notificare prin e-mail a fost pusă în coada de trimitere.,Reservierung aktualisiert. Eine E-Mail-Benachrichtigung wurde zum Versand eingereiht.,Foglalás frissítve. Az e-mail-értesítés a küldési sorba került.
+RESERVATIONS,Visitor reservations (app.js:220),RESERVATIONS,REZERVĂRI,RESERVIERUNGEN,FOGLALÁSOK
+Reservations,Admin events (app.js:610),Reservations,Rezervări,Reservierungen,Foglalások
+Reservations closed,Visitor reservations (app.js:263),Reservations closed,Rezervări închise,Reservierungen geschlossen,Foglalás lezárva
+Reserve at most 100 seats per request.,Visitor reservations (app.js:343),Reserve at most 100 seats per request.,Rezervați cel mult 100 de locuri la o singură cerere.,Reservieren Sie höchstens 100 Plätze pro Anfrage.,Kérésenként legfeljebb 100 ülőhelyet foglalhat.
+Reserve selected seats,Visitor reservations (app.js:227),Reserve selected seats,Rezervare locuri selectate,Ausgewählte Plätze reservieren,Kijelölt ülőhelyek foglalása
+Reserve {0} seat,Booking button; one selected seat,Reserve {0} seat,Rezervare {0} loc,{0} Platz reservieren,{0} ülőhely foglalása
+Reserve {0} seats,Booking button; multiple selected seats,Reserve {0} seats,Rezervare locuri ({0}),{0} Plätze reservieren,{0} ülőhely foglalása
+Reserved,Admin events (app.js:543); Printable plan and private roster (print.html); Visitor reservations (app.js:227),Reserved,Rezervat,Reserviert,Foglalt
+reserved,Admin events (app.js:556); Admin events (app.js:590),reserved,rezervat,reserviert,foglalt
+Restart on each row,Seat-plan editor (editor.js:424),Restart on each row,Reluare de la început pe fiecare rând,In jeder Reihe neu beginnen,Újrakezdés minden sorban
+Retry,System and delivery (app.js:634),Retry,Reîncercare,Erneut versuchen,Újrapróbálkozás
+Reverse alternate rows (serpentine),Seat-plan editor (editor.js:424),Reverse alternate rows (serpentine),Inversarea rândurilor alternative (șerpuit),Jede zweite Reihe umkehren (Schlangenlinie),Minden második sor megfordítása (kígyózó)
+review,Seat map review state,review,de verificat,zu prüfen,ellenőrizendő
+Review every candidate before publishing.,Seat-plan editor (editor.js:317),Review every candidate before publishing.,Verificați fiecare candidat înainte de publicare.,Prüfen Sie jeden Kandidaten vor der Veröffentlichung.,Közzététel előtt ellenőrizzen minden jelöltet.
+Review every candidate before publishing. Unreviewed: {0}.,API error (services.py:94),Review every candidate before publishing. Unreviewed: {0}.,Verificați fiecare candidat înainte de publicare. Neverificați: {0}.,Prüfen Sie jeden Kandidaten vor der Veröffentlichung. Ungeprüft: {0}.,Közzététel előtt ellenőrizzen minden jelöltet. Ellenőrizetlen: {0}.
+Review state,Seat-plan editor (editor.js:37),Review state,Starea verificării,Prüfstatus,Ellenőrzési állapot
+revision {0},Admin event revision,revision {0},revizia {0},Revision {0},változat: {0}
+"Rotation, °",Seat-plan editor (editor.js:424),"Rotation, °","Rotație, °","Drehung, °","Elforgatás, °"
+Row,CSV export header; Seat-plan editor (editor.js:37); Seat-plan editor (editor.js:516),Row,Rând,Reihe,Sor
+Row prefix,Seat-plan editor (editor.js:424),Row prefix,Prefix rând,Reihenpräfix,Sor előtagja
+Rows,Seat-plan editor (editor.js:424),Rows,Rânduri,Reihen,Sorok
+Save draft,Seat-plan editor (editor.js:37),Save draft,Salvare schiță,Entwurf speichern,Tervezet mentése
+Save event,Admin events (app.js:610),Save event,Salvare eveniment,Veranstaltung speichern,Rendezvény mentése
+Save or export first to keep your edits. Continue and discard unsaved map changes?,Admin seat plans (app.js:467),Save or export first to keep your edits. Continue and discard unsaved map changes?,Salvați sau exportați mai întâi pentru a păstra modificările. Continuați și renunțați la modificările nesalvate ale planului?,"Speichern oder exportieren Sie zuerst, um Ihre Änderungen zu behalten. Fortfahren und nicht gespeicherte Planänderungen verwerfen?","A módosítások megőrzéséhez előbb mentsen vagy exportáljon. Folytatja, és elveti a térkép nem mentett módosításait?"
+Save your changes before duplicating?,Seat-plan editor (editor.js:62),Save your changes before duplicating?,Salvați modificările înainte de duplicare?,Änderungen vor dem Duplizieren speichern?,Menti a módosításokat a másolat készítése előtt?
+"Search email, seat or reference",Admin events (app.js:543),"Search email, seat or reference","Căutare după e-mail, loc sau referință","Nach E-Mail, Platz oder Referenz suchen","Keresés e-mail-cím, ülőhely vagy hivatkozási szám alapján"
+Search roster,Admin events (app.js:543),Search roster,Căutare în listă,Liste durchsuchen,Keresés a listában
+"Search seat, row or section",Visitor reservations (app.js:227),"Search seat, row or section","Căutare după loc, rând sau sector","Nach Platz, Reihe oder Bereich suchen","Keresés ülőhely, sor vagy szektor alapján"
+Seat,Admin events (app.js:543); CSV export header,Seat,Loc,Platz,Ülőhely
+Seat availability,Seat-plan editor (editor.js:37),Seat availability,Disponibilitatea locului,Platzverfügbarkeit,Ülőhely elérhetősége
+Seat corners must form a non-degenerate convex quadrilateral.,API error (geometry.py:17),Seat corners must form a non-degenerate convex quadrilateral.,Colțurile locului trebuie să formeze un patrulater convex nedegenerat.,Die Platzecken müssen ein nicht entartetes konvexes Viereck bilden.,"Az ülőhely sarkainak nem elfajuló, konvex négyszöget kell alkotniuk."
+Seat label,Seat-plan editor (editor.js:37),Seat label,Etichetă loc,Platzbezeichnung,Ülőhely címkéje
+Seat outline extends beyond the page.,API error (domain.py:168),Seat outline extends beyond the page.,Conturul locului depășește marginile paginii.,Der Platzumriss ragt über die Seite hinaus.,Az ülőhely körvonala túlnyúlik az oldal határain.
+Seat plan,Admin seat plans (app.js:429),Seat plan,Plan de locuri,Sitzplan,Ülésrend
+Seat plan not found.,API error (services.py:25),Seat plan not found.,Planul de locuri nu a fost găsit.,Sitzplan nicht gefunden.,Az ülésrend nem található.
+Seat plans,Admin seat plans (app.js:403),Seat plans,Planuri de locuri,Sitzpläne,Ülésrendek
+Seat rectangle extends beyond the page.,API error (domain.py:80),Seat rectangle extends beyond the page.,Dreptunghiul locului depășește marginile paginii.,Das Platzrechteck ragt über die Seite hinaus.,Az ülőhely téglalapja túlnyúlik az oldal határain.
+Seat roster,Admin events (app.js:543),Seat roster,Lista locurilor,Platzliste,Ülőhelylista
+"Seating allocation plan, page {0}",Printable plan accessible label,"Seating allocation plan, page {0}","Plan de alocare a locurilor, pagina {0}","Platzbelegungsplan, Seite {0}","Ülőhelykiosztási terv, {0}. oldal"
+Seating plan · {0},Printable plan browser title; event title remains as entered,Seating plan · {0},Plan de locuri · {0},Sitzplan · {0},Ülésrend · {0}
+Seatplan home,Site shell (index.html),Seatplan home,Pagina principală Seatplan,Seatplan-Startseite,Seatplan kezdőlap
+Seatplan · Reservations,Site shell (index.html),Seatplan · Reservations,Seatplan · Rezervări,Seatplan · Reservierungen,Seatplan · Foglalások
+"Seats are assigned when you press Reserve, not while browsing. A confirmation email follows a successful reservation.",Visitor reservations (app.js:227),"Seats are assigned when you press Reserve, not while browsing. A confirmation email follows a successful reservation.","Locurile sunt alocate când apăsați Rezervare, nu în timpul navigării. După o rezervare reușită, veți primi un e-mail de confirmare.","Plätze werden erst zugewiesen, wenn Sie auf Reservieren klicken, nicht während des Durchsehens. Nach einer erfolgreichen Reservierung folgt eine Bestätigungs-E-Mail.","Az ülőhelyek kiosztása a Foglalás gomb megnyomásakor történik, nem böngészés közben. A sikeres foglalást visszaigazoló e-mail követi."
+Seats per email,Admin events (app.js:610),Seats per email,Locuri per adresă de e-mail,Plätze pro E-Mail-Adresse,Ülőhelyek e-mail-címenként
+"Seats whose centers fall inside an area stay unavailable, even when their individual flag is free. Remove the area to change that rule.",Seat-plan editor (editor.js:37),"Seats whose centers fall inside an area stay unavailable, even when their individual flag is free. Remove the area to change that rule.","Locurile al căror centru se află într-o zonă rămân indisponibile, chiar dacă marcajul lor individual este „liber”. Eliminați zona pentru a schimba această regulă.","Plätze, deren Mittelpunkt innerhalb eines Bereichs liegt, bleiben nicht verfügbar, auch wenn ihre individuelle Kennzeichnung „frei“ ist. Entfernen Sie den Bereich, um diese Regel zu ändern.","Azok az ülőhelyek, amelyek középpontja egy területen belül van, akkor sem érhetők el, ha egyedi jelölésük szabad. A szabály módosításához távolítsa el a területet."
+Section,CSV export header; Seat-plan editor (editor.js:37); Seat-plan editor (editor.js:424); Seat-plan editor (editor.js:516); Visitor reservations (app.js:227),Section,Sector,Bereich,Szektor
+Section / row / seat,Printable plan and private roster (print.html); Private roster header,Section / row / seat,Sector / rând / loc,Bereich / Reihe / Platz,Szektor / sor / ülőhely
+Section for candidates,Seat-plan editor (editor.js:37),Section for candidates,Sector pentru candidați,Bereich für Kandidaten,Jelöltek szektora
+Select,Admin events (app.js:543),Select,Selectare,Auswählen,Kijelölés
+Select a plan,Admin seat plans (app.js:429),Select a plan,Selectați un plan,Plan auswählen,Válasszon tervet
+Select an event,Admin events (app.js:518),Select an event,Selectați un eveniment,Veranstaltung auswählen,Válasszon rendezvényt
+Select at least one seat.,Admin events (app.js:553),Select at least one seat.,Selectați cel puțin un loc.,Wählen Sie mindestens einen Platz aus.,Jelöljön ki legalább egy ülőhelyet.
+Select low-confidence shapes,Seat-plan editor (editor.js:37),Select low-confidence shapes,Selectare forme cu încredere scăzută,Formen mit geringer Erkennungssicherheit auswählen,Alacsony megbízhatóságú alakzatok kijelölése
+Select one or more seats first.,Seat-plan editor (editor.js:270),Select one or more seats first.,Selectați mai întâi unul sau mai multe locuri.,Wählen Sie zuerst einen oder mehrere Plätze aus.,Először jelöljön ki egy vagy több ülőhelyet.
+"Select one seat, then drag its four corner handles",Interactive seat map (map.js:114),"Select one seat, then drag its four corner handles","Selectați un loc, apoi trageți cele patru mânere din colțuri",Einen Platz auswählen und dann seine vier Eckgriffe ziehen,"Jelöljön ki egy ülőhelyet, majd húzza el a négy sarokfogantyúját"
+Select the row or shapes to number first.,Seat-plan editor (editor.js:513),Select the row or shapes to number first.,Selectați mai întâi rândul sau formele de numerotat.,Wählen Sie zuerst die zu nummerierende Reihe oder die Formen aus.,Először jelölje ki a számozandó sort vagy alakzatokat.
+Select {0},Admin events (app.js:598),Select {0},Selectare {0},{0} auswählen,{0} kijelölése
+Selected,Admin events (app.js:543); Seat-plan editor (editor.js:37),Selected,Selectat,Ausgewählt,Kijelölve
+Selection,Seat-plan editor (editor.js:37),Selection,Selecție,Auswahl,Kijelölés
+Send sign-in link,Account and sign-in (app.js:162),Send sign-in link,Trimitere link de autentificare,Anmeldelink senden,Bejelentkezési hivatkozás küldése
+sending,Mail delivery state,sending,în curs de trimitere,wird gesendet,küldés folyamatban
+sent,Mail delivery state,sent,trimis,gesendet,elküldve
+Server returned {0}. Check the reverse proxy and application logs.,Network error,Server returned {0}. Check the reverse proxy and application logs.,Serverul a returnat {0}. Verificați proxy-ul invers și jurnalele aplicației.,Der Server hat {0} zurückgegeben. Prüfen Sie den Reverse-Proxy und die Anwendungsprotokolle.,A szerver válasza: {0}. Ellenőrizze a fordított proxyt és az alkalmazás naplóit.
+Set selected seats to,Admin events (app.js:543),Set selected seats to,Setați locurile selectate ca,Ausgewählte Plätze setzen auf,Kijelölt ülőhelyek beállítása erre
+Set {0} seats to {1}? This affects {2} currently reserved seats. Attendees with email addresses will be notified.,Administrator override confirmation,Set {0} seats to {1}? This affects {2} currently reserved seats. Attendees with email addresses will be notified.,Setați locurile ({0}) în starea „{1}”? Locuri rezervate în prezent afectate: {2}. Participanții cu adrese de e-mail vor fi notificați.,{0} Plätze auf {1} setzen? Dies betrifft {2} derzeit reservierte Plätze. Teilnehmer mit E-Mail-Adressen werden benachrichtigt.,Beállítja {0} ülőhely állapotát erre: {1}? Ez {2} jelenleg foglalt ülőhelyet érint. Az e-mail-címmel rendelkező résztvevők értesítést kapnak.
+Showing 60 of {0}. Refine your search.,Seat search results,Showing 60 of {0}. Refine your search.,Se afișează 60 din {0}. Restrângeți căutarea.,60 von {0} werden angezeigt. Verfeinern Sie Ihre Suche.,"60 találat látható, összesen {0}. Szűkítse a keresést."
+Showing the latest 100 entries. The database retains the complete audit trail; the web interface cannot edit or delete it.,System and delivery (app.js:634),Showing the latest 100 entries. The database retains the complete audit trail; the web interface cannot edit or delete it.,Se afișează cele mai recente 100 de înregistrări. Baza de date păstrează istoricul complet de audit; acesta nu poate fi editat sau șters din interfața web.,Die neuesten 100 Einträge werden angezeigt. Die Datenbank bewahrt das vollständige Auditprotokoll auf; es kann über die Weboberfläche weder bearbeitet noch gelöscht werden.,A legutóbbi 100 bejegyzés látható. Az adatbázis megőrzi a teljes auditnaplót; a webes felületen nem lehet módosítani vagy törölni.
+Sign in,Account and sign-in (app.js:124); Site shell (index.html); Visitor reservations (app.js:375),Sign in,Autentificare,Anmelden,Bejelentkezés
+Sign in to reserve,Visitor reservations (app.js:314),Sign in to reserve,Autentificare pentru rezervare,Zum Reservieren anmelden,Bejelentkezés a foglaláshoz
+Sign in to view or cancel:,Reservation email,Sign in to view or cancel:,Autentificați-vă pentru a vizualiza sau anula:,Zum Ansehen oder Stornieren anmelden:,Megtekintéshez vagy lemondáshoz jelentkezzen be:
+Sign in with the same email address you used to reserve.,Visitor reservations (app.js:375),Sign in with the same email address you used to reserve.,Autentificați-vă cu aceeași adresă de e-mail folosită la rezervare.,"Melden Sie sich mit derselben E-Mail-Adresse an, die Sie für die Reservierung verwendet haben.","Jelentkezzen be ugyanazzal az e-mail-címmel, amellyel foglalt."
+Sign in with your email,Account and sign-in (app.js:162),Sign in with your email,Autentificare cu adresa de e-mail,Mit Ihrer E-Mail-Adresse anmelden,Bejelentkezés e-mail-címmel
+Sign out,Account and sign-in (app.js:124),Sign out,Deconectare,Abmelden,Kijelentkezés
+"Small symbol max side, px",Seat-plan editor (editor.js:37),"Small symbol max side, px","Latură maximă simbol mic, px","Maximale Seitenlänge kleiner Symbole, px","Kis szimbólum maximális oldalhossza, px"
+Snapshot generated {0}. Enable background graphics for the closest color match. Symbols and outlines also distinguish states.,Printable plan guidance,Snapshot generated {0}. Enable background graphics for the closest color match. Symbols and outlines also distinguish states.,"Situație generată la {0}. Activați grafica de fundal pentru o redare cât mai fidelă a culorilor. Simbolurile și contururile diferențiază, de asemenea, stările.",Momentaufnahme erstellt: {0}. Aktivieren Sie Hintergrundgrafiken für eine möglichst genaue Farbwiedergabe. Symbole und Umrisse unterscheiden die Zustände ebenfalls.,Állapotkép készült: {0}. A lehető legpontosabb színekhez engedélyezze a háttérgrafikák nyomtatását. A szimbólumok és körvonalak is megkülönböztetik az állapotokat.
+Some selected seats are no longer available. Your selection was updated.,Visitor reservations (app.js:270),Some selected seats are no longer available. Your selection was updated.,Unele locuri selectate nu mai sunt disponibile. Selecția dumneavoastră a fost actualizată.,Einige ausgewählte Plätze sind nicht mehr verfügbar. Ihre Auswahl wurde aktualisiert.,Néhány kijelölt ülőhely már nem érhető el. A kijelölése frissült.
+Sort order,Seat-plan editor (editor.js:516),Sort order,Ordine de sortare,Sortierreihenfolge,Rendezési sorrend
+Start with your PDF.,Admin seat plans (app.js:453),Start with your PDF.,Începeți cu PDF-ul dumneavoastră.,Beginnen Sie mit Ihrem PDF.,Kezdje a PDF-fájljával.
+State,Admin events (app.js:543); CSV export header; System and delivery (app.js:634),State,Stare,Status,Állapot
+Step,Seat-plan editor (editor.js:516),Step,Pas,Schrittweite,Lépésköz
+Subject,System and delivery (app.js:634),Subject,Subiect,Betreff,Tárgy
+Symbol search exceeded its work limit. Select a smaller detection region.,API error (detection_recovery.py:193),Symbol search exceeded its work limit. Select a smaller detection region.,Căutarea simbolurilor a depășit limita de procesare. Selectați o regiune de detectare mai mică.,Die Symbolsuche hat ihr Verarbeitungslimit überschritten. Wählen Sie einen kleineren Erkennungsbereich.,A szimbólumkeresés túllépte a feldolgozási korlátot. Válasszon kisebb felismerési területet.
+That request key was already used for a different selection.,API error (services.py:164),That request key was already used for a different selection.,Acea cheie de cerere a fost deja folosită pentru o altă selecție.,Dieser Anfrageschlüssel wurde bereits für eine andere Auswahl verwendet.,Ezt a kéréskulcsot már felhasználták egy másik kijelöléshez.
+The adjusted cell is too large or too small.,Seat-plan editor (editor.js:414),The adjusted cell is too large or too small.,Celula ajustată este prea mare sau prea mică.,Die angepasste Zelle ist zu groß oder zu klein.,A módosított cella túl nagy vagy túl kicsi.
+The database is busy. Retry the same operation in a moment.,API error,The database is busy. Retry the same operation in a moment.,Baza de date este ocupată. Încercați din nou aceeași operațiune peste câteva momente.,Die Datenbank ist ausgelastet. Wiederholen Sie denselben Vorgang in einem Moment.,Az adatbázis foglalt. Kis idő múlva próbálja újra ugyanezt a műveletet.
+The draft has changed or is already published. Reload it.,API error (services.py:91),The draft has changed or is already published. Reload it.,Schița s-a modificat sau este deja publicată. Reîncărcați-o.,Der Entwurf wurde geändert oder ist bereits veröffentlicht. Laden Sie ihn neu.,"A tervezet módosult, vagy már közzétették. Töltse újra."
+The event has changed. Reload before saving.,API error (services.py:257),The event has changed. Reload before saving.,Evenimentul s-a modificat. Reîncărcați înainte de salvare.,Die Veranstaltung wurde geändert. Laden Sie vor dem Speichern neu.,A rendezvény módosult. Mentés előtt töltse újra.
+The grid extends beyond the page. Reduce its size or rotation.,API error (app.py:298),The grid extends beyond the page. Reduce its size or rotation.,Grila depășește marginile paginii. Reduceți dimensiunea sau unghiul de rotație.,Das Raster ragt über die Seite hinaus. Verringern Sie seine Größe oder Drehung.,A rács túlnyúlik az oldal határain. Csökkentse a méretét vagy az elforgatását.
+"The job is still queued or running. Check Delivery & audit and make sure the worker is running, then refresh.",Admin seat plans (app.js:511),"The job is still queued or running. Check Delivery & audit and make sure the worker is running, then refresh.","Sarcina este încă în coadă sau în curs de execuție. Verificați „Trimitere și audit” și asigurați-vă că procesul de fundal rulează, apoi actualizați.","Der Auftrag ist noch in der Warteschlange oder wird ausgeführt. Prüfen Sie „Versand und Audit“ und stellen Sie sicher, dass der Hintergrundprozess läuft. Aktualisieren Sie anschließend.","A feladat még sorban áll vagy fut. Ellenőrizze a „Kézbesítés és audit” részt, és győződjön meg róla, hogy a háttérfeldolgozó fut, majd frissítsen."
+The link expires in 15 minutes.,Sign-in request notice,The link expires in 15 minutes.,Linkul expiră în 15 minute.,Der Link läuft in 15 Minuten ab.,A hivatkozás 15 perc múlva lejár.
+The live seating state changed. Refresh and review your override again.,API error (services.py:213),The live seating state changed. Refresh and review your override again.,Starea locurilor s-a modificat în timp real. Actualizați și verificați din nou suprascrierea.,Der aktuelle Belegungsstatus hat sich geändert. Aktualisieren Sie und prüfen Sie Ihre Überschreibung erneut.,"Az élő ülőhelyállapot megváltozott. Frissítsen, majd ellenőrizze újra a felülbírálást."
+The moved selection would extend beyond the page.,Seat-plan editor (editor.js:215),The moved selection would extend beyond the page.,Selecția mutată ar depăși marginile paginii.,Die verschobene Auswahl würde über die Seite hinausragen.,Az áthelyezett kijelölés túlnyúlna az oldal határain.
+The PDF exceeds the upload limit.,API error (app.py:241),The PDF exceeds the upload limit.,PDF-ul depășește limita de încărcare.,Das PDF überschreitet das Uploadlimit.,A PDF meghaladja a feltöltési korlátot.
+The PDF must finish processing first.,API error (services.py:106),The PDF must finish processing first.,Procesarea PDF-ului trebuie să se încheie mai întâi.,Die PDF-Verarbeitung muss zuerst abgeschlossen werden.,Előbb be kell fejeződnie a PDF feldolgozásának.
+The rectangle you drew defines the grid bounds.,Seat-plan editor (editor.js:424),The rectangle you drew defines the grid bounds.,Dreptunghiul desenat definește limitele grilei.,Das gezeichnete Rechteck legt die Rastergrenzen fest.,A rajzolt téglalap határozza meg a rács határait.
+The seat would extend beyond the page.,Seat-plan editor (editor.js:196),The seat would extend beyond the page.,Locul ar depăși marginile paginii.,Der Platz würde über die Seite hinausragen.,Az ülőhely túlnyúlna az oldal határain.
+The selection includes plan-excluded seats. Explicitly allow an excluded-seat override to continue.,API error (services.py:220),The selection includes plan-excluded seats. Explicitly allow an excluded-seat override to continue.,"Selecția include locuri excluse din plan. Pentru a continua, permiteți explicit suprascrierea excluderii acestor locuri.","Die Auswahl enthält im Plan ausgeschlossene Plätze. Erlauben Sie ausdrücklich eine Überschreibung für ausgeschlossene Plätze, um fortzufahren.",A kijelölés a tervben kizárt ülőhelyeket is tartalmaz. A folytatáshoz kifejezetten engedélyezze a kizárt ülőhelyek felülbírálását.
+The source overlay has a different page count.,Seat-plan editor (editor.js:367),The source overlay has a different page count.,Stratul interactiv sursă are un număr diferit de pagini.,Das Quell-Overlay hat eine andere Seitenanzahl.,A forrásként szolgáló interaktív réteg oldalszáma eltérő.
+There must be at least one reservable seat.,API error (services.py:96),There must be at least one reservable seat.,Trebuie să existe cel puțin un loc rezervabil.,Es muss mindestens einen reservierbaren Platz geben.,Legalább egy foglalható ülőhelynek lennie kell.
+This application requires JavaScript. Enable it to select and reserve seats.,Site shell (index.html),This application requires JavaScript. Enable it to select and reserve seats.,Această aplicație necesită JavaScript. Activați-l pentru a selecta și rezerva locuri.,"Diese Anwendung benötigt JavaScript. Aktivieren Sie es, um Plätze auszuwählen und zu reservieren.",Az alkalmazáshoz JavaScript szükséges. Engedélyezze az ülőhelyek kiválasztásához és foglalásához.
+This creates a new draft. It will not change any existing event or reservation.,Admin seat plans (app.js:471),This creates a new draft. It will not change any existing event or reservation.,Aceasta creează o schiță nouă. Nu va modifica niciun eveniment sau nicio rezervare existentă.,Dies erstellt einen neuen Entwurf. Bestehende Veranstaltungen oder Reservierungen werden nicht geändert.,Ez új tervezetet hoz létre. Nem módosít egyetlen meglévő rendezvényt vagy foglalást sem.
+This email cannot be retried. Request a new sign-in link for expired messages.,API error (app.py:411),This email cannot be retried. Request a new sign-in link for expired messages.,"Acest e-mail nu poate fi retrimis. Pentru mesajele expirate, solicitați un link de autentificare nou.",Diese E-Mail kann nicht erneut gesendet werden. Fordern Sie für abgelaufene Nachrichten einen neuen Anmeldelink an.,Ez az e-mail nem küldhető újra. Lejárt üzenetek esetén kérjen új bejelentkezési hivatkozást.
+This event allows {0} seats per email. You already have {1}.,API error (services.py:182),This event allows {0} seats per email. You already have {1}.,Limita de locuri per adresă de e-mail pentru acest eveniment este {0}. Aveți deja {1}.,Diese Veranstaltung erlaubt {0} Plätze pro E-Mail-Adresse. Sie haben bereits {1}.,Ennél a rendezvénynél e-mail-címenként {0} ülőhely foglalható. Önnek már {1} van.
+This event's per-email seat limit has been reached.,Seat selection limit,This event's per-email seat limit has been reached.,A fost atinsă limita de locuri per adresă de e-mail pentru acest eveniment.,Das Platzlimit pro E-Mail-Adresse für diese Veranstaltung wurde erreicht.,Elérte a rendezvény e-mail-címenkénti ülőhelykorlátját.
+This file does not have a PDF header.,API error (app.py:239),This file does not have a PDF header.,Acest fișier nu are un antet PDF.,Diese Datei hat keinen PDF-Header.,Ennek a fájlnak nincs PDF-fejléce.
+This is not a Seatplan overlay export.,Seat-plan editor (editor.js:344),This is not a Seatplan overlay export.,Acesta nu este un export de strat interactiv Seatplan.,Dies ist kein Seatplan-Overlay-Export.,Ez nem egy Seatplanből exportált interaktív réteg.
+This language is not available yet.,Language preference API error,This language is not available yet.,Această limbă nu este încă disponibilă.,Diese Sprache ist noch nicht verfügbar.,Ez a nyelv még nem érhető el.
+"This overlay was created for a DIFFERENT PDF. Coordinates are normalized, but alignment may be wrong. Import as unreviewed shapes?",Seat-plan editor (editor.js:369),"This overlay was created for a DIFFERENT PDF. Coordinates are normalized, but alignment may be wrong. Import as unreviewed shapes?","Acest strat interactiv a fost creat pentru un ALT PDF. Coordonatele sunt normalizate, dar alinierea poate fi greșită. Importați ca forme neverificate?","Dieses Overlay wurde für ein ANDERES PDF erstellt. Die Koordinaten sind normalisiert, aber die Ausrichtung kann falsch sein. Als ungeprüfte Formen importieren?","Ez az interaktív réteg egy MÁSIK PDF-hez készült. A koordináták normalizáltak, de az illeszkedés hibás lehet. Importálja ellenőrizetlen alakzatokként?"
+This reservation has changed. Refresh your reservations.,API error (services.py:200),This reservation has changed. Refresh your reservations.,Această rezervare s-a modificat. Actualizați rezervările.,Diese Reservierung wurde geändert. Aktualisieren Sie Ihre Reservierungen.,Ez a foglalás megváltozott. Frissítse a foglalásait.
+This seating plan is not published.,API error (services.py:171),This seating plan is not published.,Acest plan de locuri nu este publicat.,Dieser Sitzplan ist nicht veröffentlicht.,Ez az ülésrend nincs közzétéve.
+This sign-in link could not be used. Request a new one.,Sign-in error,This sign-in link could not be used. Request a new one.,Acest link de autentificare nu a putut fi folosit. Solicitați unul nou.,Dieser Anmeldelink konnte nicht verwendet werden. Fordern Sie einen neuen an.,Ez a bejelentkezési hivatkozás nem volt használható. Kérjen újat.
+This sign-in link has expired or was already used. Request a new one.,API error (app.py:154),This sign-in link has expired or was already used. Request a new one.,Acest link de autentificare a expirat sau a fost deja folosit. Solicitați unul nou.,Dieser Anmeldelink ist abgelaufen oder wurde bereits verwendet. Fordern Sie einen neuen an.,"Ez a bejelentkezési hivatkozás lejárt, vagy már felhasználták. Kérjen újat."
+Time (local),System and delivery (app.js:634),Time (local),Ora (locală),Uhrzeit (lokal),Idő (helyi)
+Too many boundary proposals. Select a smaller detection region.,API error (detection_boundaries.py:123),Too many boundary proposals. Select a smaller detection region.,Prea multe propuneri de contur. Selectați o regiune de detectare mai mică.,Zu viele Umrissvorschläge. Wählen Sie einen kleineren Erkennungsbereich.,Túl sok körvonaljelölt. Válasszon kisebb felismerési területet.
+Too many distinct boundaries. Restrict the detection region.,API error (detection_boundaries.py:153),Too many distinct boundaries. Restrict the detection region.,Prea multe contururi distincte. Restrângeți regiunea de detectare.,Zu viele unterschiedliche Umrisse. Beschränken Sie den Erkennungsbereich.,Túl sok különböző körvonal. Szűkítse a felismerési területet.
+Too many requests. Please wait before trying again.,API error (security.py:94),Too many requests. Please wait before trying again.,Prea multe cereri. Așteptați înainte de a încerca din nou.,"Zu viele Anfragen. Warten Sie bitte, bevor Sie es erneut versuchen.","Túl sok kérés. Várjon, mielőtt újra próbálkozik."
+Too many symbol-search regions. Select a smaller detection region.,API error (detection_recovery.py:164),Too many symbol-search regions. Select a smaller detection region.,Prea multe regiuni de căutare a simbolurilor. Selectați o regiune de detectare mai mică.,Zu viele Symbolsuchbereiche. Wählen Sie einen kleineren Erkennungsbereich.,Túl sok szimbólumkeresési terület. Válasszon kisebb felismerési területet.
+Top to bottom,Seat-plan editor (editor.js:516),Top to bottom,De sus în jos,Von oben nach unten,Fentről lefelé
+Type,System and delivery (app.js:634),Type,Tip,Typ,Típus
+Unavailable,Admin events (app.js:543); Printable plan and private roster (print.html); Visitor reservations (app.js:227),Unavailable,Indisponibil,Nicht verfügbar,Nem elérhető
+Undo,Seat-plan editor (editor.js:37),Undo,Anulare ultima acțiune,Rückgängig,Visszavonás
+Unknown job type.,API error (pdf_job.py:25),Unknown job type.,Tip de sarcină necunoscut.,Unbekannter Auftragstyp.,Ismeretlen feladattípus.
+unsaved changes,Seat-plan editor (editor.js:103),unsaved changes,modificări nesalvate,nicht gespeicherte Änderungen,nem mentett módosítások
+Unsupported PDF page dimensions.,API error (detection.py:33),Unsupported PDF page dimensions.,Dimensiuni de pagină PDF neacceptate.,Nicht unterstützte PDF-Seitenabmessungen.,Nem támogatott PDF-oldalméretek.
+Up to {0} seats per email for this event.,Per-event booking allowance,Up to {0} seats per email for this event.,Număr maxim de locuri per adresă de e-mail pentru acest eveniment: {0}.,Bis zu {0} Plätze pro E-Mail-Adresse für diese Veranstaltung.,Ennél a rendezvénynél e-mail-címenként legfeljebb {0} ülőhely foglalható.
+Upload a new seating plan,Admin seat plans (app.js:471),Upload a new seating plan,Încărcare plan de locuri nou,Neuen Sitzplan hochladen,Új ülésrend feltöltése
+Upload a PDF,Admin seat plans (app.js:429),Upload a PDF,Încărcare PDF,PDF hochladen,PDF feltöltése
+"Upload a plan, detect seat shapes or draw grids, review the exclusions, then publish.",Admin seat plans (app.js:453),"Upload a plan, detect seat shapes or draw grids, review the exclusions, then publish.","Încărcați un plan, detectați formele locurilor sau desenați grile, verificați excluderile, apoi publicați.","Laden Sie einen Plan hoch, erkennen Sie Platzformen oder zeichnen Sie Raster, prüfen Sie die Ausschlüsse und veröffentlichen Sie anschließend.","Töltsön fel egy tervet, ismerje fel az ülőhelyalakzatokat vagy rajzoljon rácsokat, ellenőrizze a kizárásokat, majd tegye közzé."
+Upload and render,Admin seat plans (app.js:471),Upload and render,Încărcare și randare,Hochladen und rendern,Feltöltés és renderelés
+"Upload and review a seating plan in Administration, then create an event.",Visitor reservations (app.js:220),"Upload and review a seating plan in Administration, then create an event.","Încărcați și verificați un plan de locuri în Administrare, apoi creați un eveniment.","Laden Sie in der Verwaltung einen Sitzplan hoch, prüfen Sie ihn und erstellen Sie anschließend eine Veranstaltung.","Töltsön fel és ellenőrizzen egy ülésrendet az Adminisztráció részben, majd hozzon létre egy rendezvényt."
+Upload the PDF bytes with Content-Type: application/pdf.,API error (app.py:236),Upload the PDF bytes with Content-Type: application/pdf.,Încărcați octeții PDF-ului cu Content-Type: application/pdf.,Laden Sie die PDF-Bytes mit Content-Type: application/pdf hoch.,A PDF bájtjait Content-Type: application/pdf fejléccel töltse fel.
+"Use step −1, 2 or −2 for reversed or odd/even numbering. Draw irregular rows as separate grids; delete positions where aisles occur.",Seat-plan editor (editor.js:424),"Use step −1, 2 or −2 for reversed or odd/even numbering. Draw irregular rows as separate grids; delete positions where aisles occur.","Folosiți pasul −1, 2 sau −2 pentru numerotare inversă sau impară/pară. Desenați rândurile neregulate ca grile separate; ștergeți pozițiile în care se află culoare de acces.","Verwenden Sie die Schrittweite −1, 2 oder −2 für umgekehrte oder ungerade/gerade Nummerierung. Zeichnen Sie unregelmäßige Reihen als separate Raster; löschen Sie Positionen, an denen sich Gänge befinden.","Fordított vagy páratlan/páros számozáshoz használjon −1, 2 vagy −2 lépésközt. A szabálytalan sorokat külön rácsként rajzolja meg; a folyosóknál törölje az ülőhelyeket."
+"Use this on one row at a time, or choose a sorting direction explicitly.",Seat-plan editor (editor.js:516),"Use this on one row at a time, or choose a sorting direction explicitly.",Folosiți această opțiune pentru câte un rând sau alegeți explicit o direcție de sortare.,Verwenden Sie dies jeweils für eine Reihe oder wählen Sie ausdrücklich eine Sortierrichtung.,"Egyszerre egy soron használja, vagy válasszon kifejezetten rendezési irányt."
+"Vertical gap, %",Seat-plan editor (editor.js:424),"Vertical gap, %","Spațiu vertical, %","Vertikaler Abstand, %","Függőleges hézag, %"
+Wait for this plan's current PDF jobs to finish.,API error (app.py:310),Wait for this plan's current PDF jobs to finish.,Așteptați finalizarea sarcinilor PDF curente ale acestui plan.,"Warten Sie, bis die aktuellen PDF-Aufträge dieses Plans abgeschlossen sind.","Várja meg, amíg a terv jelenlegi PDF-feladatai befejeződnek."
+"We will email a one-time confirmation link. Once confirmed, you can book seats and manage your reservations.",Account and sign-in (app.js:162),"We will email a one-time confirmation link. Once confirmed, you can book seats and manage your reservations.","Vă vom trimite prin e-mail un link de confirmare de unică folosință. După confirmare, puteți rezerva locuri și gestiona rezervările.",Wir senden Ihnen per E-Mail einen einmalig verwendbaren Bestätigungslink. Nach der Bestätigung können Sie Plätze reservieren und Ihre Reservierungen verwalten.,"E-mailben küldünk egy egyszer használható megerősítő hivatkozást. A megerősítés után ülőhelyeket foglalhat, és kezelheti foglalásait."
+"Width, px",Seat-plan editor (editor.js:37),"Width, px","Lățime, px","Breite, px","Szélesség, px"
+Worker heartbeat: {0}s ago,System status,Worker heartbeat: {0}s ago,Semnal de activitate al procesului de fundal: acum {0}s,Lebenszeichen des Hintergrundprozesses: vor {0}s,Háttérfeldolgozó életjele: {0}s ezelőtt
+You have no reservations yet.,My reservations (app.js:380),You have no reservations yet.,Nu aveți încă rezervări.,Sie haben noch keine Reservierungen.,Még nincsenek foglalásai.
+Your four corners define a skewed grid. Shared boundaries are interpolated consistently; rotation is ignored. For curved banks use short strips or individual rows.,Seat-plan editor (editor.js:424),Your four corners define a skewed grid. Shared boundaries are interpolated consistently; rotation is ignored. For curved banks use short strips or individual rows.,"Cele patru colțuri definesc o grilă oblică. Marginile comune sunt interpolate în mod consecvent; rotația este ignorată. Pentru sectoarele curbate, folosiți fâșii scurte sau rânduri individuale.",Ihre vier Ecken definieren ein schiefwinkliges Raster. Gemeinsame Grenzen werden konsistent interpoliert; die Drehung wird ignoriert. Verwenden Sie für gekrümmte Sitzblöcke kurze Streifen oder einzelne Reihen.,A négy sarok ferde rácsot határoz meg. A közös határok interpolációja következetes; az elforgatás figyelmen kívül marad. Íves ülőhelycsoportokhoz használjon rövid szakaszokat vagy különálló sorokat.
+YOUR PLACES,My reservations (app.js:380),YOUR PLACES,LOCURILE DUMNEAVOASTRĂ,IHRE PLÄTZE,AZ ÖN ÜLŐHELYEI
+Your Seatplan sign-in link,Sign-in email subject,Your Seatplan sign-in link,Linkul dumneavoastră de autentificare Seatplan,Ihr Seatplan-Anmeldelink,Az Ön Seatplan-bejelentkezési hivatkozása
+Your selection,Visitor reservations (app.js:227),Your selection,Selecția dumneavoastră,Ihre Auswahl,Az Ön kijelölése
+Your selection was reduced to the seats still available under this event’s per-email limit.,Booking selection refresh,Your selection was reduced to the seats still available under this event’s per-email limit.,Selecția dumneavoastră a fost redusă la locurile încă disponibile în limita per adresă de e-mail a acestui eveniment.,"Ihre Auswahl wurde auf die Plätze reduziert, die innerhalb des E-Mail-Limits dieser Veranstaltung noch verfügbar sind.","A kijelölése azokra az ülőhelyekre csökkent, amelyek a rendezvény e-mail-címenkénti korlátján belül még elérhetők."
+Your session has changed. Reload the page and try again.,API error (security.py:72),Your session has changed. Reload the page and try again.,Sesiunea dumneavoastră s-a modificat. Reîncărcați pagina și încercați din nou.,Ihre Sitzung hat sich geändert. Laden Sie die Seite neu und versuchen Sie es erneut.,"A munkamenete megváltozott. Töltse újra az oldalt, és próbálja újra."
+yours,Seat-map accessible label for a seat owned by the signed-in visitor,yours,al dumneavoastră,Ihr Platz,az Öné
+Yours,Visitor seat result,Yours,Al dumneavoastră,Ihr Platz,Az Öné
+Zoom in,Interactive seat map (map.js:17),Zoom in,Mărire,Vergrößern,Nagyítás
+Zoom out,Interactive seat map (map.js:17),Zoom out,Micșorare,Verkleinern,Kicsinyítés
+{0} mail backend,System status,{0} mail backend,Sistem de trimitere e-mail: {0},E-Mail-Backend: {0},E-mail-küldési háttérrendszer: {0}
+{0} matching seats.,Seat search results,{0} matching seats.,Locuri corespunzătoare: {0}.,Passende Plätze: {0}.,Találatok száma: {0} ülőhely.
+{0} of {1} seats remain available to this email for this event.,Booking quota status,{0} of {1} seats remain available to this email for this event.,Locuri rămase disponibile pentru această adresă de e-mail la acest eveniment: {0} din {1}.,Für diese E-Mail-Adresse sind bei dieser Veranstaltung noch {0} von {1} Plätzen verfügbar.,Ehhez az e-mail-címhez ennél a rendezvénynél még {0} ülőhely érhető el az összesen {1} közül.
+{0} RESERVED,My reservations count,{0} RESERVED,REZERVATE: {0},RESERVIERT: {0},LEFOGLALVA: {0}
+{0} selected,Admin events (app.js:589); Admin selection count,{0} selected,selectate: {0},ausgewählt: {0},kijelölve: {0}
+{0} shapes,Seat-plan selector,{0} shapes,forme: {0},Formen: {0},alakzatok: {0}
+{0} shapes · {1} excluded · {2} need review · revision {3},Seat-plan editor summary,{0} shapes · {1} excluded · {2} need review · revision {3},forme: {0} · excluse: {1} · de verificat: {2} · revizia {3},Formen: {0} · ausgeschlossen: {1} · zu prüfen: {2} · Revision {3},alakzatok: {0} · kizárva: {1} · ellenőrizendő: {2} · változat: {3}
+“Free” removes an event assignment. A seat excluded by the underlying plan remains non-reservable; revise the plan to change that rule.,Admin events (app.js:543),“Free” removes an event assignment. A seat excluded by the underlying plan remains non-reservable; revise the plan to change that rule.,„Liber” elimină o alocare pentru eveniment. Un loc exclus din planul de bază rămâne nerezervabil; modificați planul pentru a schimba această regulă.,"„Frei“ entfernt eine Veranstaltungszuweisung. Ein im zugrunde liegenden Plan ausgeschlossener Platz bleibt nicht reservierbar; überarbeiten Sie den Plan, um diese Regel zu ändern.",A „Szabad” eltávolítja a rendezvényhez tartozó kiosztást. Az alapul szolgáló tervben kizárt ülőhely továbbra sem foglalható; a szabály módosításához módosítsa a tervet.

@@ -3,13 +3,14 @@
 ## Unreleased — language catalog and booking flow
 
 - Add an editable English-source CSV with Romanian, German, and Hungarian columns. Complete columns become available in the browser language selector; the same catalog supplies emails, print views, CSV headings, and user-facing API errors.
+- Complete all Romanian, German, and Hungarian translations so visitors can select them immediately.
 - Remember a signed-in user's selected language for later reservation notices. The database upgrades from schema version 1 to 2 by adding a `users.locale` column with an English default; existing users and reservations remain intact.
 - Opened email links now finish sign-in without a second confirmation modal.
 - Closed events label the booking button **Not reservable**. The browser enforces the remaining per-event seat allowance while the server keeps its authoritative booking check.
 
 ### Upgrade from v1.3
 
-Back up the database and assets, keep `.env` and `APP_SECRET`, then replace the source and restart the web and worker services. The application applies the additive database migration at startup. Review [the translation CSV instructions](docs/TRANSLATIONS.md) before filling language columns.
+Back up the database and assets, keep `.env` and `APP_SECRET`, then replace the source and restart the web and worker services. The application applies the additive database migration at startup. Review [the translation CSV instructions](docs/TRANSLATIONS.md) before editing or adding language columns.
 
 ## v1.3 — separate banks and faint chair pairs
 

@@ -47,7 +47,7 @@ A selected seat is **not held while someone browses**. Allocation happens when t
 
 Seatplan supports multiple events at once. Each event has its own seating plan, open/closed state, per-email seat limit, and reservations. Visitors choose an event from the booking page; administrators choose one in **Events & seating**. The browser stops selection at the remaining per-event allowance, while the server still checks the limit when booking. A closed event shows **Not reservable**.
 
-The interface can be translated through [`seatplan/locales/messages.csv`](seatplan/locales/messages.csv). Romanian, German, and Hungarian columns are ready for translation; a language appears in the selector once every cell in its column is filled. See [TRANSLATIONS.md](docs/TRANSLATIONS.md).
+The interface includes Romanian, German, and Hungarian translations in [`seatplan/locales/messages.csv`](seatplan/locales/messages.csv). Visitors can choose any of these languages, and more can be added through the CSV. See [TRANSLATIONS.md](docs/TRANSLATIONS.md).
 
 ## Quick start: Docker behind your HTTPS proxy
 

@@ -1,11 +1,11 @@
 # Translating Seatplan
 
-The source of truth is [`seatplan/locales/messages.csv`](../seatplan/locales/messages.csv). It contains the English interface and message text, plus empty `ro`, `de`, and `hu` columns for Romanian, German, and Hungarian. The `context` column says where a phrase appears. The application needs no machine-translation service or network connection at runtime.
+The source of truth is [`seatplan/locales/messages.csv`](../seatplan/locales/messages.csv). It contains the English interface and message text, plus completed `ro`, `de`, and `hu` columns for Romanian, German, and Hungarian. The `context` column says where a phrase appears. The application needs no machine-translation service or network connection at runtime.
 
 ## Fill a language
 
 1. Edit one language column in a spreadsheet or CSV editor that preserves UTF-8 and quoted CSV cells. Leave `source`, `context`, and `en` unchanged.
-2. Fill **every** row of that column. A blank cell keeps the language out of the public selector, so visitors never see a partly translated interface.
+2. Fill **every** row of a new language column. A blank cell keeps that language out of the public selector, so visitors never see a partly translated interface. For an existing language, edit its translated cells as needed.
 3. Keep numbered placeholders such as `{0}` and `{1}` in the translation. They stand for counts, seat names, or references; they may be reordered to fit the language. Do not put HTML in translated cells.
 4. Run `python -m pytest -q tests/test_i18n.py` and reload the website. A newly complete language appears in the selector. The choice is remembered for this browser and, after sign-in, for reservation emails.
 

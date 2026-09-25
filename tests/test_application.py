@@ -313,7 +313,8 @@ def test_subpath_urls_and_cookie_scope(settings):
         assert 'src="/seats/static/app.js"' in client.get("/seats/").text
         translations = client.get("/seats/api/i18n")
         assert translations.status_code == 200
-        assert translations.json()["languages"] == ["en"]
+        assert "en" in translations.json()["languages"]
+        assert "Book seats" in translations.json()["messages"]
         assert client.get("/seats/static/i18n.js").status_code == 200
         stylesheet = client.get("/seats/static/app.css")
         assert stylesheet.status_code == 200
