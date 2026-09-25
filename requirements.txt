@@ -1,0 +1,10 @@
+# Versions exercised in the delivered test environment. Review security updates before deployment.
+fastapi==0.128.2
+starlette==0.50.0
+pydantic==2.13.4
+uvicorn==0.48.0
+pypdfium2==5.8.0
+opencv-python-headless==4.13.0.92
+numpy==2.3.5
+Pillow==12.3.0
+Jinja2==3.1.6

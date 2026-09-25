@@ -1,0 +1,20 @@
+[Unit]
+Description=Seatplan SMTP and PDF worker
+After=network.target
+[Service]
+User=seatplan
+Group=seatplan
+WorkingDirectory=/opt/seatplan
+EnvironmentFile=/opt/seatplan/.env
+Environment=DATA_DIR=/var/lib/seatplan
+Environment=OPENBLAS_NUM_THREADS=1
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/opt/seatplan/.venv/bin/python -m seatplan.worker
+Restart=on-failure
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/seatplan
+[Install]
+WantedBy=multi-user.target

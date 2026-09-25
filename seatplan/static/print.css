@@ -1,0 +1,35 @@
+@page { size: A4 portrait; margin: 10mm; }
+* { box-sizing: border-box; }
+body { margin: 0; color: #172531; background: #e9edef; font: 12px/1.4 system-ui, sans-serif; }
+.print-actions { padding: 16px 24px; display: flex; align-items: center; gap: 20px; background: white; border-bottom: 1px solid #ccc; }
+.print-actions button { border: 0; border-radius: 5px; background: #126d72; color: white; padding: 11px 15px; cursor: pointer; white-space: nowrap; }
+.print-actions span { font-size: 12px; color: #596a73; }
+.print-sheet { background: white; width: 190mm; height: 270mm; display: flex; flex-direction: column; margin: 20px auto; padding: 0; break-after: page; }
+.print-sheet:last-child { break-after: auto; }
+header { display: flex; justify-content: space-between; gap: 5mm; border-bottom: .3mm solid #bbc7cd; padding: 2mm 0; min-height: 18mm; }
+header > div { max-width: 148mm; }
+h1 { font-size: 16px; line-height: 1.25; margin: 0 0 3px; }
+p { margin: 2px 0; }
+header small { font-size: 8px; text-align: right; flex-shrink: 0; }
+.legend { display: flex; gap: 6mm; font-size: 9px; padding: 2mm 0; }
+.printed-map { display: block; width: 190mm; height: 0; min-height: 0; flex: 1 1 0; }
+.seat { stroke-width: 1.4; }
+.seat.free { fill: #31947615; stroke: #146c51; }
+.seat.reserved { fill: #644585aa; stroke: #241333; stroke-width: 2.5; }
+.seat.blocked { fill: #77808a50; stroke: #4a5159; }
+.blocked-mark { stroke: #343a42; stroke-width: 2; fill: none; }
+.printed-roster { width: 190mm; background: white; padding: 0; margin: 20px auto; }
+table { border-collapse: collapse; width: 100%; margin-top: 5mm; font-size: 9px; }
+thead { display: table-header-group; }
+tr { break-inside: avoid; }
+th, td { border: .2mm solid #cad2d6; padding: 2mm; text-align: left; overflow-wrap: anywhere; }
+th { background: #edf1f3; }
+td:last-child { font-size: 7px; }
+@media print { body { background: white; -webkit-print-color-adjust: exact; print-color-adjust: exact; } .print-actions { display: none; } .print-sheet, .printed-roster { margin: 0; } }
+
+header h1, header p { overflow-wrap: anywhere; }
+.print-seat-label { display: none; pointer-events: none; }
+.overlay-labels .print-seat-label { display: initial; }
+.print-seat-label rect { fill: white; opacity: .94; }
+.print-seat-label text { fill: #172531; font-family: sans-serif; }
+.print-actions label { white-space: nowrap; }

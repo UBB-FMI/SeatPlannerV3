@@ -1,0 +1,1268 @@
+{
+  "source_pdf_sha256": "df5e409db1b0452828718e697960cdacd28f668c93eefeed4519da41a8bf6816",
+  "reference_method": "24 approximate reference polygons visually placed on the original rendered scan using pixel rulers, not derived from detector outputs. Boundary placement uncertainty approximately 1-3 pixels; this is a development-region test, not a full venue audit or held-out benchmark.",
+  "reference_cells": 24,
+  "opencv_version": "4.13.0",
+  "detection_seconds": {
+    "v1.1": 7.689,
+    "v1.2": 22.985
+  },
+  "versions": {
+    "v1.1": {
+      "mean_iou": 0.7850523155937674,
+      "at_least_0.8": 21,
+      "at_least_0.9": 10,
+      "extra_overlaps": 2,
+      "cases": [
+        {
+          "name": "Main 374",
+          "region": "main-middle",
+          "points": [
+            [
+              483,
+              1147.5
+            ],
+            [
+              514,
+              1147.5
+            ],
+            [
+              514,
+              1188.0
+            ],
+            [
+              483,
+              1188.0
+            ]
+          ],
+          "iou": 0.9563116527712563,
+          "seat_id": "d-444c84da9aa13d120e427bf8",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Main 372",
+          "region": "main-middle",
+          "points": [
+            [
+              514,
+              1147.5
+            ],
+            [
+              545,
+              1147.5
+            ],
+            [
+              545,
+              1188.0
+            ],
+            [
+              514,
+              1188.0
+            ]
+          ],
+          "iou": 0.9318976517046844,
+          "seat_id": "d-4b21fb8ba8a105bf899d9934",
+          "extra_overlaps": 1
+        },
+        {
+          "name": "Main 370",
+          "region": "main-middle",
+          "points": [
+            [
+              545,
+              1147.5
+            ],
+            [
+              576,
+              1147.5
+            ],
+            [
+              576,
+              1188.0
+            ],
+            [
+              545,
+              1188.0
+            ]
+          ],
+          "iou": 0.9326998167552145,
+          "seat_id": "d-a1d856f22f0c0386ab638345",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Main 348",
+          "region": "main-middle",
+          "points": [
+            [
+              483,
+              1188.5
+            ],
+            [
+              514,
+              1188.5
+            ],
+            [
+              514,
+              1229.0
+            ],
+            [
+              483,
+              1229.0
+            ]
+          ],
+          "iou": 0.9262842305697607,
+          "seat_id": "d-0a780e60a89af30f1f857ded",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Main 346",
+          "region": "main-middle",
+          "points": [
+            [
+              514,
+              1188.5
+            ],
+            [
+              545,
+              1188.5
+            ],
+            [
+              545,
+              1229.0
+            ],
+            [
+              514,
+              1229.0
+            ]
+          ],
+          "iou": 0.9111861700946868,
+          "seat_id": "d-98665d003c980075ab45aca9",
+          "extra_overlaps": 1
+        },
+        {
+          "name": "Main 344",
+          "region": "main-middle",
+          "points": [
+            [
+              545,
+              1188.5
+            ],
+            [
+              576,
+              1188.5
+            ],
+            [
+              576,
+              1229.0
+            ],
+            [
+              545,
+              1229.0
+            ]
+          ],
+          "iou": 0.9876524004295155,
+          "seat_id": "d-7e09a0ed443afa493655505b",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Main 194",
+          "region": "main-lower",
+          "points": [
+            [
+              730,
+              1391
+            ],
+            [
+              761,
+              1391
+            ],
+            [
+              761,
+              1432
+            ],
+            [
+              730,
+              1432
+            ]
+          ],
+          "iou": 0.9441394340756565,
+          "seat_id": "d-a9a8389806b0d732d44fdee7",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Main 192",
+          "region": "main-lower",
+          "points": [
+            [
+              762,
+              1391
+            ],
+            [
+              793,
+              1391
+            ],
+            [
+              793,
+              1432
+            ],
+            [
+              762,
+              1432
+            ]
+          ],
+          "iou": 0.9677400611014286,
+          "seat_id": "d-7332a189b266cecb0913c2af",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Main 166",
+          "region": "main-lower",
+          "points": [
+            [
+              730,
+              1432
+            ],
+            [
+              761,
+              1432
+            ],
+            [
+              761,
+              1473
+            ],
+            [
+              730,
+              1473
+            ]
+          ],
+          "iou": 0.9441365527881589,
+          "seat_id": "d-5e3db095c8c097cfacc70917",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Main 164",
+          "region": "main-lower",
+          "points": [
+            [
+              762,
+              1432
+            ],
+            [
+              793,
+              1432
+            ],
+            [
+              793,
+              1473
+            ],
+            [
+              762,
+              1473
+            ]
+          ],
+          "iou": 0.8848153752812454,
+          "seat_id": "d-481f819052143f3702234a32",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Main 142",
+          "region": "main-lower",
+          "points": [
+            [
+              668,
+              1473
+            ],
+            [
+              699,
+              1473
+            ],
+            [
+              699,
+              1514
+            ],
+            [
+              668,
+              1514
+            ]
+          ],
+          "iou": 0.8923076923076924,
+          "seat_id": "d-f545b2229ac2b87b7f0328f0",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Upper right 57",
+          "region": "upper-right",
+          "points": [
+            [
+              1301,
+              701
+            ],
+            [
+              1338,
+              728
+            ],
+            [
+              1318,
+              766
+            ],
+            [
+              1282,
+              740
+            ]
+          ],
+          "iou": 0.9115856208079245,
+          "seat_id": "d-ea0cd789840f7a3f1b636e9e",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Upper right 59",
+          "region": "upper-right",
+          "points": [
+            [
+              1338,
+              728
+            ],
+            [
+              1370,
+              754
+            ],
+            [
+              1351,
+              792
+            ],
+            [
+              1318,
+              766
+            ]
+          ],
+          "iou": 0.8521034819299828,
+          "seat_id": "d-49ad64245ee46da34f88fe3d",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Upper right 33",
+          "region": "upper-right",
+          "points": [
+            [
+              1282,
+              740
+            ],
+            [
+              1318,
+              766
+            ],
+            [
+              1298,
+              804
+            ],
+            [
+              1264,
+              779
+            ]
+          ],
+          "iou": 0.8679000776780341,
+          "seat_id": "d-1d2978ad1e4cf2df854aa02e",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Upper right 35",
+          "region": "upper-right",
+          "points": [
+            [
+              1318,
+              766
+            ],
+            [
+              1351,
+              792
+            ],
+            [
+              1330,
+              831
+            ],
+            [
+              1298,
+              804
+            ]
+          ],
+          "iou": 0.8637616673102975,
+          "seat_id": "d-dd0c405d0d0b58133da96b95",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Upper right 37",
+          "region": "upper-right",
+          "points": [
+            [
+              1351,
+              792
+            ],
+            [
+              1384,
+              818
+            ],
+            [
+              1363,
+              857
+            ],
+            [
+              1330,
+              831
+            ]
+          ],
+          "iou": 0.8499316275844919,
+          "seat_id": "d-e1e2d75519963c465b13254e",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Upper left 84",
+          "region": "upper-left",
+          "points": [
+            [
+              325,
+              718
+            ],
+            [
+              361,
+              689
+            ],
+            [
+              380,
+              728
+            ],
+            [
+              344,
+              755
+            ]
+          ],
+          "iou": 0.8858280329024621,
+          "seat_id": "d-7aecb89f7dffd3c0c1bbae29",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Upper left 86",
+          "region": "upper-left",
+          "points": [
+            [
+              292,
+              748
+            ],
+            [
+              325,
+              718
+            ],
+            [
+              344,
+              755
+            ],
+            [
+              313,
+              783
+            ]
+          ],
+          "iou": 0.8199359894230496,
+          "seat_id": "d-449b9d89ae5e3934ae44540b",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Upper left 60",
+          "region": "upper-left",
+          "points": [
+            [
+              344,
+              755
+            ],
+            [
+              380,
+              728
+            ],
+            [
+              399,
+              767
+            ],
+            [
+              365,
+              794
+            ]
+          ],
+          "iou": 0.84486242214852,
+          "seat_id": "d-00e0956b60d5aa32f491b9da",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Upper left 62",
+          "region": "upper-left",
+          "points": [
+            [
+              313,
+              783
+            ],
+            [
+              344,
+              755
+            ],
+            [
+              365,
+              794
+            ],
+            [
+              333,
+              820
+            ]
+          ],
+          "iou": 0.8467271514215368,
+          "seat_id": "d-9971aeabb9e0bf804881b128",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Upper left 36",
+          "region": "upper-left",
+          "points": [
+            [
+              365,
+              794
+            ],
+            [
+              399,
+              767
+            ],
+            [
+              419,
+              803
+            ],
+            [
+              386,
+              831
+            ]
+          ],
+          "iou": 0.8194484651648212,
+          "seat_id": "d-93f8af38fe8676859823d274",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Left outer 242",
+          "region": "left-outer",
+          "points": [
+            [
+              210,
+              1053
+            ],
+            [
+              247,
+              1073
+            ],
+            [
+              232,
+              1102
+            ],
+            [
+              194,
+              1084
+            ]
+          ],
+          "iou": 0.0,
+          "seat_id": null,
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Left outer 244",
+          "region": "left-outer",
+          "points": [
+            [
+              194,
+              1084
+            ],
+            [
+              232,
+              1102
+            ],
+            [
+              215,
+              1135
+            ],
+            [
+              179,
+              1118
+            ]
+          ],
+          "iou": 0.0,
+          "seat_id": null,
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Left outer 246",
+          "region": "left-outer",
+          "points": [
+            [
+              179,
+              1118
+            ],
+            [
+              215,
+              1135
+            ],
+            [
+              203,
+              1164
+            ],
+            [
+              166,
+              1152
+            ]
+          ],
+          "iou": 0.0,
+          "seat_id": null,
+          "extra_overlaps": 0
+        }
+      ],
+      "candidate_report": {
+        "algorithm": "deterministic-contour-v2",
+        "strategy": "multiscale",
+        "repair_candidates": 66,
+        "candidates": 920,
+        "blocked_candidates": 86,
+        "review_required": 920,
+        "native_text": false,
+        "image_width": 1698,
+        "image_height": 2400,
+        "warnings": [
+          "Candidates are not a verified seat inventory.",
+          "Cross-out detection is heuristic: inspect exclusions and missing/merged/split boxes.",
+          "Scanned labels use provisional D-numbers; no OCR or label guessing is performed."
+        ]
+      }
+    },
+    "v1.2": {
+      "mean_iou": 0.9172632509575319,
+      "at_least_0.8": 24,
+      "at_least_0.9": 18,
+      "extra_overlaps": 0,
+      "cases": [
+        {
+          "name": "Main 374",
+          "region": "main-middle",
+          "points": [
+            [
+              483,
+              1147.5
+            ],
+            [
+              514,
+              1147.5
+            ],
+            [
+              514,
+              1188.0
+            ],
+            [
+              483,
+              1188.0
+            ]
+          ],
+          "iou": 0.9159097211398128,
+          "seat_id": "d-4245bb7585b7eae54c36ff36",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Main 372",
+          "region": "main-middle",
+          "points": [
+            [
+              514,
+              1147.5
+            ],
+            [
+              545,
+              1147.5
+            ],
+            [
+              545,
+              1188.0
+            ],
+            [
+              514,
+              1188.0
+            ]
+          ],
+          "iou": 0.9344587567215057,
+          "seat_id": "d-0990d38029bc4abdf6393b0d",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Main 370",
+          "region": "main-middle",
+          "points": [
+            [
+              545,
+              1147.5
+            ],
+            [
+              576,
+              1147.5
+            ],
+            [
+              576,
+              1188.0
+            ],
+            [
+              545,
+              1188.0
+            ]
+          ],
+          "iou": 0.9318406357771016,
+          "seat_id": "d-a4caa367ebd52a14106f384c",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Main 348",
+          "region": "main-middle",
+          "points": [
+            [
+              483,
+              1188.5
+            ],
+            [
+              514,
+              1188.5
+            ],
+            [
+              514,
+              1229.0
+            ],
+            [
+              483,
+              1229.0
+            ]
+          ],
+          "iou": 0.9335352647243788,
+          "seat_id": "d-42b14eda4a48d109c661b30a",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Main 346",
+          "region": "main-middle",
+          "points": [
+            [
+              514,
+              1188.5
+            ],
+            [
+              545,
+              1188.5
+            ],
+            [
+              545,
+              1229.0
+            ],
+            [
+              514,
+              1229.0
+            ]
+          ],
+          "iou": 0.9226201875775082,
+          "seat_id": "d-f6600003093270577454a061",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Main 344",
+          "region": "main-middle",
+          "points": [
+            [
+              545,
+              1188.5
+            ],
+            [
+              576,
+              1188.5
+            ],
+            [
+              576,
+              1229.0
+            ],
+            [
+              545,
+              1229.0
+            ]
+          ],
+          "iou": 0.880177612366737,
+          "seat_id": "d-c8c8406700ed8dfbe8c19e0c",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Main 194",
+          "region": "main-lower",
+          "points": [
+            [
+              730,
+              1391
+            ],
+            [
+              761,
+              1391
+            ],
+            [
+              761,
+              1432
+            ],
+            [
+              730,
+              1432
+            ]
+          ],
+          "iou": 0.94411926486947,
+          "seat_id": "d-2c8ab848990b256d0082a881",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Main 192",
+          "region": "main-lower",
+          "points": [
+            [
+              762,
+              1391
+            ],
+            [
+              793,
+              1391
+            ],
+            [
+              793,
+              1432
+            ],
+            [
+              762,
+              1432
+            ]
+          ],
+          "iou": 0.8988740132931327,
+          "seat_id": "d-4fff67504179179aea8e12a7",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Main 166",
+          "region": "main-lower",
+          "points": [
+            [
+              730,
+              1432
+            ],
+            [
+              761,
+              1432
+            ],
+            [
+              761,
+              1473
+            ],
+            [
+              730,
+              1473
+            ]
+          ],
+          "iou": 0.9440636126953484,
+          "seat_id": "d-8ae00955d151124a88ab63e6",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Main 164",
+          "region": "main-lower",
+          "points": [
+            [
+              762,
+              1432
+            ],
+            [
+              793,
+              1432
+            ],
+            [
+              793,
+              1473
+            ],
+            [
+              762,
+              1473
+            ]
+          ],
+          "iou": 0.8981419222964131,
+          "seat_id": "d-298294a53516badac40eb18d",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Main 142",
+          "region": "main-lower",
+          "points": [
+            [
+              668,
+              1473
+            ],
+            [
+              699,
+              1473
+            ],
+            [
+              699,
+              1514
+            ],
+            [
+              668,
+              1514
+            ]
+          ],
+          "iou": 0.9177152910578035,
+          "seat_id": "d-81464b5eede47b2efa9656fc",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Upper right 57",
+          "region": "upper-right",
+          "points": [
+            [
+              1301,
+              701
+            ],
+            [
+              1338,
+              728
+            ],
+            [
+              1318,
+              766
+            ],
+            [
+              1282,
+              740
+            ]
+          ],
+          "iou": 0.9571329804896727,
+          "seat_id": "d-6bfc84935652b38e4f0afdba",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Upper right 59",
+          "region": "upper-right",
+          "points": [
+            [
+              1338,
+              728
+            ],
+            [
+              1370,
+              754
+            ],
+            [
+              1351,
+              792
+            ],
+            [
+              1318,
+              766
+            ]
+          ],
+          "iou": 0.9379879174486723,
+          "seat_id": "d-b09bba18935b76cdae4a7974",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Upper right 33",
+          "region": "upper-right",
+          "points": [
+            [
+              1282,
+              740
+            ],
+            [
+              1318,
+              766
+            ],
+            [
+              1298,
+              804
+            ],
+            [
+              1264,
+              779
+            ]
+          ],
+          "iou": 0.9252766877126666,
+          "seat_id": "d-2968518638a3e26f93f03a85",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Upper right 35",
+          "region": "upper-right",
+          "points": [
+            [
+              1318,
+              766
+            ],
+            [
+              1351,
+              792
+            ],
+            [
+              1330,
+              831
+            ],
+            [
+              1298,
+              804
+            ]
+          ],
+          "iou": 0.9110104924756108,
+          "seat_id": "d-c492f76a384da5e9d5f569c5",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Upper right 37",
+          "region": "upper-right",
+          "points": [
+            [
+              1351,
+              792
+            ],
+            [
+              1384,
+              818
+            ],
+            [
+              1363,
+              857
+            ],
+            [
+              1330,
+              831
+            ]
+          ],
+          "iou": 0.8666970351860857,
+          "seat_id": "d-59ab759a92dff7c2080c8ef3",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Upper left 84",
+          "region": "upper-left",
+          "points": [
+            [
+              325,
+              718
+            ],
+            [
+              361,
+              689
+            ],
+            [
+              380,
+              728
+            ],
+            [
+              344,
+              755
+            ]
+          ],
+          "iou": 0.9327826378429269,
+          "seat_id": "d-5506036b1ef6d6abf8db4aed",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Upper left 86",
+          "region": "upper-left",
+          "points": [
+            [
+              292,
+              748
+            ],
+            [
+              325,
+              718
+            ],
+            [
+              344,
+              755
+            ],
+            [
+              313,
+              783
+            ]
+          ],
+          "iou": 0.9432097555758078,
+          "seat_id": "d-644331c2963a7a73f1ef7ec3",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Upper left 60",
+          "region": "upper-left",
+          "points": [
+            [
+              344,
+              755
+            ],
+            [
+              380,
+              728
+            ],
+            [
+              399,
+              767
+            ],
+            [
+              365,
+              794
+            ]
+          ],
+          "iou": 0.9079567997156973,
+          "seat_id": "d-23b0d4de2d39a4124574fdbe",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Upper left 62",
+          "region": "upper-left",
+          "points": [
+            [
+              313,
+              783
+            ],
+            [
+              344,
+              755
+            ],
+            [
+              365,
+              794
+            ],
+            [
+              333,
+              820
+            ]
+          ],
+          "iou": 0.9484398649933773,
+          "seat_id": "d-3f0804c47b483c4520703337",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Upper left 36",
+          "region": "upper-left",
+          "points": [
+            [
+              365,
+              794
+            ],
+            [
+              399,
+              767
+            ],
+            [
+              419,
+              803
+            ],
+            [
+              386,
+              831
+            ]
+          ],
+          "iou": 0.8668008403061397,
+          "seat_id": "d-280786832e960442db4544cb",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Left outer 242",
+          "region": "left-outer",
+          "points": [
+            [
+              210,
+              1053
+            ],
+            [
+              247,
+              1073
+            ],
+            [
+              232,
+              1102
+            ],
+            [
+              194,
+              1084
+            ]
+          ],
+          "iou": 0.9077582993297538,
+          "seat_id": "d-bde16debb8c68d1507f4b28f",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Left outer 244",
+          "region": "left-outer",
+          "points": [
+            [
+              194,
+              1084
+            ],
+            [
+              232,
+              1102
+            ],
+            [
+              215,
+              1135
+            ],
+            [
+              179,
+              1118
+            ]
+          ],
+          "iou": 0.9028626087952014,
+          "seat_id": "d-d4374e9e2229357a6a29b6e7",
+          "extra_overlaps": 0
+        },
+        {
+          "name": "Left outer 246",
+          "region": "left-outer",
+          "points": [
+            [
+              179,
+              1118
+            ],
+            [
+              215,
+              1135
+            ],
+            [
+              203,
+              1164
+            ],
+            [
+              166,
+              1152
+            ]
+          ],
+          "iou": 0.884945820589941,
+          "seat_id": "d-b23a3b955c006ba9eb72df07",
+          "extra_overlaps": 0
+        }
+      ],
+      "candidate_report": {
+        "algorithm": "deterministic-boundaries-v3",
+        "strategy": "boundaries",
+        "local_grid_proposals": 32,
+        "overlapping_alternatives_removed": 67,
+        "boundary_proposals": 3187,
+        "fitted_proposals": 2664,
+        "unfitted_seeds": 25,
+        "removed_compartment_candidates": 2,
+        "additional_candidates": 36,
+        "ambiguous_empty_candidates": 1,
+        "repair_candidates": 53,
+        "candidates": 919,
+        "blocked_candidates": 59,
+        "review_required": 919,
+        "native_text": false,
+        "image_width": 1698,
+        "image_height": 2400,
+        "warnings": [
+          "Candidates are not a verified seat inventory.",
+          "Cross-out detection is heuristic: inspect exclusions and missing/merged/split boxes.",
+          "Scanned labels use provisional D-numbers; no OCR or label guessing is performed."
+        ]
+      }
+    }
+  }
+}

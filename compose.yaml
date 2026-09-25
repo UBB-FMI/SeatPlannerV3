@@ -1,0 +1,46 @@
+services:
+  web:
+    build: .
+    image: seatplan:local
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATA_DIR: /data
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - seatplan-data:/data
+    read_only: true
+    tmpfs:
+      - /tmp:size=128m,mode=1777
+    security_opt:
+      - no-new-privileges:true
+    cap_drop: [ALL]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/healthz', timeout=3)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+  worker:
+    image: seatplan:local
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATA_DIR: /data
+    command: ["python", "-m", "seatplan.worker"]
+    volumes:
+      - seatplan-data:/data
+    read_only: true
+    tmpfs:
+      - /tmp:size=256m,mode=1777
+    security_opt:
+      - no-new-privileges:true
+    cap_drop: [ALL]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import sqlite3,time; c=sqlite3.connect('/data/seatplan.sqlite3'); r=c.execute(\"select updated from heartbeat where name='worker'\").fetchone(); assert r and time.time()-r[0]<180"]
+      interval: 45s
+      timeout: 5s
+      retries: 3
+volumes:
+  seatplan-data:

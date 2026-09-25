@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-25",
+  "source_pdf_sha256": "df5e409db1b0452828718e697960cdacd28f668c93eefeed4519da41a8bf6816",
+  "pages": 1,
+  "native_text": false,
+  "rendered_dimensions": [
+    1698,
+    2400
+  ],
+  "raw_candidates": 691,
+  "automatic_cross_out_flags_without_masks": 0,
+  "manually_annotated_exclusion_areas": 12,
+  "candidates_excluded_with_manual_masks": 47,
+  "unreviewed_candidates": 691,
+  "determinism": "Two repeated masked detections produced identical canonical JSON in this environment.",
+  "canonical_masked_result_sha256": "133e303438bf8c149d9469f5f4638da1cb5e2c3620ebaf9e7ed562857b446904",
+  "single_detection_seconds_in_this_environment": 0.394,
+  "verification": "NOT a verified complete seat inventory. No precision/recall or cross-out accuracy claim. D-labels must be replaced with reviewed seat identities."
+}

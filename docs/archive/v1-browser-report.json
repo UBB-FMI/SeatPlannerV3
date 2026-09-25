@@ -1,0 +1,18 @@
+{
+  "transport": "offline DOM with HTTP API bridge (managed browser navigation blocked)",
+  "passed": 11,
+  "checks": [
+    "Admin email request, delivered link, explicit verification and cookie session",
+    "Supplied scanned PDF displayed with 691 pending candidates and 12 masks; unreviewed publication blocked",
+    "Seat selection, inspector edit, draft save through browser",
+    "Drawn 2 x 4 grid, algorithmic preview, add eight seats, undo",
+    "Web detection job reaches the PDF worker and returns 691 review-only candidates",
+    "Visitor signs in by delivered email and reserves two seats through the map",
+    "My reservations shows both seats",
+    "Admin overrides one reserved seat to blocked with required reason and audit",
+    "Admin PDF print snapshot with seating map and private roster",
+    "390px mobile public page without horizontal page overflow",
+    "No uncaught JavaScript page errors across the tested flows"
+  ],
+  "page_errors": []
+}

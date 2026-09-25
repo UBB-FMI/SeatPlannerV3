@@ -1,0 +1,165 @@
+{
+  "pdf_sha256": "df5e409db1b0452828718e697960cdacd28f668c93eefeed4519da41a8bf6816",
+  "width": 1698,
+  "height": 2400,
+  "method": "Interior points visually selected on the original rendered PDF around the two reported crops. Development regressions, not a full-hall ground-truth inventory; no OCR and no detector-generated labels. Positions 1-6 inside loje are test identifiers, not printed seat numbers.",
+  "points": [
+    {
+      "name": "outer-right-255",
+      "region": "outer-right",
+      "printed_label": "255",
+      "x": 1570,
+      "y": 1475
+    },
+    {
+      "name": "outer-right-257",
+      "region": "outer-right",
+      "printed_label": "257",
+      "x": 1565,
+      "y": 1512
+    },
+    {
+      "name": "outer-right-259",
+      "region": "outer-right",
+      "printed_label": "259",
+      "x": 1558,
+      "y": 1550
+    },
+    {
+      "name": "outer-right-261",
+      "region": "outer-right",
+      "printed_label": "261",
+      "x": 1551,
+      "y": 1587
+    },
+    {
+      "name": "outer-right-263",
+      "region": "outer-right",
+      "printed_label": "263",
+      "x": 1543,
+      "y": 1624
+    },
+    {
+      "name": "outer-right-265",
+      "region": "outer-right",
+      "printed_label": "265",
+      "x": 1532,
+      "y": 1658
+    },
+    {
+      "name": "loja-9-outer-position-1",
+      "region": "loja-9-outer",
+      "x": 544,
+      "y": 786
+    },
+    {
+      "name": "loja-9-outer-position-2",
+      "region": "loja-9-outer",
+      "x": 550,
+      "y": 800
+    },
+    {
+      "name": "loja-9-outer-position-3",
+      "region": "loja-9-outer",
+      "x": 574,
+      "y": 771
+    },
+    {
+      "name": "loja-9-outer-position-4",
+      "region": "loja-9-outer",
+      "x": 580,
+      "y": 785
+    },
+    {
+      "name": "loja-9-outer-position-5",
+      "region": "loja-9-outer",
+      "x": 605,
+      "y": 757
+    },
+    {
+      "name": "loja-9-outer-position-6",
+      "region": "loja-9-outer",
+      "x": 611,
+      "y": 771
+    },
+    {
+      "name": "loja-9-inner-position-1",
+      "region": "loja-9-inner",
+      "x": 560,
+      "y": 820
+    },
+    {
+      "name": "loja-9-inner-position-2",
+      "region": "loja-9-inner",
+      "x": 567,
+      "y": 835
+    },
+    {
+      "name": "loja-9-inner-position-3",
+      "region": "loja-9-inner",
+      "x": 591,
+      "y": 805
+    },
+    {
+      "name": "loja-9-inner-position-4",
+      "region": "loja-9-inner",
+      "x": 597,
+      "y": 820
+    },
+    {
+      "name": "loja-9-inner-position-5",
+      "region": "loja-9-inner",
+      "x": 621,
+      "y": 791
+    },
+    {
+      "name": "loja-9-inner-position-6",
+      "region": "loja-9-inner",
+      "x": 628,
+      "y": 805
+    },
+    {
+      "name": "loja-10-outer-position-1",
+      "region": "loja-10-outer",
+      "x": 687,
+      "y": 727
+    },
+    {
+      "name": "loja-10-outer-position-2",
+      "region": "loja-10-outer",
+      "x": 690,
+      "y": 742
+    },
+    {
+      "name": "loja-10-outer-position-3",
+      "region": "loja-10-outer",
+      "x": 720,
+      "y": 720
+    },
+    {
+      "name": "loja-10-outer-position-4",
+      "region": "loja-10-outer",
+      "x": 723,
+      "y": 735
+    },
+    {
+      "name": "loja-10-outer-position-5",
+      "region": "loja-10-outer",
+      "x": 753,
+      "y": 712
+    },
+    {
+      "name": "loja-10-outer-position-6",
+      "region": "loja-10-outer",
+      "x": 757,
+      "y": 728
+    }
+  ],
+  "negative_points": [
+    {
+      "name": "gap-between-loja-9-chair-columns",
+      "x": 576.5,
+      "y": 814.9
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "transport": "offline DOM with HTTP API bridge (managed browser navigation blocked)",
+  "passed": 16,
+  "checks": [
+    "Admin email request, delivered link, explicit verification and cookie session",
+    "Full PDF fits inside the viewport; focus view exposes the complete page",
+    "Supplied scanned PDF displayed with 935 pending candidates and 12 masks; unreviewed publication blocked",
+    "Clicked all 17 recovered references (438, 437, loje and upper rows); correct inspector and free flags",
+    "Clicked 24 distinct residual-region seats: six outer-right seats and eighteen loje symbols; recovery enabled",
+    "Seat selection, inspector edit, draft save through browser",
+    "Drawn 2 x 4 grid, algorithmic preview, add eight seats, undo",
+    "Four clicked corners generate four convex polygon cells; preview, add, undo",
+    "Actual SVG corner dragging edits a convex cell outline; undo restores it",
+    "Web detection job reaches the PDF worker and returns 935 review-only candidates",
+    "Visitor signs in by delivered email and reserves two seats through the map",
+    "My reservations shows both seats",
+    "Admin overrides one reserved seat to blocked with required reason and audit",
+    "Admin PDF print snapshot with seating map and private roster",
+    "390px mobile public page without horizontal page overflow",
+    "No uncaught JavaScript page errors across the tested flows"
+  ],
+  "page_errors": []
+}

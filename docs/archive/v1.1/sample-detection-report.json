@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-25",
+  "algorithm": "deterministic-contour-v2",
+  "source_pdf_sha256": "df5e409db1b0452828718e697960cdacd28f668c93eefeed4519da41a8bf6816",
+  "rendered_dimensions": [
+    1698,
+    2400
+  ],
+  "old_candidates": 691,
+  "new_candidates": 920,
+  "repair_pass_candidates": 66,
+  "manually_annotated_exclusion_areas": 12,
+  "candidates_excluded_with_manual_masks": 86,
+  "automatic_cross_out_flags_outside_masks": 0,
+  "unreviewed_candidates": 920,
+  "specific_regression_locations": 17,
+  "previously_covered_locations": 0,
+  "now_covered_locations": 17,
+  "regression_scope": "A selected, visually checked subset of original misses, not an unbiased precision/recall benchmark or exhaustive inventory.",
+  "geometry_source": "Algorithm only; no manually inserted seat positions, OCR, or hard-coded hall geometry.",
+  "single_detection_seconds_observed": 7.108,
+  "determinism": "Repeated detection compared as canonical JSON by automated test.",
+  "canonical_masked_result_sha256": "b75e8f74ac37d4f078e23a3a4c72541e8b992033bfac26a2f182f16bf00601eb",
+  "remaining_limitations": [
+    "Residual missed and imperfect candidates remain, including one faint rectangle in left Loja 5.",
+    "Shape count is not seat count.",
+    "Printed numbers on the scan remain D-labels pending manual review.",
+    "Manual exclusions have not been independently audited as a complete hall inventory."
+  ]
+}

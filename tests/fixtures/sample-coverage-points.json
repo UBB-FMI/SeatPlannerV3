@@ -1,0 +1,93 @@
+{
+  "source": "User-supplied sample PDF; raster coordinates checked visually. A focused regression subset, not an exhaustive seat inventory.",
+  "pdf_sha256": "df5e409db1b0452828718e697960cdacd28f668c93eefeed4519da41a8bf6816",
+  "width": 1698,
+  "height": 2400,
+  "points": [
+    {
+      "name": "Main seat 438",
+      "x": 376,
+      "y": 1087
+    },
+    {
+      "name": "Main seat 437",
+      "x": 1336,
+      "y": 1086
+    },
+    {
+      "name": "Loja 5 left reference 1",
+      "x": 232,
+      "y": 1128
+    },
+    {
+      "name": "Loja 5 left reference 2",
+      "x": 247,
+      "y": 1134
+    },
+    {
+      "name": "Loja 5 left reference 3",
+      "x": 221,
+      "y": 1160
+    },
+    {
+      "name": "Loja 5 left reference 4",
+      "x": 235,
+      "y": 1166
+    },
+    {
+      "name": "Loja 5 left reference 5",
+      "x": 281,
+      "y": 1155
+    },
+    {
+      "name": "Loja 5 left reference 6",
+      "x": 255,
+      "y": 1180
+    },
+    {
+      "name": "Loja 5 left reference 7",
+      "x": 269,
+      "y": 1186
+    },
+    {
+      "name": "Upper curved block reference 1",
+      "x": 964,
+      "y": 426
+    },
+    {
+      "name": "Upper curved block reference 2",
+      "x": 837,
+      "y": 462
+    },
+    {
+      "name": "Upper curved block reference 3",
+      "x": 882,
+      "y": 462
+    },
+    {
+      "name": "Upper curved block reference 4",
+      "x": 962,
+      "y": 468
+    },
+    {
+      "name": "Upper curved block reference 5",
+      "x": 837,
+      "y": 546
+    },
+    {
+      "name": "Upper curved block reference 6",
+      "x": 919,
+      "y": 547
+    },
+    {
+      "name": "Upper curved block reference 7",
+      "x": 717,
+      "y": 557
+    },
+    {
+      "name": "Upper curved block reference 8",
+      "x": 917,
+      "y": 589
+    }
+  ]
+}

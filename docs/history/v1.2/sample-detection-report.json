@@ -1,0 +1,34 @@
+{
+  "source_pdf_sha256": "df5e409db1b0452828718e697960cdacd28f668c93eefeed4519da41a8bf6816",
+  "canonical_masked_result_sha256": "3a5102660a6f5b1c7b63633d310e66562e8ef34ca9a4e019b4c53f2d714fee72",
+  "single_detection_seconds_observed": 22.985,
+  "manually_annotated_exclusion_areas": 12,
+  "algorithm": "deterministic-boundaries-v3",
+  "strategy": "boundaries",
+  "local_grid_proposals": 32,
+  "overlapping_alternatives_removed": 67,
+  "boundary_proposals": 3187,
+  "fitted_proposals": 2664,
+  "unfitted_seeds": 25,
+  "removed_compartment_candidates": 2,
+  "additional_candidates": 36,
+  "ambiguous_empty_candidates": 1,
+  "repair_candidates": 53,
+  "candidates": 919,
+  "blocked_candidates": 59,
+  "review_required": 919,
+  "native_text": false,
+  "image_width": 1698,
+  "image_height": 2400,
+  "warnings": [
+    "Candidates are not a verified seat inventory.",
+    "Cross-out detection is heuristic: inspect exclusions and missing/merged/split boxes.",
+    "Scanned labels use provisional D-numbers; no OCR or label guessing is performed."
+  ],
+  "limitations": [
+    "Candidate count is not measured seat recall.",
+    "24 reference cells were used during development; not a held-out full-hall audit.",
+    "Some faint outer-right positions and loje symbols are still missed; false positives remain.",
+    "All identities and exclusions still require review."
+  ]
+}

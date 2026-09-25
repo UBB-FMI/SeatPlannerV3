@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Seatplan · Reservations</title>
+  <link rel="stylesheet" href="{{ base }}/static/app.css">
+  <script type="module" src="{{ base }}/static/app.js"></script>
+</head>
+<body data-base="{{ base }}">
+  <header class="site-header">
+    <a class="brand" href="{{ base }}/" aria-label="Seatplan home"><span class="brand-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Seatplan</a>
+    <nav aria-label="Main navigation"><button data-view="book" class="nav active">Book seats</button><button data-view="mine" class="nav">My reservations</button><button data-view="admin" class="nav" id="admin-nav" hidden>Administration</button></nav>
+    <div class="account"><span id="account-email"></span><button id="account-button" class="button secondary">Sign in</button></div>
+  </header>
+  <div id="development" class="development" hidden>Development mode · Email messages are written to the server's data/dev-mail directory when MAIL_BACKEND=file.</div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <main id="app"><div class="empty">Loading Seatplan…</div></main>
+  <dialog id="modal"><div id="modal-content"></div></dialog>
+  <footer class="site-footer">Seatplan <span>Choose your place. Keep your confirmation.</span></footer>
+  <noscript>This application requires JavaScript. Enable it to select and reserve seats.</noscript>
+</body>
+</html>

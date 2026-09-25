@@ -1,0 +1,286 @@
+{
+  "pdf_sha256": "df5e409db1b0452828718e697960cdacd28f668c93eefeed4519da41a8bf6816",
+  "provenance": "Manually annotated conservative starter exclusion masks from the supplied scan. Not output of the generic seat detector. Review all positions and boundaries before publication.",
+  "reference_size": [
+    1024,
+    1448
+  ],
+  "zones": [
+    {
+      "id": "sample-exclusion-01",
+      "page": 0,
+      "name": "Upper center: crossed-out two-column group",
+      "points": [
+        [
+          0.48339844,
+          0.23549724
+        ],
+        [
+          0.53027344,
+          0.23549724
+        ],
+        [
+          0.53027344,
+          0.28936464
+        ],
+        [
+          0.48339844,
+          0.28936464
+        ]
+      ]
+    },
+    {
+      "id": "sample-exclusion-02",
+      "page": 0,
+      "name": "Viewer-left Loja 8: crossed-out box areas",
+      "points": [
+        [
+          0.23828125,
+          0.35773481
+        ],
+        [
+          0.3046875,
+          0.32941989
+        ],
+        [
+          0.32714844,
+          0.36049724
+        ],
+        [
+          0.26269531,
+          0.38950276
+        ]
+      ]
+    },
+    {
+      "id": "sample-exclusion-03",
+      "page": 0,
+      "name": "Viewer-left Loja 10: inner crossed-out box",
+      "points": [
+        [
+          0.38964844,
+          0.3128453
+        ],
+        [
+          0.46582031,
+          0.3038674
+        ],
+        [
+          0.46875,
+          0.32389503
+        ],
+        [
+          0.39648438,
+          0.33356354
+        ]
+      ]
+    },
+    {
+      "id": "sample-exclusion-04",
+      "page": 0,
+      "name": "Main left: crossed-out full row",
+      "points": [
+        [
+          0.24511719,
+          0.63052486
+        ],
+        [
+          0.48828125,
+          0.63052486
+        ],
+        [
+          0.48828125,
+          0.64779006
+        ],
+        [
+          0.24511719,
+          0.64779006
+        ]
+      ]
+    },
+    {
+      "id": "sample-exclusion-05",
+      "page": 0,
+      "name": "Main left: two crossed-out row-end seats",
+      "points": [
+        [
+          0.2265625,
+          0.61395028
+        ],
+        [
+          0.26660156,
+          0.61395028
+        ],
+        [
+          0.26660156,
+          0.63121547
+        ],
+        [
+          0.2265625,
+          0.63121547
+        ]
+      ]
+    },
+    {
+      "id": "sample-exclusion-06",
+      "page": 0,
+      "name": "Main left: two front-row cross-outs",
+      "points": [
+        [
+          0.29882812,
+          0.69820442
+        ],
+        [
+          0.33984375,
+          0.69820442
+        ],
+        [
+          0.33984375,
+          0.71685083
+        ],
+        [
+          0.29882812,
+          0.71685083
+        ]
+      ]
+    },
+    {
+      "id": "sample-exclusion-07",
+      "page": 0,
+      "name": "Main left: bottom-row cross-out",
+      "points": [
+        [
+          0.33886719,
+          0.71546961
+        ],
+        [
+          0.36035156,
+          0.71546961
+        ],
+        [
+          0.36035156,
+          0.73342541
+        ],
+        [
+          0.33886719,
+          0.73342541
+        ]
+      ]
+    },
+    {
+      "id": "sample-exclusion-08",
+      "page": 0,
+      "name": "Main right: crossed-out full row",
+      "points": [
+        [
+          0.51953125,
+          0.56146409
+        ],
+        [
+          0.78125,
+          0.56146409
+        ],
+        [
+          0.78125,
+          0.5808011
+        ],
+        [
+          0.51953125,
+          0.5808011
+        ]
+      ]
+    },
+    {
+      "id": "sample-exclusion-09",
+      "page": 0,
+      "name": "Main right: two crossed-out row-end seats",
+      "points": [
+        [
+          0.74121094,
+          0.61325967
+        ],
+        [
+          0.78125,
+          0.61325967
+        ],
+        [
+          0.78125,
+          0.63190608
+        ],
+        [
+          0.74121094,
+          0.63190608
+        ]
+      ]
+    },
+    {
+      "id": "sample-exclusion-10",
+      "page": 0,
+      "name": "Main right: front-row right cross-outs",
+      "points": [
+        [
+          0.66699219,
+          0.69751381
+        ],
+        [
+          0.70898438,
+          0.69751381
+        ],
+        [
+          0.70898438,
+          0.71754144
+        ],
+        [
+          0.66699219,
+          0.71754144
+        ]
+      ]
+    },
+    {
+      "id": "sample-exclusion-11",
+      "page": 0,
+      "name": "Main right: bottom-row left cross-outs",
+      "points": [
+        [
+          0.51953125,
+          0.71477901
+        ],
+        [
+          0.56152344,
+          0.71477901
+        ],
+        [
+          0.56152344,
+          0.73411602
+        ],
+        [
+          0.51953125,
+          0.73411602
+        ]
+      ]
+    },
+    {
+      "id": "sample-exclusion-12",
+      "page": 0,
+      "name": "Main right: bottom-row right cross-out",
+      "points": [
+        [
+          0.64746094,
+          0.71477901
+        ],
+        [
+          0.66992188,
+          0.71477901
+        ],
+        [
+          0.66992188,
+          0.73411602
+        ],
+        [
+          0.64746094,
+          0.73411602
+        ]
+      ]
+    }
+  ]
+}

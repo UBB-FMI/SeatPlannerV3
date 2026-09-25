@@ -1,0 +1,43 @@
+{
+  "source_pdf_sha256": "df5e409db1b0452828718e697960cdacd28f668c93eefeed4519da41a8bf6816",
+  "canonical_masked_result_sha256": "bb8dc133ef56644ae5b1b07efc57c58857f5e12d97baf963c9104ba84802eb1a",
+  "single_detection_seconds_observed": 80.22545295199996,
+  "manually_annotated_exclusion_areas": 12,
+  "algorithm": "deterministic-boundaries-v4",
+  "strategy": "boundaries",
+  "local_grid_proposals": 32,
+  "overlapping_alternatives_removed": 67,
+  "recovered_bank_groups": 1,
+  "recovered_bank_cells": 6,
+  "symbol_scan_tiles": 46,
+  "symbol_template_evaluations": 2691,
+  "symbol_template_candidates": 307,
+  "recovered_symbol_cells": 32,
+  "replaced_symbol_enclosures": 18,
+  "removed_symbol_gaps": 1,
+  "refined_symbol_enclosures": 3,
+  "boundary_proposals": 3187,
+  "fitted_proposals": 2664,
+  "unfitted_seeds": 25,
+  "removed_compartment_candidates": 2,
+  "additional_candidates": 36,
+  "ambiguous_empty_candidates": 1,
+  "repair_candidates": 43,
+  "candidates": 935,
+  "blocked_candidates": 59,
+  "review_required": 935,
+  "native_text": false,
+  "image_width": 1698,
+  "image_height": 2400,
+  "warnings": [
+    "Candidates are not a verified seat inventory.",
+    "Cross-out detection is heuristic: inspect exclusions and missing/merged/split boxes.",
+    "Scanned labels use provisional D-numbers; no OCR or label guessing is performed."
+  ],
+  "limitations": [
+    "Candidate count is not measured seat recall.",
+    "24 new interior-point references and 24 older polygon references were used during development, not held-out validation.",
+    "Residual loje details and incorrect candidates can remain outside the checked locations.",
+    "All seat identities and handwritten exclusions require review before publishing."
+  ]
+}

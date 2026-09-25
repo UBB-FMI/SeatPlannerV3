@@ -1,0 +1,536 @@
+{
+  "pdf_sha256": "df5e409db1b0452828718e697960cdacd28f668c93eefeed4519da41a8bf6816",
+  "width": 1698,
+  "height": 2400,
+  "method": "24 approximate reference polygons visually placed on the original rendered scan using pixel rulers, not derived from detector outputs. Boundary placement uncertainty approximately 1-3 pixels; this is a development-region test, not a full venue audit or held-out benchmark.",
+  "cases": [
+    {
+      "name": "Main 374",
+      "region": "main-middle",
+      "points": [
+        [
+          483,
+          1147.5
+        ],
+        [
+          514,
+          1147.5
+        ],
+        [
+          514,
+          1188.0
+        ],
+        [
+          483,
+          1188.0
+        ]
+      ]
+    },
+    {
+      "name": "Main 372",
+      "region": "main-middle",
+      "points": [
+        [
+          514,
+          1147.5
+        ],
+        [
+          545,
+          1147.5
+        ],
+        [
+          545,
+          1188.0
+        ],
+        [
+          514,
+          1188.0
+        ]
+      ]
+    },
+    {
+      "name": "Main 370",
+      "region": "main-middle",
+      "points": [
+        [
+          545,
+          1147.5
+        ],
+        [
+          576,
+          1147.5
+        ],
+        [
+          576,
+          1188.0
+        ],
+        [
+          545,
+          1188.0
+        ]
+      ]
+    },
+    {
+      "name": "Main 348",
+      "region": "main-middle",
+      "points": [
+        [
+          483,
+          1188.5
+        ],
+        [
+          514,
+          1188.5
+        ],
+        [
+          514,
+          1229.0
+        ],
+        [
+          483,
+          1229.0
+        ]
+      ]
+    },
+    {
+      "name": "Main 346",
+      "region": "main-middle",
+      "points": [
+        [
+          514,
+          1188.5
+        ],
+        [
+          545,
+          1188.5
+        ],
+        [
+          545,
+          1229.0
+        ],
+        [
+          514,
+          1229.0
+        ]
+      ]
+    },
+    {
+      "name": "Main 344",
+      "region": "main-middle",
+      "points": [
+        [
+          545,
+          1188.5
+        ],
+        [
+          576,
+          1188.5
+        ],
+        [
+          576,
+          1229.0
+        ],
+        [
+          545,
+          1229.0
+        ]
+      ]
+    },
+    {
+      "name": "Main 194",
+      "region": "main-lower",
+      "points": [
+        [
+          730,
+          1391
+        ],
+        [
+          761,
+          1391
+        ],
+        [
+          761,
+          1432
+        ],
+        [
+          730,
+          1432
+        ]
+      ]
+    },
+    {
+      "name": "Main 192",
+      "region": "main-lower",
+      "points": [
+        [
+          762,
+          1391
+        ],
+        [
+          793,
+          1391
+        ],
+        [
+          793,
+          1432
+        ],
+        [
+          762,
+          1432
+        ]
+      ]
+    },
+    {
+      "name": "Main 166",
+      "region": "main-lower",
+      "points": [
+        [
+          730,
+          1432
+        ],
+        [
+          761,
+          1432
+        ],
+        [
+          761,
+          1473
+        ],
+        [
+          730,
+          1473
+        ]
+      ]
+    },
+    {
+      "name": "Main 164",
+      "region": "main-lower",
+      "points": [
+        [
+          762,
+          1432
+        ],
+        [
+          793,
+          1432
+        ],
+        [
+          793,
+          1473
+        ],
+        [
+          762,
+          1473
+        ]
+      ]
+    },
+    {
+      "name": "Main 142",
+      "region": "main-lower",
+      "points": [
+        [
+          668,
+          1473
+        ],
+        [
+          699,
+          1473
+        ],
+        [
+          699,
+          1514
+        ],
+        [
+          668,
+          1514
+        ]
+      ]
+    },
+    {
+      "name": "Upper right 57",
+      "region": "upper-right",
+      "points": [
+        [
+          1301,
+          701
+        ],
+        [
+          1338,
+          728
+        ],
+        [
+          1318,
+          766
+        ],
+        [
+          1282,
+          740
+        ]
+      ]
+    },
+    {
+      "name": "Upper right 59",
+      "region": "upper-right",
+      "points": [
+        [
+          1338,
+          728
+        ],
+        [
+          1370,
+          754
+        ],
+        [
+          1351,
+          792
+        ],
+        [
+          1318,
+          766
+        ]
+      ]
+    },
+    {
+      "name": "Upper right 33",
+      "region": "upper-right",
+      "points": [
+        [
+          1282,
+          740
+        ],
+        [
+          1318,
+          766
+        ],
+        [
+          1298,
+          804
+        ],
+        [
+          1264,
+          779
+        ]
+      ]
+    },
+    {
+      "name": "Upper right 35",
+      "region": "upper-right",
+      "points": [
+        [
+          1318,
+          766
+        ],
+        [
+          1351,
+          792
+        ],
+        [
+          1330,
+          831
+        ],
+        [
+          1298,
+          804
+        ]
+      ]
+    },
+    {
+      "name": "Upper right 37",
+      "region": "upper-right",
+      "points": [
+        [
+          1351,
+          792
+        ],
+        [
+          1384,
+          818
+        ],
+        [
+          1363,
+          857
+        ],
+        [
+          1330,
+          831
+        ]
+      ]
+    },
+    {
+      "name": "Upper left 84",
+      "region": "upper-left",
+      "points": [
+        [
+          325,
+          718
+        ],
+        [
+          361,
+          689
+        ],
+        [
+          380,
+          728
+        ],
+        [
+          344,
+          755
+        ]
+      ]
+    },
+    {
+      "name": "Upper left 86",
+      "region": "upper-left",
+      "points": [
+        [
+          292,
+          748
+        ],
+        [
+          325,
+          718
+        ],
+        [
+          344,
+          755
+        ],
+        [
+          313,
+          783
+        ]
+      ]
+    },
+    {
+      "name": "Upper left 60",
+      "region": "upper-left",
+      "points": [
+        [
+          344,
+          755
+        ],
+        [
+          380,
+          728
+        ],
+        [
+          399,
+          767
+        ],
+        [
+          365,
+          794
+        ]
+      ]
+    },
+    {
+      "name": "Upper left 62",
+      "region": "upper-left",
+      "points": [
+        [
+          313,
+          783
+        ],
+        [
+          344,
+          755
+        ],
+        [
+          365,
+          794
+        ],
+        [
+          333,
+          820
+        ]
+      ]
+    },
+    {
+      "name": "Upper left 36",
+      "region": "upper-left",
+      "points": [
+        [
+          365,
+          794
+        ],
+        [
+          399,
+          767
+        ],
+        [
+          419,
+          803
+        ],
+        [
+          386,
+          831
+        ]
+      ]
+    },
+    {
+      "name": "Left outer 242",
+      "region": "left-outer",
+      "points": [
+        [
+          210,
+          1053
+        ],
+        [
+          247,
+          1073
+        ],
+        [
+          232,
+          1102
+        ],
+        [
+          194,
+          1084
+        ]
+      ]
+    },
+    {
+      "name": "Left outer 244",
+      "region": "left-outer",
+      "points": [
+        [
+          194,
+          1084
+        ],
+        [
+          232,
+          1102
+        ],
+        [
+          215,
+          1135
+        ],
+        [
+          179,
+          1118
+        ]
+      ]
+    },
+    {
+      "name": "Left outer 246",
+      "region": "left-outer",
+      "points": [
+        [
+          179,
+          1118
+        ],
+        [
+          215,
+          1135
+        ],
+        [
+          203,
+          1164
+        ],
+        [
+          166,
+          1152
+        ]
+      ]
+    }
+  ]
+}
